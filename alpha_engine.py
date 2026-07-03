@@ -15,12 +15,12 @@ from statsmodels.tsa.stattools import coint
 # =====================================================================
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 
-ENTRY_Z = 2.6                      # Adjusted signal boundary based on your current setup
+ENTRY_Z = 2.3                      # Adjusted signal boundary based on your current setup
 MAX_P_VALUE_GATE = 0.05            # High statistical confidence threshold
 MIN_SHARPE_GATE = 0.65             # Elevated backtest quality baseline
 MAX_DD_LIMIT = -20.0               # Strict historical drawdown threshold
 LOOKBACK_HOURS = 120               # Trailing lookback window for spread analysis
-MAX_HALF_LIFE_DAYS = 5.0           # Maximum allowed mean reversion half-life (in days)
+MAX_HALF_LIFE_DAYS = 6.0           # Maximum allowed mean reversion half-life (in days)
 MAX_VOLUME_ANOMALY = 3.5           # Filters out breakout stocks trading at >3.5x typical volume
 
 INITIAL_CAPITAL = 10000
