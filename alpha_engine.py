@@ -11,7 +11,7 @@ import yfinance as yf
 from statsmodels.tsa.stattools import coint
 
 # =====================================================================
-# ⚙️ HIGH-CONVICTION CONFIGURATION PANEL
+# ⚙️ SYSTEM CONFIGURATION PANEL (Pulls Securely From GitHub Environment)
 # =====================================================================
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 
@@ -93,7 +93,7 @@ def verify_multi_window_cointegration(df, t1, t2):
         
         # Window B: 1-Year Mid Horizon
         _, p_1y, _ = coint(pair_df[t1].tail(252), pair_df[t2].tail(252))
-        if p_1y > 0.10: return False, p_2y # Allow slightly looser bound on shorter window
+        if p_1y > 0.10: return False, p_2y 
         
         return True, p_2y
     except:
@@ -112,11 +112,11 @@ def calculate_ou_half_life(spreads_series):
         beta_coeff = model.params.iloc[1]
         
         if beta_coeff >= 0: 
-            return 999.0 # Diverging spread
+            return 999.0 
             
         theta = -np.log(1 + beta_coeff)
         half_life_hours = np.log(2) / theta
-        return half_life_hours / 7.0 # Convert 7-hour market execution sessions to trading days
+        return half_life_hours / 7.0 
     except:
         return 999.0
 
@@ -174,17 +174,21 @@ if __name__ == "__main__":
     
     for sub_ind in sub_industry_list:
         tickers = [t for t in daily_macro_data.columns if sub_industry_map.get(t) == sub_ind]
-        if len(tickers) < 2: continue # Requires a combination pair to match
+        if len(tickers) < 2: continue 
         
         try:
-            # VITAL PERFORMANCE UPGRADE: Pull both Price AND Volume parameters in a single batch
             raw_intraday = yf.download(tickers, period="3mo", interval="1h", progress=False)
             if isinstance(raw_intraday.columns, pd.MultiIndex):
                 intraday_prices = (raw_intraday["Adj Close"] if "Adj Close" in raw_intraday.columns.levels[0] else raw_intraday["Close"]).ffill()
                 intraday_volumes = raw_intraday["Volume"].ffill()
+                
+                # OPTIMIZATION: Force columns to explicit string formats to destroy MultiIndex/Tuple artifacts
+                intraday_prices.columns = [str(c).replace("'", "").replace("(", "").replace(")", "").replace(",", "").strip() for c in intraday_prices.columns]
+                intraday_volumes.columns = [str(c).replace("'", "").replace("(", "").replace(")", "").replace(",", "").strip() for c in intraday_volumes.columns]
             else:
                 continue
-        except:
+        except Exception as e:
+            logging.error(f"Failed to fetch or clean intraday matrix block for {sub_ind}: {e}")
             continue
             
         for t1, t2 in itertools.combinations(tickers, 2):
@@ -209,6 +213,10 @@ if __name__ == "__main__":
                 intra_spreads = df_intra_p[t1].values - (beta * df_intra_p[t2].values)
                 z_val = (intra_spreads[-1] - np.mean(intra_spreads[-LOOKBACK_HOURS:-1])) / np.std(intra_spreads[-LOOKBACK_HOURS:-1])
                 
+                # SYSTEM DIAGNOSTIC LOGGER: Prints every pair's mathematical status inside your GitHub console
+                if abs(z_val) > 1.0:
+                    logging.info(f"Audit: {t1} vs {t2} | Z: {z_val:.2f} | Gate: {ENTRY_Z} | CoC: {is_stable}")
+
                 action = None
                 if z_val >= ENTRY_Z: action = "SHORT SPREAD"
                 elif z_val <= -ENTRY_Z: action = "LONG SPREAD"
@@ -219,9 +227,8 @@ if __name__ == "__main__":
                     if half_life_days > MAX_HALF_LIFE_DAYS: continue
                     
                     # Filter 4: Volume Outlier / Breakout Trend Safeguard
-                    # Ensures we aren't stepping in front of a heavy institutional price run
                     latest_vol_t1 = df_intra_v[t1].iloc[-1]
-                    mean_vol_t1 = df_intra_v[t1].tail(48).mean() # Rolling 2-week baseline
+                    mean_vol_t1 = df_intra_v[t1].tail(48).mean() 
                     latest_vol_t2 = df_intra_v[t2].iloc[-1]
                     mean_vol_t2 = df_intra_v[t2].tail(48).mean()
                     
@@ -233,10 +240,9 @@ if __name__ == "__main__":
                         continue
                         
                     # Filter 5: Tail Risk Volatility Check
-                    # Drop pairs if a single asset leg experiences unbacked daily volatility shocks
                     ret_1d_t1 = abs(df_intra_p[t1].iloc[-1] / df_intra_p[t1].iloc[-8] - 1)
                     ret_1d_t2 = abs(df_intra_p[t2].iloc[-1] / df_intra_p[t2].iloc[-8] - 1)
-                    if ret_1d_t1 > 0.08 or ret_1d_t2 > 0.08: continue # Drop pairs experiencing >8% daily shocks
+                    if ret_1d_t1 > 0.08 or ret_1d_t2 > 0.08: continue 
 
                     # All 5 institutional filters passed -> Dispatch alert
                     dispatch_discord_alert({
@@ -246,7 +252,7 @@ if __name__ == "__main__":
                         "Price A": df_intra_p[t1].iloc[-1], "Price B": df_intra_p[t2].iloc[-1],
                         "Half-Life Days": half_life_days
                     })
-            except:
+            except Exception as loop_ex:
                 continue
                 
     logging.info("High-conviction strategy loop completed safely.")
