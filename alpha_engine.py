@@ -15,7 +15,7 @@ from statsmodels.tsa.stattools import coint
 # =====================================================================
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 
-ENTRY_Z = 2.65                      # Tightened signal boundary for extreme dislocation
+ENTRY_Z = 2.6                      # Adjusted signal boundary based on your current setup
 MAX_P_VALUE_GATE = 0.05            # High statistical confidence threshold
 MIN_SHARPE_GATE = 0.65             # Elevated backtest quality baseline
 MAX_DD_LIMIT = -20.0               # Strict historical drawdown threshold
@@ -213,7 +213,7 @@ if __name__ == "__main__":
                 intra_spreads = df_intra_p[t1].values - (beta * df_intra_p[t2].values)
                 z_val = (intra_spreads[-1] - np.mean(intra_spreads[-LOOKBACK_HOURS:-1])) / np.std(intra_spreads[-LOOKBACK_HOURS:-1])
                 
-                # SYSTEM DIAGNOSTIC LOGGER: Prints every pair's mathematical status inside your GitHub console
+                # SYSTEM DIAGNOSTIC LOGGER: Prints every pair's baseline mathematical parameters
                 if abs(z_val) > 1.0:
                     logging.info(f"Audit: {t1} vs {t2} | Z: {z_val:.2f} | Gate: {ENTRY_Z} | CoC: {is_stable}")
 
@@ -224,7 +224,9 @@ if __name__ == "__main__":
                 if action:
                     # Filter 3: Ornstein-Uhlenbeck Mean Reversion Velocity Verification
                     half_life_days = calculate_ou_half_life(intra_spreads[-LOOKBACK_HOURS:])
-                    if half_life_days > MAX_HALF_LIFE_DAYS: continue
+                    if half_life_days > MAX_HALF_LIFE_DAYS:
+                        logging.info(f"   [SKIPPED] {t1}/{t2} - Reversion half-life too slow: {half_life_days:.1f} days (Max: {MAX_HALF_LIFE_DAYS})")
+                        continue
                     
                     # Filter 4: Volume Outlier / Breakout Trend Safeguard
                     latest_vol_t1 = df_intra_v[t1].iloc[-1]
@@ -236,13 +238,15 @@ if __name__ == "__main__":
                     vol_ratio_t2 = latest_vol_t2 / mean_vol_t2 if mean_vol_t2 > 0 else 1.0
                     
                     if vol_ratio_t1 > MAX_VOLUME_ANOMALY or vol_ratio_t2 > MAX_VOLUME_ANOMALY:
-                        logging.info(f"Skipped {t1}/{t2} due to breakout volume anomaly.")
+                        logging.info(f"   [SKIPPED] {t1}/{t2} - Breakout volume anomaly detected (Vol A: {vol_ratio_t1:.1f}x, Vol B: {vol_ratio_t2:.1f}x)")
                         continue
                         
                     # Filter 5: Tail Risk Volatility Check
                     ret_1d_t1 = abs(df_intra_p[t1].iloc[-1] / df_intra_p[t1].iloc[-8] - 1)
                     ret_1d_t2 = abs(df_intra_p[t2].iloc[-1] / df_intra_p[t2].iloc[-8] - 1)
-                    if ret_1d_t1 > 0.08 or ret_1d_t2 > 0.08: continue 
+                    if ret_1d_t1 > 0.08 or ret_1d_t2 > 0.08:
+                        logging.info(f"   [SKIPPED] {t1}/{t2} - Single-leg volatility shock too high (>{max(ret_1d_t1, ret_1d_t2)*100:.1f}%)")
+                        continue 
 
                     # All 5 institutional filters passed -> Dispatch alert
                     dispatch_discord_alert({
