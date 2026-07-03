@@ -2,10 +2,7 @@ name: Automated Market Engine
 on:
   schedule:
     - cron: '0 * * * *' # Re-runs precisely at minute 0 of every hour
-  workflow_dispatch:   # Adds a manual button so you can trigger it from your iPhone anytime
-
-permissions:
-  contents: write      # Grants the server permission to update the alert tracking memory file
+  workflow_dispatch:   # Manual button trigger
 
 jobs:
   sweep-market:
@@ -33,11 +30,3 @@ jobs:
       env:
         DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
       run: python alpha_engine.py
-
-    - name: Commit Alert Tracking Memories To Storage
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add engine_memory.json || true
-        git commit -m "Sync engine loop alert state [skip ci]" || true
-        git push || true
