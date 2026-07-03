@@ -15,40 +15,14 @@ from statsmodels.tsa.stattools import coint
 # =====================================================================
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 
-ENTRY_Z = 2.5
+ENTRY_Z = 2.8
 MAX_P_VALUE_GATE = 0.05
-MIN_SHARPE_GATE = 0.5
+MIN_SHARPE_GATE = 0.9
 MAX_DD_LIMIT = -25.0
 LOOKBACK_HOURS = 120
 INITIAL_CAPITAL = 10000
 
-STATE_FILE = "engine_memory.json"
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
-
-# =====================================================================
-# PERSISTENT STATE MEMORY MANAGEMENT (Prevents Duplicate Hourly Alerts)
-# =====================================================================
-def load_historical_memory():
-    if not os.path.exists(STATE_FILE):
-        return set()
-    try:
-        with open(STATE_FILE, "r") as f:
-            data = json.load(f)
-            if data.get("date") != str(datetime.date.today()):
-                return set()  # Midnight calendar wipe
-            return set(data.get("dispatched_alerts", []))
-    except:
-        return set()
-
-def commit_memory_to_disk(dispatched_set):
-    try:
-        with open(STATE_FILE, "w") as f:
-            json.dump({
-                "date": str(datetime.date.today()),
-                "dispatched_alerts": list(dispatched_set)
-            }, f)
-    except Exception as e:
-        logging.error(f"Memory write failure: {e}")
 
 # =====================================================================
 # TELEMETRY DISPATCH HOOK
@@ -74,7 +48,7 @@ def dispatch_discord_alert(data):
                 {"name": "Sharpe", "value": f"{data['Historical Sharpe Ratio']:.2f}", "inline": True},
                 {"name": "Context Prices", "value": f"`{data['Stock A']}`: ${data['Price A']:.2f} | `{data['Stock B']}`: ${data['Price B']:.2f}", "inline": False}
             ],
-            "footer": {"text": "S&P 500 GitHub Free Instance"},
+            "footer": {"text": "S&P 500 GitHub Streamlined Instance"},
             "timestamp": datetime.datetime.utcnow().isoformat() + "Z"
         }]
     }
@@ -141,7 +115,6 @@ def audit_macro_historical_profile(df, t_a, t_b):
 
 if __name__ == "__main__":
     logging.info("Starting automated market system sweep...")
-    memory = load_historical_memory()
     
     sp500_meta = harvest_sp500_sectors()
     sectors_map = sp500_meta.set_index("Ticker")["Sector"].to_dict()
@@ -191,18 +164,15 @@ if __name__ == "__main__":
                 if z_val >= ENTRY_Z: action = "SHORT SPREAD"
                 elif z_val <= -ENTRY_Z: action = "LONG SPREAD"
                 
+                # Direct alert dispatch without any tracking file filters
                 if action:
-                    alert_key = f"{t1}_{t2}_{action}"
-                    if alert_key not in memory:
-                        memory.add(alert_key)
-                        dispatch_discord_alert({
-                            "Pair Name": f"{t1} vs {t2}", "Stock A": t1, "Stock B": t2, "Sector": sector,
-                            "Cointegration P-Value": p_val, "Historical Sharpe Ratio": macro["Sharpe"],
-                            "Current Intraday Z-Score": z_val, "Action State": action, "Beta": beta,
-                            "Price A": df_intra[t1].iloc[-1], "Price B": df_intra[t2].iloc[-1]
-                        })
+                    dispatch_discord_alert({
+                        "Pair Name": f"{t1} vs {t2}", "Stock A": t1, "Stock B": t2, "Sector": sector,
+                        "Cointegration P-Value": p_val, "Historical Sharpe Ratio": macro["Sharpe"],
+                        "Current Intraday Z-Score": z_val, "Action State": action, "Beta": beta,
+                        "Price A": df_intra[t1].iloc[-1], "Price B": df_intra[t2].iloc[-1]
+                    })
             except:
                 continue
                 
-    commit_memory_to_disk(memory)
     logging.info("Sweep complete. Process terminated cleanly.")
