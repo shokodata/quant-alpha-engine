@@ -15,7 +15,7 @@ from statsmodels.tsa.stattools import coint
 # =====================================================================
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 
-ENTRY_Z = 2.7                      # Tightened signal boundary for extreme dislocation
+ENTRY_Z = 2.65                      # Tightened signal boundary for extreme dislocation
 MAX_P_VALUE_GATE = 0.05            # High statistical confidence threshold
 MIN_SHARPE_GATE = 0.65             # Elevated backtest quality baseline
 MAX_DD_LIMIT = -20.0               # Strict historical drawdown threshold
