@@ -13,6 +13,8 @@ jobs:
 
     - name: Set up Python Environment
       uses: actions/setup-python@v6    # Fixes Node.js deprecation warning
+      with:
+        python-version: '3.10'         # 🎯 FIX: Restores the correct Python environment
 
     - name: Cache Python Modules
       uses: actions/cache@v4
