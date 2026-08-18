@@ -4,6 +4,7 @@ import itertools
 import urllib.request
 import logging
 import os
+import time
 import numpy as np
 import pandas as pd
 import statsmodels.api as sm
@@ -15,13 +16,13 @@ from statsmodels.tsa.stattools import coint
 # =====================================================================
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 
-ENTRY_Z = 2.3                      # Adjusted signal boundary based on your current setup
-MAX_P_VALUE_GATE = 0.05            # High statistical confidence threshold
-MIN_SHARPE_GATE = 0.65             # Elevated backtest quality baseline
-MAX_DD_LIMIT = -20.0               # Strict historical drawdown threshold
-LOOKBACK_HOURS = 120               # Trailing lookback window for spread analysis
-MAX_HALF_LIFE_DAYS = 6.0           # Maximum allowed mean reversion half-life (in days)
-MAX_VOLUME_ANOMALY = 3.5           # Filters out breakout stocks trading at >3.5x typical volume
+ENTRY_Z = 2.3                    # Adjusted signal boundary based on your current setup
+MAX_P_VALUE_GATE = 0.05          # High statistical confidence threshold
+MIN_SHARPE_GATE = 0.65           # Elevated backtest quality baseline
+MAX_DD_LIMIT = -20.0             # Strict historical drawdown threshold
+LOOKBACK_HOURS = 120             # Trailing lookback window for spread analysis
+MAX_HALF_LIFE_DAYS = 6.0         # Maximum allowed mean reversion half-life (in days)
+MAX_VOLUME_ANOMALY = 3.5         # Filters out breakout stocks trading at >3.5x typical volume
 
 INITIAL_CAPITAL = 10000
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -52,7 +53,7 @@ def dispatch_discord_alert(data):
                 {"name": "Context Spot Values", "value": f"`{data['Stock A']}`: ${data['Price A']:.2f} | `{data['Stock B']}`: ${data['Price B']:.2f}", "inline": False}
             ],
             "footer": {"text": "Quant System Alpha Engine • Multi-Timeframe Validated"},
-            "timestamp": datetime.datetime.utcnow().isoformat() + "Z"
+            "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat()
         }]
     }
 
@@ -83,6 +84,56 @@ def harvest_sp500_homogeneity():
     # Drop rows missing Sub-Industry metadata to protect pair homogeneity logic
     return df[["Ticker", "Sub-Industry"]].dropna(subset=["Sub-Industry"])
 
+def fetch_market_data_chunked(tickers, period, interval, chunk_size=100, pause_seconds=1.0):
+    """Batches yfinance downloads in chunks with rate-limit pacing to avoid blocks/timeouts."""
+    price_dfs = []
+    volume_dfs = []
+    
+    ticker_chunks = [tickers[i:i + chunk_size] for i in range(0, len(tickers), chunk_size)]
+    logging.info(f"Downloading {interval} data across {len(ticker_chunks)} chunk(s)...")
+
+    for idx, chunk in enumerate(ticker_chunks):
+        try:
+            raw = yf.download(chunk, period=period, interval=interval, progress=False, group_by="column")
+            if raw.empty:
+                continue
+
+            if isinstance(raw.columns, pd.MultiIndex):
+                price_col = "Adj Close" if "Adj Close" in raw.columns.levels[0] else "Close"
+                prices = raw[price_col].copy()
+                volumes = raw["Volume"].copy() if "Volume" in raw.columns.levels[0] else pd.DataFrame()
+            else:
+                price_col = "Adj Close" if "Adj Close" in raw.columns else "Close"
+                prices = raw[[price_col]].copy()
+                prices.columns = chunk
+                volumes = raw[["Volume"]].copy() if "Volume" in raw.columns else pd.DataFrame()
+                if not volumes.empty:
+                    volumes.columns = chunk
+
+            # Standardize and clean column header names
+            prices.columns = [str(c).replace("'", "").replace("(", "").replace(")", "").replace(",", "").strip() for c in prices.columns]
+            if not volumes.empty:
+                volumes.columns = [str(c).replace("'", "").replace("(", "").replace(")", "").replace(",", "").strip() for c in volumes.columns]
+
+            price_dfs.append(prices)
+            if not volumes.empty:
+                volume_dfs.append(volumes)
+
+        except Exception as err:
+            logging.warning(f"Chunk {idx + 1} download warning: {err}")
+        
+        time.sleep(pause_seconds)
+
+    merged_prices = pd.concat(price_dfs, axis=1).ffill() if price_dfs else pd.DataFrame()
+    merged_volumes = pd.concat(volume_dfs, axis=1).ffill() if volume_dfs else pd.DataFrame()
+
+    # Deduplicate columns if any ticker overlapped across chunks
+    merged_prices = merged_prices.loc[:, ~merged_prices.columns.duplicated()]
+    if not merged_volumes.empty:
+        merged_volumes = merged_volumes.loc[:, ~merged_volumes.columns.duplicated()]
+
+    return merged_prices, merged_volumes
+
 def verify_multi_window_cointegration(df, t1, t2):
     """Filter 1: Validates that cointegration persists across multiple historical horizons."""
     try:
@@ -98,7 +149,7 @@ def verify_multi_window_cointegration(df, t1, t2):
         if p_1y > 0.10: return False, p_2y 
         
         return True, p_2y
-    except:
+    except Exception:
         return False, 1.0
 
 def calculate_ou_half_life(spreads_series):
@@ -119,7 +170,7 @@ def calculate_ou_half_life(spreads_series):
         theta = -np.log(1 + beta_coeff)
         half_life_hours = np.log(2) / theta
         return half_life_hours / 7.0 
-    except:
+    except Exception:
         return 999.0
 
 def audit_macro_historical_profile(df, t1, t2):
@@ -129,7 +180,7 @@ def audit_macro_historical_profile(df, t1, t2):
     X_mat = np.vstack([np.ones(len(x)), x]).T
     try:
         beta = np.linalg.lstsq(X_mat, y, rcond=None)[0][1]
-    except:
+    except Exception:
         return None
         
     spreads = pair_df[t1] - (beta * pair_df[t2])
@@ -166,32 +217,26 @@ if __name__ == "__main__":
     sp500_meta = harvest_sp500_homogeneity()
     sub_industry_map = sp500_meta.set_index("Ticker")["Sub-Industry"].to_dict()
     sub_industry_list = sorted(sp500_meta["Sub-Industry"].dropna().unique())
+    all_tickers = sp500_meta["Ticker"].unique().tolist()
     
-    # Extract historical daily baseline metrics
-    daily_raw = yf.download(sp500_meta["Ticker"].tolist(), period="2y", interval="1d", progress=False)
-    if isinstance(daily_raw.columns, pd.MultiIndex):
-        daily_macro_data = (daily_raw["Adj Close"] if "Adj Close" in daily_raw.columns.levels[0] else daily_raw["Close"]).ffill()
-    else:
-        daily_macro_data = (daily_raw["Adj Close"] if "Adj Close" in daily_raw.columns else daily_raw["Close"]).ffill()
+    # 1. Bulk-download daily historical macro data in rate-controlled batches
+    logging.info("Harvesting 2-year daily historical matrix...")
+    daily_macro_data, _ = fetch_market_data_chunked(all_tickers, period="2y", interval="1d", chunk_size=100, pause_seconds=1.0)
     
+    # 2. Bulk-download 3-month hourly intraday data in rate-controlled batches
+    logging.info("Harvesting 3-month hourly intraday matrix...")
+    intraday_prices, intraday_volumes = fetch_market_data_chunked(all_tickers, period="3mo", interval="1h", chunk_size=100, pause_seconds=1.0)
+    
+    if daily_macro_data.empty or intraday_prices.empty:
+        logging.error("Failed to harvest market data matrix blocks. Exiting.")
+        exit(1)
+
+    logging.info("Beginning in-memory multi-timeframe structural sweep...")
+
+    # 3. Process pairs rapidly in memory without making extra network requests
     for sub_ind in sub_industry_list:
-        tickers = [t for t in daily_macro_data.columns if sub_industry_map.get(t) == sub_ind]
+        tickers = [t for t in daily_macro_data.columns if sub_industry_map.get(t) == sub_ind and t in intraday_prices.columns]
         if len(tickers) < 2: continue 
-        
-        try:
-            raw_intraday = yf.download(tickers, period="3mo", interval="1h", progress=False)
-            if isinstance(raw_intraday.columns, pd.MultiIndex):
-                intraday_prices = (raw_intraday["Adj Close"] if "Adj Close" in raw_intraday.columns.levels[0] else raw_intraday["Close"]).ffill()
-                intraday_volumes = raw_intraday["Volume"].ffill()
-                
-                # OPTIMIZATION: Force columns to explicit string formats to destroy MultiIndex/Tuple artifacts
-                intraday_prices.columns = [str(c).replace("'", "").replace("(", "").replace(")", "").replace(",", "").strip() for c in intraday_prices.columns]
-                intraday_volumes.columns = [str(c).replace("'", "").replace("(", "").replace(")", "").replace(",", "").strip() for c in intraday_volumes.columns]
-            else:
-                continue
-        except Exception as e:
-            logging.error(f"Failed to fetch or clean intraday matrix block for {sub_ind}: {e}")
-            continue
             
         for t1, t2 in itertools.combinations(tickers, 2):
             try:
@@ -203,9 +248,8 @@ if __name__ == "__main__":
                 macro = audit_macro_historical_profile(daily_macro_data, t1, t2)
                 if not macro or macro["Sharpe"] < MIN_SHARPE_GATE or macro["Max DD"] < MAX_DD_LIMIT: continue
                 
-                if t1 not in intraday_prices.columns or t2 not in intraday_prices.columns: continue
                 df_intra_p = intraday_prices[[t1, t2]].dropna()
-                df_intra_v = intraday_volumes[[t1, t2]].dropna()
+                df_intra_v = intraday_volumes[[t1, t2]].dropna() if (t1 in intraday_volumes.columns and t2 in intraday_volumes.columns) else pd.DataFrame()
                 if len(df_intra_p) < (LOOKBACK_HOURS + 5): continue
                 
                 # Check current live spread parameters
@@ -231,17 +275,18 @@ if __name__ == "__main__":
                         continue
                     
                     # Filter 4: Volume Outlier / Breakout Trend Safeguard
-                    latest_vol_t1 = df_intra_v[t1].iloc[-1]
-                    mean_vol_t1 = df_intra_v[t1].tail(48).mean() 
-                    latest_vol_t2 = df_intra_v[t2].iloc[-1]
-                    mean_vol_t2 = df_intra_v[t2].tail(48).mean()
-                    
-                    vol_ratio_t1 = latest_vol_t1 / mean_vol_t1 if mean_vol_t1 > 0 else 1.0
-                    vol_ratio_t2 = latest_vol_t2 / mean_vol_t2 if mean_vol_t2 > 0 else 1.0
-                    
-                    if vol_ratio_t1 > MAX_VOLUME_ANOMALY or vol_ratio_t2 > MAX_VOLUME_ANOMALY:
-                        logging.info(f"    [SKIPPED] {t1}/{t2} - Breakout volume anomaly detected (Vol A: {vol_ratio_t1:.1f}x, Vol B: {vol_ratio_t2:.1f}x)")
-                        continue
+                    if not df_intra_v.empty:
+                        latest_vol_t1 = df_intra_v[t1].iloc[-1]
+                        mean_vol_t1 = df_intra_v[t1].tail(48).mean() 
+                        latest_vol_t2 = df_intra_v[t2].iloc[-1]
+                        mean_vol_t2 = df_intra_v[t2].tail(48).mean()
+                        
+                        vol_ratio_t1 = latest_vol_t1 / mean_vol_t1 if mean_vol_t1 > 0 else 1.0
+                        vol_ratio_t2 = latest_vol_t2 / mean_vol_t2 if mean_vol_t2 > 0 else 1.0
+                        
+                        if vol_ratio_t1 > MAX_VOLUME_ANOMALY or vol_ratio_t2 > MAX_VOLUME_ANOMALY:
+                            logging.info(f"    [SKIPPED] {t1}/{t2} - Breakout volume anomaly detected (Vol A: {vol_ratio_t1:.1f}x, Vol B: {vol_ratio_t2:.1f}x)")
+                            continue
                         
                     # Filter 5: Tail Risk Volatility Check
                     ret_1d_t1 = abs(df_intra_p[t1].iloc[-1] / df_intra_p[t1].iloc[-8] - 1)
