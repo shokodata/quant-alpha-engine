@@ -25,8 +25,8 @@ jobs:
     - name: Install Dependencies (Fresh yfinance + Stable Analytics)
       run: |
         python -m pip install --upgrade pip
-        # Safe bounds: Allows performance patches in Pandas 2.x, but caps at <3.0.0
-        pip install "pandas>=2.1.0,<3.0.0" "statsmodels>=0.14.0" lxml html5lib
+        # Safe bounds: Allows performance patches in Pandas 2.x, but caps at <3.0.5
+        pip install "pandas>=2.1.0,<3.0.5" "statsmodels>=0.14.0" lxml html5lib
         # Force-upgrade yfinance so API patches are pulled on every run
         pip install --upgrade yfinance
 
