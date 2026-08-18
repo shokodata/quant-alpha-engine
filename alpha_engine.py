@@ -79,7 +79,9 @@ def harvest_sp500_homogeneity():
         tables = pd.read_html(r.read())
     df = tables[0].rename(columns={"Symbol": "Ticker", "GICS Sub-Industry": "Sub-Industry"})
     df["Ticker"] = df["Ticker"].str.replace(".", "-", regex=False)
-    return df[["Ticker", "Sub-Industry"]]
+    
+    # Drop rows missing Sub-Industry metadata to protect pair homogeneity logic
+    return df[["Ticker", "Sub-Industry"]].dropna(subset=["Sub-Industry"])
 
 def verify_multi_window_cointegration(df, t1, t2):
     """Filter 1: Validates that cointegration persists across multiple historical horizons."""
@@ -163,7 +165,7 @@ if __name__ == "__main__":
     
     sp500_meta = harvest_sp500_homogeneity()
     sub_industry_map = sp500_meta.set_index("Ticker")["Sub-Industry"].to_dict()
-    sub_industry_list = sorted(sp500_meta["Sub-Industry"].unique())
+    sub_industry_list = sorted(sp500_meta["Sub-Industry"].dropna().unique())
     
     # Extract historical daily baseline metrics
     daily_raw = yf.download(sp500_meta["Ticker"].tolist(), period="2y", interval="1d", progress=False)
@@ -225,7 +227,7 @@ if __name__ == "__main__":
                     # Filter 3: Ornstein-Uhlenbeck Mean Reversion Velocity Verification
                     half_life_days = calculate_ou_half_life(intra_spreads[-LOOKBACK_HOURS:])
                     if half_life_days > MAX_HALF_LIFE_DAYS:
-                        logging.info(f"   [SKIPPED] {t1}/{t2} - Reversion half-life too slow: {half_life_days:.1f} days (Max: {MAX_HALF_LIFE_DAYS})")
+                        logging.info(f"    [SKIPPED] {t1}/{t2} - Reversion half-life too slow: {half_life_days:.1f} days (Max: {MAX_HALF_LIFE_DAYS})")
                         continue
                     
                     # Filter 4: Volume Outlier / Breakout Trend Safeguard
@@ -238,14 +240,14 @@ if __name__ == "__main__":
                     vol_ratio_t2 = latest_vol_t2 / mean_vol_t2 if mean_vol_t2 > 0 else 1.0
                     
                     if vol_ratio_t1 > MAX_VOLUME_ANOMALY or vol_ratio_t2 > MAX_VOLUME_ANOMALY:
-                        logging.info(f"   [SKIPPED] {t1}/{t2} - Breakout volume anomaly detected (Vol A: {vol_ratio_t1:.1f}x, Vol B: {vol_ratio_t2:.1f}x)")
+                        logging.info(f"    [SKIPPED] {t1}/{t2} - Breakout volume anomaly detected (Vol A: {vol_ratio_t1:.1f}x, Vol B: {vol_ratio_t2:.1f}x)")
                         continue
                         
                     # Filter 5: Tail Risk Volatility Check
                     ret_1d_t1 = abs(df_intra_p[t1].iloc[-1] / df_intra_p[t1].iloc[-8] - 1)
                     ret_1d_t2 = abs(df_intra_p[t2].iloc[-1] / df_intra_p[t2].iloc[-8] - 1)
                     if ret_1d_t1 > 0.08 or ret_1d_t2 > 0.08:
-                        logging.info(f"   [SKIPPED] {t1}/{t2} - Single-leg volatility shock too high (>{max(ret_1d_t1, ret_1d_t2)*100:.1f}%)")
+                        logging.info(f"    [SKIPPED] {t1}/{t2} - Single-leg volatility shock too high (>{max(ret_1d_t1, ret_1d_t2)*100:.1f}%)")
                         continue 
 
                     # All 5 institutional filters passed -> Dispatch alert
