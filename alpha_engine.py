@@ -85,52 +85,171 @@ def harvest_sp500_homogeneity():
     return df[["Ticker", "Sub-Industry"]].dropna(subset=["Sub-Industry"])
 
 def fetch_market_data_chunked(tickers, period, interval, chunk_size=100, pause_seconds=1.0):
-    """Batches yfinance downloads in chunks with rate-limit pacing to avoid blocks/timeouts."""
+    """Download market data safely, retry failures, and report incomplete coverage."""
     price_dfs = []
     volume_dfs = []
-    
-    ticker_chunks = [tickers[i:i + chunk_size] for i in range(0, len(tickers), chunk_size)]
-    logging.info(f"Downloading {interval} data across {len(ticker_chunks)} chunk(s)...")
+    failed_tickers = set()
+
+    def extract_frames(raw, requested_tickers):
+        """Normalize yfinance output into ticker-column price and volume frames."""
+        if raw is None or raw.empty:
+            return pd.DataFrame(), pd.DataFrame()
+
+        if isinstance(raw.columns, pd.MultiIndex):
+            available_fields = set(raw.columns.get_level_values(0))
+            price_col = "Adj Close" if "Adj Close" in available_fields else "Close"
+            prices = raw[price_col].copy()
+            volumes = raw["Volume"].copy() if "Volume" in available_fields else pd.DataFrame()
+        else:
+            price_col = "Adj Close" if "Adj Close" in raw.columns else "Close"
+            prices = raw[[price_col]].copy()
+            prices.columns = requested_tickers
+            volumes = raw[["Volume"]].copy() if "Volume" in raw.columns else pd.DataFrame()
+            if not volumes.empty:
+                volumes.columns = requested_tickers
+
+        if isinstance(prices, pd.Series):
+            prices = prices.to_frame(name=requested_tickers[0])
+        if isinstance(volumes, pd.Series):
+            volumes = volumes.to_frame(name=requested_tickers[0])
+
+        prices.columns = [
+            str(c).replace("'", "").replace("(", "").replace(")", "")
+            .replace(",", "").strip()
+            for c in prices.columns
+        ]
+        if not volumes.empty:
+            volumes.columns = [
+                str(c).replace("'", "").replace("(", "").replace(")", "")
+                .replace(",", "").strip()
+                for c in volumes.columns
+            ]
+
+        return prices, volumes
+
+    def download_with_retries(requested_tickers, label):
+        """Use serialized yfinance downloads to avoid SQLite cache contention."""
+        for attempt in range(1, 4):
+            try:
+                raw = yf.download(
+                    requested_tickers,
+                    period=period,
+                    interval=interval,
+                    progress=False,
+                    group_by="column",
+                    threads=False,
+                    timeout=30,
+                )
+                if not raw.empty:
+                    return raw
+                logging.warning(
+                    f"{label}, attempt {attempt}/3 returned no data."
+                )
+            except Exception as err:
+                logging.warning(
+                    f"{label}, attempt {attempt}/3 failed: {err}"
+                )
+
+            if attempt < 3:
+                time.sleep(attempt * 3)
+
+        return pd.DataFrame()
+
+    ticker_chunks = [
+        tickers[i:i + chunk_size]
+        for i in range(0, len(tickers), chunk_size)
+    ]
+    logging.info(
+        f"Downloading {interval} data across {len(ticker_chunks)} chunk(s)..."
+    )
 
     for idx, chunk in enumerate(ticker_chunks):
-        try:
-            raw = yf.download(chunk, period=period, interval=interval, progress=False, group_by="column")
-            if raw.empty:
-                continue
+        raw = download_with_retries(chunk, f"Chunk {idx + 1}")
+        prices, volumes = extract_frames(raw, chunk)
 
-            if isinstance(raw.columns, pd.MultiIndex):
-                price_col = "Adj Close" if "Adj Close" in raw.columns.levels[0] else "Close"
-                prices = raw[price_col].copy()
-                volumes = raw["Volume"].copy() if "Volume" in raw.columns.levels[0] else pd.DataFrame()
-            else:
-                price_col = "Adj Close" if "Adj Close" in raw.columns else "Close"
-                prices = raw[[price_col]].copy()
-                prices.columns = chunk
-                volumes = raw[["Volume"]].copy() if "Volume" in raw.columns else pd.DataFrame()
-                if not volumes.empty:
-                    volumes.columns = chunk
-
-            # Standardize and clean column header names
-            prices.columns = [str(c).replace("'", "").replace("(", "").replace(")", "").replace(",", "").strip() for c in prices.columns]
-            if not volumes.empty:
-                volumes.columns = [str(c).replace("'", "").replace("(", "").replace(")", "").replace(",", "").strip() for c in volumes.columns]
-
+        if not prices.empty:
             price_dfs.append(prices)
-            if not volumes.empty:
-                volume_dfs.append(volumes)
+        if not volumes.empty:
+            volume_dfs.append(volumes)
 
-        except Exception as err:
-            logging.warning(f"Chunk {idx + 1} download warning: {err}")
-        
+        returned_tickers = {
+            ticker
+            for ticker in chunk
+            if ticker in prices.columns and prices[ticker].notna().any()
+        }
+        missing_tickers = [
+            ticker for ticker in chunk if ticker not in returned_tickers
+        ]
+
+        if missing_tickers:
+            logging.warning(
+                f"Chunk {idx + 1} missing {interval} data for "
+                f"{', '.join(missing_tickers)}; retrying individually."
+            )
+
+        for ticker in missing_tickers:
+            retry_raw = download_with_retries(
+                [ticker], f"Individual retry for {ticker}"
+            )
+            retry_prices, retry_volumes = extract_frames(retry_raw, [ticker])
+
+            if (
+                ticker in retry_prices.columns
+                and retry_prices[ticker].notna().any()
+            ):
+                price_dfs.append(retry_prices[[ticker]])
+                if ticker in retry_volumes.columns:
+                    volume_dfs.append(retry_volumes[[ticker]])
+                logging.info(f"Recovered missing {interval} data for {ticker}.")
+            else:
+                failed_tickers.add(ticker)
+                logging.error(
+                    f"Final {interval} download failure for {ticker} "
+                    "after three individual attempts."
+                )
+
         time.sleep(pause_seconds)
 
-    merged_prices = pd.concat(price_dfs, axis=1).ffill() if price_dfs else pd.DataFrame()
-    merged_volumes = pd.concat(volume_dfs, axis=1).ffill() if volume_dfs else pd.DataFrame()
+    merged_prices = (
+        pd.concat(price_dfs, axis=1).ffill()
+        if price_dfs else pd.DataFrame()
+    )
+    merged_volumes = (
+        pd.concat(volume_dfs, axis=1).ffill()
+        if volume_dfs else pd.DataFrame()
+    )
 
-    # Deduplicate columns if any ticker overlapped across chunks
-    merged_prices = merged_prices.loc[:, ~merged_prices.columns.duplicated()]
+    # Keep the latest copy so an individually recovered ticker replaces an
+    # all-null column returned by the original batch.
+    if not merged_prices.empty:
+        merged_prices = merged_prices.loc[
+            :, ~merged_prices.columns.duplicated(keep="last")
+        ]
     if not merged_volumes.empty:
-        merged_volumes = merged_volumes.loc[:, ~merged_volumes.columns.duplicated()]
+        merged_volumes = merged_volumes.loc[
+            :, ~merged_volumes.columns.duplicated(keep="last")
+        ]
+
+    unresolved = sorted(
+        ticker for ticker in tickers
+        if (
+            ticker not in merged_prices.columns
+            or not merged_prices[ticker].notna().any()
+        )
+    )
+    unresolved = sorted(set(unresolved) | failed_tickers)
+
+    if unresolved:
+        logging.warning(
+            f"{interval} download completed with degraded coverage: "
+            f"{len(unresolved)}/{len(tickers)} ticker(s) unavailable - "
+            f"{', '.join(unresolved)}"
+        )
+    else:
+        logging.info(
+            f"{interval} download coverage verified: "
+            f"{len(tickers)}/{len(tickers)} tickers available."
+        )
 
     return merged_prices, merged_volumes
 
@@ -258,10 +377,21 @@ if __name__ == "__main__":
                 
                 intra_spreads = df_intra_p[t1].values - (beta * df_intra_p[t2].values)
                 z_val = (intra_spreads[-1] - np.mean(intra_spreads[-LOOKBACK_HOURS:-1])) / np.std(intra_spreads[-LOOKBACK_HOURS:-1])
-                
-                # SYSTEM DIAGNOSTIC LOGGER: Prints every pair's baseline mathematical parameters
+                half_life_days = calculate_ou_half_life(
+                    intra_spreads[-LOOKBACK_HOURS:]
+                )
+
+                # SYSTEM DIAGNOSTIC LOGGER: Include decision context for every
+                # pair that reaches the existing audit visibility threshold.
                 if abs(z_val) > 1.0:
-                    logging.info(f"Audit: {t1} vs {t2} | Z: {z_val:.2f} | Gate: {ENTRY_Z} | CoC: {is_stable}")
+                    logging.info(
+                        f"Audit: {t1} vs {t2} | Z: {z_val:.2f} | "
+                        f"Gate: {ENTRY_Z} | CoC: {is_stable} | "
+                        f"Half-Life: {half_life_days:.1f} days | "
+                        f"Historical Sharpe: {macro['Sharpe']:.2f} | "
+                        f"Spot: {t1} ${df_intra_p[t1].iloc[-1]:.2f}, "
+                        f"{t2} ${df_intra_p[t2].iloc[-1]:.2f}"
+                    )
 
                 action = None
                 if z_val >= ENTRY_Z: action = "SHORT SPREAD"
@@ -269,7 +399,6 @@ if __name__ == "__main__":
                 
                 if action:
                     # Filter 3: Ornstein-Uhlenbeck Mean Reversion Velocity Verification
-                    half_life_days = calculate_ou_half_life(intra_spreads[-LOOKBACK_HOURS:])
                     if half_life_days > MAX_HALF_LIFE_DAYS:
                         logging.info(f"    [SKIPPED] {t1}/{t2} - Reversion half-life too slow: {half_life_days:.1f} days (Max: {MAX_HALF_LIFE_DAYS})")
                         continue
@@ -304,6 +433,9 @@ if __name__ == "__main__":
                         "Half-Life Days": half_life_days
                     })
             except Exception as loop_ex:
+                logging.exception(
+                    f"Pair-processing failure for {t1}/{t2}: {loop_ex}"
+                )
                 continue
                 
-    logging.info("High-conviction strategy loop completed safely.")
+    logging.info("High-conviction strategy loop completed.")
