@@ -377,10 +377,21 @@ if __name__ == "__main__":
                 
                 intra_spreads = df_intra_p[t1].values - (beta * df_intra_p[t2].values)
                 z_val = (intra_spreads[-1] - np.mean(intra_spreads[-LOOKBACK_HOURS:-1])) / np.std(intra_spreads[-LOOKBACK_HOURS:-1])
-                
-                # SYSTEM DIAGNOSTIC LOGGER: Prints every pair's baseline mathematical parameters
+                half_life_days = calculate_ou_half_life(
+                    intra_spreads[-LOOKBACK_HOURS:]
+                )
+
+                # SYSTEM DIAGNOSTIC LOGGER: Include decision context for every
+                # pair that reaches the existing audit visibility threshold.
                 if abs(z_val) > 1.0:
-                    logging.info(f"Audit: {t1} vs {t2} | Z: {z_val:.2f} | Gate: {ENTRY_Z} | CoC: {is_stable}")
+                    logging.info(
+                        f"Audit: {t1} vs {t2} | Z: {z_val:.2f} | "
+                        f"Gate: {ENTRY_Z} | CoC: {is_stable} | "
+                        f"Half-Life: {half_life_days:.1f} days | "
+                        f"Historical Sharpe: {macro['Sharpe']:.2f} | "
+                        f"Spot: {t1} ${df_intra_p[t1].iloc[-1]:.2f}, "
+                        f"{t2} ${df_intra_p[t2].iloc[-1]:.2f}"
+                    )
 
                 action = None
                 if z_val >= ENTRY_Z: action = "SHORT SPREAD"
@@ -388,7 +399,6 @@ if __name__ == "__main__":
                 
                 if action:
                     # Filter 3: Ornstein-Uhlenbeck Mean Reversion Velocity Verification
-                    half_life_days = calculate_ou_half_life(intra_spreads[-LOOKBACK_HOURS:])
                     if half_life_days > MAX_HALF_LIFE_DAYS:
                         logging.info(f"    [SKIPPED] {t1}/{t2} - Reversion half-life too slow: {half_life_days:.1f} days (Max: {MAX_HALF_LIFE_DAYS})")
                         continue
