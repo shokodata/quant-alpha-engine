@@ -210,12 +210,14 @@ def fetch_market_data_chunked(tickers, period, interval, chunk_size=100, pause_s
 
         time.sleep(pause_seconds)
 
+    # Preserve missing observations instead of forward-filling stale prices.
+    # Pair calculations will use only timestamps where both stocks have data.
     merged_prices = (
-        pd.concat(price_dfs, axis=1).ffill()
+        pd.concat(price_dfs, axis=1)
         if price_dfs else pd.DataFrame()
     )
     merged_volumes = (
-        pd.concat(volume_dfs, axis=1).ffill()
+        pd.concat(volume_dfs, axis=1)
         if volume_dfs else pd.DataFrame()
     )
 
@@ -316,13 +318,31 @@ def audit_macro_historical_profile(df, t1, t2):
         pos_vector[i] = curr
         
     pair_df["position"] = pos_vector
-    pair_df["strat_ret"] = pair_df["position"].shift(1) * (pair_df[t1].pct_change() - pair_df[t2].pct_change())
-    pair_df["strat_ret"] = pair_df["strat_ret"].fillna(0)
-    pair_df.loc[pair_df["position"].diff().fillna(0).abs() > 0, "strat_ret"] -= 0.0007
+
+    # Match the historical P&L to the live regression hedge:
+    # one share of t1 hedged with beta shares of t2. Normalize by gross
+    # notional so returns are comparable across pairs with different betas.
+    spread_pnl = pair_df[t1].diff() - (beta * pair_df[t2].diff())
+    gross_notional = (
+        pair_df[t1].shift(1).abs()
+        + (beta * pair_df[t2].shift(1)).abs()
+    )
+    hedged_return = np.where(
+        gross_notional > 0,
+        spread_pnl / gross_notional,
+        0.0,
+    )
+    turnover = pair_df["position"].diff().fillna(
+        pair_df["position"].abs()
+    ).abs()
+    pair_df["strat_ret"] = (
+        pair_df["position"].shift(1).fillna(0) * hedged_return
+        - (turnover * 0.0007)
+    )
     
     vol = pair_df["strat_ret"].std() * np.sqrt(252)
     sharpe = (pair_df["strat_ret"].mean() * 252) / vol if vol != 0 else 0
-    fund = INITIAL_CAPITAL * np.exp(np.cumsum(pair_df["strat_ret"]))
+    fund = INITIAL_CAPITAL * (1 + pair_df["strat_ret"]).cumprod()
     max_dd = ((fund - fund.cummax()) / fund.cummax()).min() * 100
     
     return {"Sharpe": sharpe, "Max DD": max_dd}
@@ -352,6 +372,18 @@ if __name__ == "__main__":
 
     logging.info("Beginning in-memory multi-timeframe structural sweep...")
 
+    # Use the newest timestamp available across the intraday matrix as the
+    # freshness standard. A pair is eligible only when both legs have prices
+    # at this timestamp.
+    intraday_rows_with_data = intraday_prices.dropna(how="all")
+    if intraday_rows_with_data.empty:
+        logging.error("Intraday matrix contains no usable price rows. Exiting.")
+        exit(1)
+    latest_intraday_timestamp = intraday_rows_with_data.index.max()
+    logging.info(
+        f"Latest intraday price timestamp: {latest_intraday_timestamp}"
+    )
+
     # 3. Process pairs rapidly in memory without making extra network requests
     for sub_ind in sub_industry_list:
         tickers = [t for t in daily_macro_data.columns if sub_industry_map.get(t) == sub_ind and t in intraday_prices.columns]
@@ -369,6 +401,24 @@ if __name__ == "__main__":
                 
                 df_intra_p = intraday_prices[[t1, t2]].dropna()
                 df_intra_v = intraday_volumes[[t1, t2]].dropna() if (t1 in intraday_volumes.columns and t2 in intraday_volumes.columns) else pd.DataFrame()
+
+                # Do not generate a signal when either leg is missing the
+                # newest market observation. Both prices must come from the
+                # same latest intraday timestamp.
+                if (
+                    df_intra_p.empty
+                    or df_intra_p.index[-1] != latest_intraday_timestamp
+                ):
+                    pair_timestamp = (
+                        df_intra_p.index[-1] if not df_intra_p.empty else "none"
+                    )
+                    logging.warning(
+                        f"    [SKIPPED] {t1}/{t2} - stale or mismatched "
+                        f"prices (pair: {pair_timestamp}, "
+                        f"latest: {latest_intraday_timestamp})"
+                    )
+                    continue
+
                 if len(df_intra_p) < (LOOKBACK_HOURS + 5): continue
                 
                 # Check current live spread parameters
