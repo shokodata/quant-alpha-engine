@@ -191,7 +191,7 @@ def get_catalyst_context(ticker):
             news_items = ticker_obj.news
 
         for item in news_items or []:
-            article = item.get("content", item) if isinstance(item, dict) else {}
+            article = (item.get("content") or item) if isinstance(item, dict) else {}
             title = str(article.get("title") or item.get("title") or "").strip()
             published_value = (
                 article.get("pubDate")
