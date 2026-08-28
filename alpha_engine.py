@@ -23,8 +23,11 @@ MAX_DD_LIMIT = -20.0             # Strict historical drawdown threshold
 LOOKBACK_HOURS = 120             # Trailing lookback window for spread analysis
 MAX_HALF_LIFE_DAYS = 6.0         # Maximum allowed mean reversion half-life (in days)
 MAX_VOLUME_ANOMALY = 3.5         # Filters out breakout stocks trading at >3.5x typical volume
+CATALYST_WINDOW_HOURS = 48       # Recent-news lookback and scheduled-earnings lookahead
+MAX_CATALYST_ITEMS_PER_TICKER = 3
 
 INITIAL_CAPITAL = 10000
+CATALYST_CACHE = {}
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
 # =====================================================================
@@ -50,7 +53,8 @@ def dispatch_discord_alert(data):
                 {"name": "Relationship Half-Life", "value": f"`{data['Half-Life Days']:.1f} Trading Days`", "inline": True},
                 {"name": "Cointegration P-Value (2Y)", "value": f"{data['Cointegration P-Value']:.4f}", "inline": True},
                 {"name": "Historical Sharpe Ratio", "value": f"{data['Historical Sharpe Ratio']:.2f}", "inline": True},
-                {"name": "Context Spot Values", "value": f"`{data['Stock A']}`: ${data['Price A']:.2f} | `{data['Stock B']}`: ${data['Price B']:.2f}", "inline": False}
+                {"name": "Context Spot Values", "value": f"`{data['Stock A']}`: ${data['Price A']:.2f} | `{data['Stock B']}`: ${data['Price B']:.2f}", "inline": False},
+                {"name": "Catalyst Watch (±48 Hours)", "value": data["Catalyst Context"], "inline": False}
             ],
             "footer": {"text": "Quant System Alpha Engine • Multi-Timeframe Validated"},
             "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat()
@@ -68,6 +72,204 @@ def dispatch_discord_alert(data):
                 logging.info(f"High-conviction alert broadcasted for {data['Pair Name']}")
     except Exception as err:
         logging.error(f"Discord telemetry payload delivery failed: {err}")
+
+# =====================================================================
+# CATALYST CONTEXT (Non-Blocking Trade Annotation)
+# =====================================================================
+def _as_utc_datetime(value):
+    """Convert yfinance timestamps into timezone-aware UTC datetimes."""
+    try:
+        if value is None:
+            return None
+        if isinstance(value, (int, float, np.integer, np.floating)):
+            parsed = pd.to_datetime(value, unit="s", utc=True)
+        else:
+            parsed = pd.to_datetime(value, utc=True)
+        if isinstance(parsed, pd.DatetimeIndex):
+            parsed = parsed[0] if len(parsed) else None
+        if parsed is None or pd.isna(parsed):
+            return None
+        return parsed.to_pydatetime()
+    except Exception:
+        return None
+
+
+def _classify_catalyst_headline(title):
+    """Classify only headlines likely to represent a material pair catalyst."""
+    normalized = f" {title.lower()} "
+
+    keyword_groups = [
+        ("Guidance", (
+            " guidance", " outlook", " forecast", "raises full-year",
+            "cuts full-year", "reaffirms full-year", "profit warning",
+        )),
+        ("Acquisition/M&A", (
+            " acquisition", " acquire", " merger", " takeover", " buyout",
+            "strategic alternatives", "to be acquired", "definitive agreement",
+        )),
+        ("Earnings", (
+            " earnings", "quarterly results", "financial results",
+            "reports first quarter", "reports second quarter",
+            "reports third quarter", "reports fourth quarter",
+        )),
+        ("Major News", (
+            " ceo ", " cfo ", "resigns", "steps down", "appointed",
+            " fda ", "lawsuit", "investigation", "probe", "settlement",
+            "recall", "cyberattack", "data breach", "bankruptcy",
+            "restructuring", "layoff", "contract award", "regulatory",
+            "downgrade", "upgrade", "share buyback", "dividend cut",
+        )),
+    ]
+
+    for category, keywords in keyword_groups:
+        if any(keyword in normalized for keyword in keywords):
+            return category
+    return None
+
+
+def get_catalyst_context(ticker):
+    """
+    Find scheduled earnings in the next 48 hours and material headlines from
+    the prior 48 hours. Failures never block a qualifying pairs alert.
+    """
+    if ticker in CATALYST_CACHE:
+        return CATALYST_CACHE[ticker]
+
+    now_utc = datetime.datetime.now(datetime.timezone.utc)
+    window = datetime.timedelta(hours=CATALYST_WINDOW_HOURS)
+    events = []
+    lookup_errors = []
+    ticker_obj = yf.Ticker(ticker)
+
+    # Scheduled earnings are the only reliably calendar-based future catalyst
+    # available through yfinance. Date-only entries are treated as "today."
+    try:
+        calendar = ticker_obj.calendar
+        earnings_dates = []
+
+        if isinstance(calendar, dict):
+            raw_dates = calendar.get(
+                "Earnings Date", calendar.get("EarningsDate", [])
+            )
+            if not isinstance(
+                raw_dates, (list, tuple, np.ndarray, pd.Series, pd.Index)
+            ):
+                raw_dates = [raw_dates]
+            earnings_dates.extend(raw_dates)
+        elif isinstance(calendar, pd.DataFrame):
+            if "Earnings Date" in calendar.index:
+                earnings_dates.extend(calendar.loc["Earnings Date"].tolist())
+            elif "Earnings Date" in calendar.columns:
+                earnings_dates.extend(calendar["Earnings Date"].tolist())
+
+        parsed_dates = sorted(
+            parsed
+            for parsed in (_as_utc_datetime(value) for value in earnings_dates)
+            if parsed is not None
+        )
+        for earnings_time in parsed_dates:
+            if (
+                earnings_time.date() == now_utc.date()
+                or now_utc < earnings_time <= now_utc + window
+            ):
+                events.append({
+                    "kind": "upcoming",
+                    "category": "Earnings",
+                    "time": earnings_time,
+                    "title": "Scheduled earnings",
+                })
+                break
+    except Exception as err:
+        lookup_errors.append(f"earnings calendar: {err}")
+
+    # Recent headlines provide guidance, M&A, reported earnings, and other
+    # material-news context. Unclassified routine headlines are ignored.
+    try:
+        try:
+            news_items = ticker_obj.get_news(count=25, tab="news")
+        except (AttributeError, TypeError):
+            news_items = ticker_obj.news
+
+        for item in news_items or []:
+            article = item.get("content", item) if isinstance(item, dict) else {}
+            title = str(article.get("title") or item.get("title") or "").strip()
+            published_value = (
+                article.get("pubDate")
+                or article.get("displayTime")
+                or item.get("providerPublishTime")
+                or item.get("pubDate")
+            )
+            published_at = _as_utc_datetime(published_value)
+            category = _classify_catalyst_headline(title)
+
+            if (
+                not title
+                or published_at is None
+                or category is None
+                or not (now_utc - window <= published_at <= now_utc)
+            ):
+                continue
+
+            events.append({
+                "kind": "recent",
+                "category": category,
+                "time": published_at,
+                "title": " ".join(title.split())[:180],
+            })
+    except Exception as err:
+        lookup_errors.append(f"recent news: {err}")
+
+    events.sort(key=lambda event: event["time"], reverse=True)
+    result = {
+        "ticker": ticker,
+        "events": events[:MAX_CATALYST_ITEMS_PER_TICKER],
+        "errors": lookup_errors,
+    }
+    CATALYST_CACHE[ticker] = result
+    return result
+
+
+def format_catalyst_context(contexts, multiline=False):
+    """Create compact GitHub Actions or Discord catalyst summaries."""
+    now_utc = datetime.datetime.now(datetime.timezone.utc)
+    ticker_summaries = []
+
+    for context in contexts:
+        ticker = context["ticker"]
+        parts = []
+
+        for event in context["events"]:
+            event_time = event["time"]
+            if event["kind"] == "upcoming":
+                if event_time.date() == now_utc.date():
+                    timing = "scheduled today"
+                else:
+                    hours_until = max(
+                        0.0, (event_time - now_utc).total_seconds() / 3600
+                    )
+                    timing = f"in {hours_until:.1f}h"
+                parts.append(f"⚠️ {event['category']} {timing}")
+            else:
+                hours_ago = max(
+                    0.0, (now_utc - event_time).total_seconds() / 3600
+                )
+                parts.append(
+                    f"⚠️ {event['category']} {hours_ago:.1f}h ago: "
+                    f"{event['title']}"
+                )
+
+        if not parts:
+            parts.append("No detected catalyst")
+        if context["errors"]:
+            parts.append(
+                "Lookup incomplete (" + "; ".join(context["errors"])[:220] + ")"
+            )
+
+        ticker_summaries.append(f"{ticker}: " + "; ".join(parts))
+
+    separator = "\n" if multiline else " | "
+    return separator.join(ticker_summaries)
+
 
 # =====================================================================
 # CORE PIPELINES & ADVANCED FILTER VALIDATORS
@@ -474,13 +676,36 @@ if __name__ == "__main__":
                         logging.info(f"    [SKIPPED] {t1}/{t2} - Single-leg volatility shock too high (>{max(ret_1d_t1, ret_1d_t2)*100:.1f}%)")
                         continue 
 
+                    # Catalyst context is informational only. It never screens
+                    # out an otherwise valid signal, even if the lookup fails.
+                    catalyst_contexts = [
+                        get_catalyst_context(t1),
+                        get_catalyst_context(t2),
+                    ]
+                    catalyst_log = format_catalyst_context(
+                        catalyst_contexts, multiline=False
+                    )
+                    has_catalyst = any(
+                        context["events"] for context in catalyst_contexts
+                    )
+                    catalyst_label = (
+                        "CATALYST WARNING" if has_catalyst
+                        else "CATALYST CHECK"
+                    )
+                    logging.info(
+                        f"    [{catalyst_label}] {t1}/{t2} | {catalyst_log}"
+                    )
+
                     # All 5 institutional filters passed -> Dispatch alert
                     dispatch_discord_alert({
                         "Pair Name": f"{t1} vs {t2}", "Stock A": t1, "Stock B": t2, "Sub-Industry": sub_ind,
                         "Cointegration P-Value": p_val, "Historical Sharpe Ratio": macro["Sharpe"],
                         "Current Intraday Z-Score": z_val, "Action State": action, "Beta": beta,
                         "Price A": df_intra_p[t1].iloc[-1], "Price B": df_intra_p[t2].iloc[-1],
-                        "Half-Life Days": half_life_days
+                        "Half-Life Days": half_life_days,
+                        "Catalyst Context": format_catalyst_context(
+                            catalyst_contexts, multiline=True
+                        ),
                     })
             except Exception as loop_ex:
                 logging.exception(
