@@ -2,7 +2,7 @@ name: Automated Market Engine
 
 on:
   schedule:
-    - cron: '0 * * * *' # Re-runs precisely at minute 0 of every hour
+    - cron: '17 * * * *' # Avoid top-of-hour GitHub Actions scheduler congestion
   workflow_dispatch:   # Manual button trigger
 
 permissions:
