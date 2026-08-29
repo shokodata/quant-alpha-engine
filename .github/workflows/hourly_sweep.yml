@@ -1,8 +1,16 @@
 name: Automated Market Engine
+
 on:
   schedule:
     - cron: '0 * * * *' # Re-runs precisely at minute 0 of every hour
   workflow_dispatch:   # Manual button trigger
+
+permissions:
+  contents: write
+
+concurrency:
+  group: alpha-quant-hourly-sweep
+  cancel-in-progress: false
 
 jobs:
   sweep-market:
@@ -10,6 +18,8 @@ jobs:
     steps:
     - name: Checkout Repository Code
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: Set up Python Environment
       uses: actions/setup-python@v5
@@ -25,12 +35,24 @@ jobs:
     - name: Install Dependencies (Fresh yfinance + Stable Analytics)
       run: |
         python -m pip install --upgrade pip
-        # Safe bounds: Allows performance patches in Pandas 2.x, but caps at <3.0.5
         pip install "pandas>=2.1.0,<3.0.5" "statsmodels>=0.14.0" lxml html5lib
-        # Force-upgrade yfinance so API patches are pulled on every run
         pip install --upgrade yfinance
 
-    - name: Execute Live Strategy Sweep
+    - name: Execute Live Strategy Sweep + Validation
       env:
         DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-      run: python alpha_engine.py
+      run: python validation_runner.py
+
+    - name: Persist Signal Validation Ledger
+      if: always()
+      run: |
+        if git diff --quiet -- signal_ledger.json; then
+          echo "No signal-ledger changes to persist."
+          exit 0
+        fi
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add signal_ledger.json
+        git commit -m "Update live signal validation ledger"
+        git pull --rebase origin main
+        git push origin HEAD:main
