@@ -17,13 +17,13 @@
       "entry_z_reported": -2.6177135411271952,
       "half_life_days": 0.42828382508220825,
       "historical_sharpe": 1.5735005751180557,
-      "last_observed_market_timestamp": "2026-08-31T12:30:00-04:00",
-      "latest_pair_return": 0.012335769710031226,
-      "latest_z": -1.0060149034662313,
+      "last_observed_market_timestamp": "2026-08-31T15:30:00-04:00",
+      "latest_pair_return": 0.01616659425708423,
+      "latest_z": -0.5761917728486018,
       "market_timestamp": "2026-08-31T09:30:00-04:00",
       "max_adverse_return": 0.0,
-      "max_favorable_return": 0.012335769710031226,
-      "observation_count": 2,
+      "max_favorable_return": 0.01616659425708423,
+      "observation_count": 3,
       "observations": [
         {
           "market_timestamp": "2026-08-31T10:30:00-04:00",
@@ -40,6 +40,14 @@
           "price_b": 615.0900268554688,
           "spread": 1599.862287860853,
           "z": -1.0060149034662313
+        },
+        {
+          "market_timestamp": "2026-08-31T15:30:00-04:00",
+          "pair_return_net_est": 0.01616659425708423,
+          "price_a": 1404.780029296875,
+          "price_b": 617.594970703125,
+          "spread": 1605.9080365730592,
+          "z": -0.5761917728486018
         }
       ],
       "pair_key": "MTD|TMO",
@@ -67,13 +75,13 @@
       "entry_z_reported": 2.634797397797301,
       "half_life_days": 1.7558302409033304,
       "historical_sharpe": 1.045480759375602,
-      "last_observed_market_timestamp": "2026-08-31T12:30:00-04:00",
-      "latest_pair_return": 0.0014679344257978475,
-      "latest_z": 2.1505082835909755,
+      "last_observed_market_timestamp": "2026-08-31T15:30:00-04:00",
+      "latest_pair_return": 0.004934752100421971,
+      "latest_z": 1.680950576010317,
       "market_timestamp": "2026-08-31T09:30:00-04:00",
       "max_adverse_return": 0.0,
-      "max_favorable_return": 0.0014679344257978475,
-      "observation_count": 2,
+      "max_favorable_return": 0.004934752100421971,
+      "observation_count": 3,
       "observations": [
         {
           "market_timestamp": "2026-08-31T10:30:00-04:00",
@@ -90,6 +98,14 @@
           "price_b": 52.880001068115234,
           "spread": 88.51554644541523,
           "z": 2.1505082835909755
+        },
+        {
+          "market_timestamp": "2026-08-31T15:30:00-04:00",
+          "pair_return_net_est": 0.004934752100421971,
+          "price_a": 456.7799987792969,
+          "price_b": 52.25,
+          "spread": 85.5911387364801,
+          "z": 1.680950576010317
         }
       ],
       "pair_key": "DELL|HPE",
@@ -117,14 +133,23 @@
       "entry_z_reported": -3.036416375281145,
       "half_life_days": 0.39453805941824344,
       "historical_sharpe": 1.0118270024832334,
-      "last_observed_market_timestamp": "2026-08-31T12:30:00-04:00",
-      "latest_pair_return": 0.0,
-      "latest_z": -3.108973755786693,
+      "last_observed_market_timestamp": "2026-08-31T15:30:00-04:00",
+      "latest_pair_return": 0.0006695465536862035,
+      "latest_z": -1.9499545427450284,
       "market_timestamp": "2026-08-31T12:30:00-04:00",
       "max_adverse_return": 0.0,
-      "max_favorable_return": 0.0,
-      "observation_count": 0,
-      "observations": [],
+      "max_favorable_return": 0.0006695465536862035,
+      "observation_count": 1,
+      "observations": [
+        {
+          "market_timestamp": "2026-08-31T15:30:00-04:00",
+          "pair_return_net_est": 0.0006695465536862035,
+          "price_a": 70.12000274658203,
+          "price_b": 81.0199966430664,
+          "spread": 24.588654646346917,
+          "z": -1.9499545427450284
+        }
+      ],
       "pair_key": "ES|EVRG",
       "resolution_reason": null,
       "resolved_at_utc": null,
@@ -150,14 +175,23 @@
       "entry_z_reported": -2.4296071545604607,
       "half_life_days": 1.8236588808505956,
       "historical_sharpe": 1.3399475190505261,
-      "last_observed_market_timestamp": "2026-08-31T12:30:00-04:00",
-      "latest_pair_return": 0.0,
-      "latest_z": -2.494400273700224,
+      "last_observed_market_timestamp": "2026-08-31T15:30:00-04:00",
+      "latest_pair_return": -0.0005071420026629475,
+      "latest_z": -2.18120602649066,
       "market_timestamp": "2026-08-31T12:30:00-04:00",
-      "max_adverse_return": 0.0,
+      "max_adverse_return": -0.0005071420026629475,
       "max_favorable_return": 0.0,
-      "observation_count": 0,
-      "observations": [],
+      "observation_count": 1,
+      "observations": [
+        {
+          "market_timestamp": "2026-08-31T15:30:00-04:00",
+          "pair_return_net_est": -0.0005071420026629475,
+          "price_a": 106.01000213623047,
+          "price_b": 39.599998474121094,
+          "spread": 41.732680024537885,
+          "z": -2.18120602649066
+        }
+      ],
       "pair_key": "AEE|CNP",
       "resolution_reason": null,
       "resolved_at_utc": null,
@@ -166,6 +200,39 @@
       "stock_a": "AEE",
       "stock_b": "CNP",
       "sub_industry": "Multi-Utilities"
+    },
+    {
+      "action": "LONG SPREAD",
+      "beta": 0.17713418811552734,
+      "catalyst_context": "BF-B: \u26a0\ufe0f Earnings in 27.8h\nSTZ: No detected catalyst",
+      "catalyst_present": true,
+      "cointegration_p_value": 0.049823254055739556,
+      "created_at_utc": "2026-08-31T20:09:29.169093+00:00",
+      "entry_price_a": 26.56999969482422,
+      "entry_price_b": 130.64500427246094,
+      "entry_spread": 3.428302931672249,
+      "entry_spread_mean": 4.274286916831029,
+      "entry_spread_std": 0.297301007385889,
+      "entry_z_recomputed": -2.845546984846622,
+      "entry_z_reported": -2.845546984846622,
+      "half_life_days": 1.283780991899634,
+      "historical_sharpe": 0.6705058512511773,
+      "last_observed_market_timestamp": "2026-08-31T15:30:00-04:00",
+      "latest_pair_return": 0.0,
+      "latest_z": -2.845546984846622,
+      "market_timestamp": "2026-08-31T15:30:00-04:00",
+      "max_adverse_return": 0.0,
+      "max_favorable_return": 0.0,
+      "observation_count": 0,
+      "observations": [],
+      "pair_key": "BF-B|STZ",
+      "resolution_reason": null,
+      "resolved_at_utc": null,
+      "signal_id": "20260831T200929Z-BF-B-STZ-LONG",
+      "status": "OPEN",
+      "stock_a": "BF-B",
+      "stock_b": "STZ",
+      "sub_industry": "Distillers & Vintners"
     }
   ]
 }
