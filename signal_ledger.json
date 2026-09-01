@@ -17,13 +17,13 @@
       "entry_z_reported": -2.6177135411271952,
       "half_life_days": 0.42828382508220825,
       "historical_sharpe": 1.5735005751180557,
-      "last_observed_market_timestamp": "2026-09-01T09:30:00-04:00",
-      "latest_pair_return": 0.005054271253825752,
-      "latest_z": -1.835482237301665,
+      "last_observed_market_timestamp": "2026-09-01T10:30:00-04:00",
+      "latest_pair_return": 0.003554069561440814,
+      "latest_z": -1.9752436373063227,
       "market_timestamp": "2026-08-31T09:30:00-04:00",
       "max_adverse_return": 0.0,
       "max_favorable_return": 0.016171916660679516,
-      "observation_count": 6,
+      "observation_count": 7,
       "observations": [
         {
           "market_timestamp": "2026-08-31T10:30:00-04:00",
@@ -72,6 +72,14 @@
           "price_b": 613.10498046875,
           "spread": 1588.3707383592189,
           "z": -1.835482237301665
+        },
+        {
+          "market_timestamp": "2026-09-01T10:30:00-04:00",
+          "pair_return_net_est": 0.003554069561440814,
+          "price_a": 1388.489990234375,
+          "price_b": 606.4949951171875,
+          "spread": 1586.0031429921162,
+          "z": -1.9752436373063227
         }
       ],
       "pair_key": "MTD|TMO",
@@ -99,13 +107,13 @@
       "entry_z_reported": 2.634797397797301,
       "half_life_days": 1.7558302409033304,
       "historical_sharpe": 1.045480759375602,
-      "last_observed_market_timestamp": "2026-09-01T09:30:00-04:00",
-      "latest_pair_return": 0.008162718128020873,
-      "latest_z": 1.3677012595004376,
+      "last_observed_market_timestamp": "2026-09-01T10:30:00-04:00",
+      "latest_pair_return": 0.014429137942593052,
+      "latest_z": 0.8131565585387218,
       "market_timestamp": "2026-08-31T09:30:00-04:00",
       "max_adverse_return": 0.0,
-      "max_favorable_return": 0.008162718128020873,
-      "observation_count": 4,
+      "max_favorable_return": 0.014429137942593052,
+      "observation_count": 5,
       "observations": [
         {
           "market_timestamp": "2026-08-31T10:30:00-04:00",
@@ -138,6 +146,14 @@
           "price_b": 51.56700134277344,
           "spread": 82.86821251962499,
           "z": 1.3677012595004376
+        },
+        {
+          "market_timestamp": "2026-09-01T10:30:00-04:00",
+          "pair_return_net_est": 0.014429137942593052,
+          "price_a": 440.8500061035156,
+          "price_b": 51.1349983215332,
+          "spread": 77.58222169660161,
+          "z": 0.8131565585387218
         }
       ],
       "pair_key": "DELL|HPE",
@@ -165,13 +181,13 @@
       "entry_z_reported": -3.036416375281145,
       "half_life_days": 0.39453805941824344,
       "historical_sharpe": 1.0118270024832334,
-      "last_observed_market_timestamp": "2026-09-01T09:30:00-04:00",
-      "latest_pair_return": 0.0030566950414473914,
-      "latest_z": -0.9717402854998352,
+      "last_observed_market_timestamp": "2026-09-01T10:30:00-04:00",
+      "latest_pair_return": 0.00029737266834671625,
+      "latest_z": -2.0220535787541443,
       "market_timestamp": "2026-08-31T12:30:00-04:00",
       "max_adverse_return": 0.0,
       "max_favorable_return": 0.0030566950414473914,
-      "observation_count": 2,
+      "observation_count": 3,
       "observations": [
         {
           "market_timestamp": "2026-08-31T15:30:00-04:00",
@@ -188,6 +204,14 @@
           "price_b": 81.26000213623047,
           "spread": 24.86377319068857,
           "z": -0.9717402854998352
+        },
+        {
+          "market_timestamp": "2026-09-01T10:30:00-04:00",
+          "pair_return_net_est": 0.00029737266834671625,
+          "price_a": 70.33000183105469,
+          "price_b": 81.47000122070312,
+          "spread": 24.545761655776147,
+          "z": -2.0220535787541443
         }
       ],
       "pair_key": "ES|EVRG",
@@ -215,13 +239,13 @@
       "entry_z_reported": -2.4296071545604607,
       "half_life_days": 1.8236588808505956,
       "historical_sharpe": 1.3399475190505261,
-      "last_observed_market_timestamp": "2026-09-01T09:30:00-04:00",
-      "latest_pair_return": -0.0003299728295707218,
-      "latest_z": -2.09110759468166,
+      "last_observed_market_timestamp": "2026-09-01T10:30:00-04:00",
+      "latest_pair_return": -0.0017424757844298497,
+      "latest_z": -2.418283556408808,
       "market_timestamp": "2026-08-31T12:30:00-04:00",
-      "max_adverse_return": -0.0005659368693703552,
+      "max_adverse_return": -0.0017424757844298497,
       "max_favorable_return": 0.001252057579345024,
-      "observation_count": 4,
+      "observation_count": 5,
       "observations": [
         {
           "market_timestamp": "2026-08-31T15:30:00-04:00",
@@ -254,6 +278,14 @@
           "price_b": 39.68000030517578,
           "spread": 41.76281990416253,
           "z": -2.09110759468166
+        },
+        {
+          "market_timestamp": "2026-09-01T10:30:00-04:00",
+          "pair_return_net_est": -0.0017424757844298497,
+          "price_a": 105.66999816894531,
+          "price_b": 39.52000045776367,
+          "spread": 41.52252601846075,
+          "z": -2.418283556408808
         }
       ],
       "pair_key": "AEE|CNP",
@@ -281,13 +313,13 @@
       "entry_z_reported": -2.845546984846622,
       "half_life_days": 1.283780991899634,
       "historical_sharpe": 0.6705058512511773,
-      "last_observed_market_timestamp": "2026-09-01T09:30:00-04:00",
-      "latest_pair_return": -0.00263447716639087,
-      "latest_z": -2.954694987612977,
+      "last_observed_market_timestamp": "2026-09-01T10:30:00-04:00",
+      "latest_pair_return": -0.0037965580244434033,
+      "latest_z": -3.031523501375381,
       "market_timestamp": "2026-08-31T15:30:00-04:00",
-      "max_adverse_return": -0.00263447716639087,
+      "max_adverse_return": -0.0037965580244434033,
       "max_favorable_return": 0.0,
-      "observation_count": 1,
+      "observation_count": 2,
       "observations": [
         {
           "market_timestamp": "2026-09-01T09:30:00-04:00",
@@ -296,6 +328,14 @@
           "price_b": 130.93499755859375,
           "spread": 3.366934977492324,
           "z": -2.954694987612977
+        },
+        {
+          "market_timestamp": "2026-09-01T10:30:00-04:00",
+          "pair_return_net_est": -0.0037965580244434033,
+          "price_a": 26.53499984741211,
+          "price_b": 131.1199951171875,
+          "spread": 3.3091659666171935,
+          "z": -3.031523501375381
         }
       ],
       "pair_key": "BF-B|STZ",
@@ -323,14 +363,23 @@
       "entry_z_reported": 3.0611580599940416,
       "half_life_days": 1.1939499958218636,
       "historical_sharpe": 0.907693290536049,
-      "last_observed_market_timestamp": "2026-09-01T09:30:00-04:00",
-      "latest_pair_return": 0.0,
-      "latest_z": 3.168922605924308,
+      "last_observed_market_timestamp": "2026-09-01T10:30:00-04:00",
+      "latest_pair_return": -0.006276324322337134,
+      "latest_z": 3.49383285298965,
       "market_timestamp": "2026-09-01T09:30:00-04:00",
-      "max_adverse_return": 0.0,
+      "max_adverse_return": -0.006276324322337134,
       "max_favorable_return": 0.0,
-      "observation_count": 0,
-      "observations": [],
+      "observation_count": 1,
+      "observations": [
+        {
+          "market_timestamp": "2026-09-01T10:30:00-04:00",
+          "pair_return_net_est": -0.006276324322337134,
+          "price_a": 292.69500732421875,
+          "price_b": 253.44000244140625,
+          "spread": -119.04557330511079,
+          "z": 3.49383285298965
+        }
+      ],
       "pair_key": "ADBE|ADSK",
       "resolution_reason": null,
       "resolved_at_utc": null,
@@ -339,6 +388,39 @@
       "stock_a": "ADBE",
       "stock_b": "ADSK",
       "sub_industry": "Application Software"
+    },
+    {
+      "action": "LONG SPREAD",
+      "beta": 1.6136809305713458,
+      "catalyst_context": "AMZN: \u26a0\ufe0f Earnings 0.8h ago: Amazon (AMZN): Buy, Sell, or Hold Post Q2 Earnings?; \u26a0\ufe0f Major News 2.2h ago: Amazon Stock Extends Losses After FTC Lawsuit Over Ad Practices; \u26a0\ufe0f Major News 3.1h ago: AMZN Stock Slips On $20B FTC Ad Lawsuit: Citi Calls Pullback A \u2018Buying Opportunity\u2019 As Amazon \u2018Strongly Disagrees\u2019 With Allegations\nEBAY: \u26a0\ufe0f Acquisition/M&A 14.9h ago: A rejected $56B takeover bid just rescued GameStop's quarter",
+      "catalyst_present": true,
+      "cointegration_p_value": 0.005058345682951621,
+      "created_at_utc": "2026-09-01T14:57:43.467569+00:00",
+      "entry_price_a": 254.6699981689453,
+      "entry_price_b": 105.93000030517578,
+      "entry_spread": 83.60221556403823,
+      "entry_spread_mean": 94.97117019423055,
+      "entry_spread_std": 4.441076467165325,
+      "entry_z_recomputed": -2.5599547123873236,
+      "entry_z_reported": -2.5305561784973145,
+      "half_life_days": 1.4051928546434744,
+      "historical_sharpe": 1.4161921237706852,
+      "last_observed_market_timestamp": "2026-09-01T10:30:00-04:00",
+      "latest_pair_return": 0.0,
+      "latest_z": -2.5599547123873236,
+      "market_timestamp": "2026-09-01T10:30:00-04:00",
+      "max_adverse_return": 0.0,
+      "max_favorable_return": 0.0,
+      "observation_count": 0,
+      "observations": [],
+      "pair_key": "AMZN|EBAY",
+      "resolution_reason": null,
+      "resolved_at_utc": null,
+      "signal_id": "20260901T145743Z-AMZN-EBAY-LONG",
+      "status": "OPEN",
+      "stock_a": "AMZN",
+      "stock_b": "EBAY",
+      "sub_industry": "Broadline Retail"
     }
   ]
 }
