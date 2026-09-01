@@ -17,13 +17,13 @@
       "entry_z_reported": -2.6177135411271952,
       "half_life_days": 0.42828382508220825,
       "historical_sharpe": 1.5735005751180557,
-      "last_observed_market_timestamp": "2026-09-01T10:30:00-04:00",
-      "latest_pair_return": 0.003554069561440814,
-      "latest_z": -1.9752436373063227,
+      "last_observed_market_timestamp": "2026-09-01T13:30:00-04:00",
+      "latest_pair_return": -0.006767136307961993,
+      "latest_z": -2.789129414898874,
       "market_timestamp": "2026-08-31T09:30:00-04:00",
-      "max_adverse_return": 0.0,
+      "max_adverse_return": -0.006767136307961993,
       "max_favorable_return": 0.016171916660679516,
-      "observation_count": 7,
+      "observation_count": 8,
       "observations": [
         {
           "market_timestamp": "2026-08-31T10:30:00-04:00",
@@ -80,6 +80,14 @@
           "price_b": 606.4949951171875,
           "spread": 1586.0031429921162,
           "z": -1.9752436373063227
+        },
+        {
+          "market_timestamp": "2026-09-01T13:30:00-04:00",
+          "pair_return_net_est": -0.006767136307961993,
+          "price_a": 1373.8800048828125,
+          "price_b": 601.3400268554688,
+          "spread": 1569.7143737397214,
+          "z": -2.789129414898874
         }
       ],
       "pair_key": "MTD|TMO",
@@ -107,13 +115,13 @@
       "entry_z_reported": 2.634797397797301,
       "half_life_days": 1.7558302409033304,
       "historical_sharpe": 1.045480759375602,
-      "last_observed_market_timestamp": "2026-09-01T10:30:00-04:00",
-      "latest_pair_return": 0.014429137942593052,
-      "latest_z": 0.8131565585387218,
+      "last_observed_market_timestamp": "2026-09-01T14:30:00-04:00",
+      "latest_pair_return": 0.023063299160546044,
+      "latest_z": 0.06239419315820889,
       "market_timestamp": "2026-08-31T09:30:00-04:00",
       "max_adverse_return": 0.0,
-      "max_favorable_return": 0.014429137942593052,
-      "observation_count": 5,
+      "max_favorable_return": 0.023063299160546044,
+      "observation_count": 6,
       "observations": [
         {
           "market_timestamp": "2026-08-31T10:30:00-04:00",
@@ -154,13 +162,21 @@
           "price_b": 51.1349983215332,
           "spread": 77.58222169660161,
           "z": 0.8131565585387218
+        },
+        {
+          "market_timestamp": "2026-09-01T14:30:00-04:00",
+          "pair_return_net_est": 0.023063299160546044,
+          "price_a": 429.69500732421875,
+          "price_b": 50.59000015258789,
+          "spread": 70.29894060259147,
+          "z": 0.06239419315820889
         }
       ],
       "pair_key": "DELL|HPE",
-      "resolution_reason": null,
-      "resolved_at_utc": null,
+      "resolution_reason": "abs(z) <= 0.5",
+      "resolved_at_utc": "2026-09-01T18:32:17.448019+00:00",
       "signal_id": "20260831T135628Z-DELL-HPE-SHORT",
-      "status": "OPEN",
+      "status": "CONVERGED",
       "stock_a": "DELL",
       "stock_b": "HPE",
       "sub_industry": "Technology Hardware, Storage & Peripherals"
@@ -181,13 +197,13 @@
       "entry_z_reported": -3.036416375281145,
       "half_life_days": 0.39453805941824344,
       "historical_sharpe": 1.0118270024832334,
-      "last_observed_market_timestamp": "2026-09-01T10:30:00-04:00",
-      "latest_pair_return": 0.00029737266834671625,
-      "latest_z": -2.0220535787541443,
+      "last_observed_market_timestamp": "2026-09-01T14:30:00-04:00",
+      "latest_pair_return": 0.0007347891273641034,
+      "latest_z": -1.780219595621194,
       "market_timestamp": "2026-08-31T12:30:00-04:00",
       "max_adverse_return": 0.0,
       "max_favorable_return": 0.0030566950414473914,
-      "observation_count": 3,
+      "observation_count": 4,
       "observations": [
         {
           "market_timestamp": "2026-08-31T15:30:00-04:00",
@@ -212,6 +228,14 @@
           "price_b": 81.47000122070312,
           "spread": 24.545761655776147,
           "z": -2.0220535787541443
+        },
+        {
+          "market_timestamp": "2026-09-01T14:30:00-04:00",
+          "pair_return_net_est": 0.0007347891273641034,
+          "price_a": 70.1500015258789,
+          "price_b": 81.05999755859375,
+          "spread": 24.596173844248263,
+          "z": -1.780219595621194
         }
       ],
       "pair_key": "ES|EVRG",
@@ -239,13 +263,13 @@
       "entry_z_reported": -2.4296071545604607,
       "half_life_days": 1.8236588808505956,
       "historical_sharpe": 1.3399475190505261,
-      "last_observed_market_timestamp": "2026-09-01T10:30:00-04:00",
-      "latest_pair_return": -0.0017424757844298497,
-      "latest_z": -2.418283556408808,
+      "last_observed_market_timestamp": "2026-09-01T14:30:00-04:00",
+      "latest_pair_return": -0.001847706528013598,
+      "latest_z": -2.2354818236123117,
       "market_timestamp": "2026-08-31T12:30:00-04:00",
-      "max_adverse_return": -0.0017424757844298497,
+      "max_adverse_return": -0.001847706528013598,
       "max_favorable_return": 0.001252057579345024,
-      "observation_count": 5,
+      "observation_count": 6,
       "observations": [
         {
           "market_timestamp": "2026-08-31T15:30:00-04:00",
@@ -286,6 +310,14 @@
           "price_b": 39.52000045776367,
           "spread": 41.52252601846075,
           "z": -2.418283556408808
+        },
+        {
+          "market_timestamp": "2026-09-01T14:30:00-04:00",
+          "pair_return_net_est": -0.001847706528013598,
+          "price_a": 105.29499816894531,
+          "price_b": 39.29999923706055,
+          "spread": 41.504624247576636,
+          "z": -2.2354818236123117
         }
       ],
       "pair_key": "AEE|CNP",
@@ -313,13 +345,13 @@
       "entry_z_reported": -2.845546984846622,
       "half_life_days": 1.283780991899634,
       "historical_sharpe": 0.6705058512511773,
-      "last_observed_market_timestamp": "2026-09-01T10:30:00-04:00",
-      "latest_pair_return": -0.0037965580244434033,
-      "latest_z": -3.031523501375381,
+      "last_observed_market_timestamp": "2026-09-01T14:30:00-04:00",
+      "latest_pair_return": -0.005920726097333241,
+      "latest_z": -2.836145727063087,
       "market_timestamp": "2026-08-31T15:30:00-04:00",
-      "max_adverse_return": -0.0037965580244434033,
+      "max_adverse_return": -0.005920726097333241,
       "max_favorable_return": 0.0,
-      "observation_count": 2,
+      "observation_count": 3,
       "observations": [
         {
           "market_timestamp": "2026-09-01T09:30:00-04:00",
@@ -336,6 +368,14 @@
           "price_b": 131.1199951171875,
           "spread": 3.3091659666171935,
           "z": -3.031523501375381
+        },
+        {
+          "market_timestamp": "2026-09-01T14:30:00-04:00",
+          "pair_return_net_est": -0.005920726097333241,
+          "price_a": 26.510000228881836,
+          "price_b": 131.5749969482422,
+          "spread": 3.203569968151971,
+          "z": -2.836145727063087
         }
       ],
       "pair_key": "BF-B|STZ",
@@ -363,13 +403,13 @@
       "entry_z_reported": 3.0611580599940416,
       "half_life_days": 1.1939499958218636,
       "historical_sharpe": 0.907693290536049,
-      "last_observed_market_timestamp": "2026-09-01T10:30:00-04:00",
-      "latest_pair_return": -0.006276324322337134,
-      "latest_z": 3.49383285298965,
+      "last_observed_market_timestamp": "2026-09-01T14:30:00-04:00",
+      "latest_pair_return": -0.009467256073156414,
+      "latest_z": 3.1212087914451208,
       "market_timestamp": "2026-09-01T09:30:00-04:00",
-      "max_adverse_return": -0.006276324322337134,
+      "max_adverse_return": -0.009467256073156414,
       "max_favorable_return": 0.0,
-      "observation_count": 1,
+      "observation_count": 2,
       "observations": [
         {
           "market_timestamp": "2026-09-01T10:30:00-04:00",
@@ -378,6 +418,14 @@
           "price_b": 253.44000244140625,
           "spread": -119.04557330511079,
           "z": 3.49383285298965
+        },
+        {
+          "market_timestamp": "2026-09-01T14:30:00-04:00",
+          "pair_return_net_est": -0.009467256073156414,
+          "price_a": 287.385009765625,
+          "price_b": 248.77999877929688,
+          "spread": -116.78489301060864,
+          "z": 3.1212087914451208
         }
       ],
       "pair_key": "ADBE|ADSK",
@@ -405,14 +453,23 @@
       "entry_z_reported": -2.5305561784973145,
       "half_life_days": 1.4051928546434744,
       "historical_sharpe": 1.4161921237706852,
-      "last_observed_market_timestamp": "2026-09-01T10:30:00-04:00",
-      "latest_pair_return": 0.0,
-      "latest_z": -2.5599547123873236,
+      "last_observed_market_timestamp": "2026-09-01T14:30:00-04:00",
+      "latest_pair_return": 0.0013800337479269729,
+      "latest_z": -2.012923333194365,
       "market_timestamp": "2026-09-01T10:30:00-04:00",
       "max_adverse_return": 0.0,
-      "max_favorable_return": 0.0,
-      "observation_count": 0,
-      "observations": [],
+      "max_favorable_return": 0.0013800337479269729,
+      "observation_count": 1,
+      "observations": [
+        {
+          "market_timestamp": "2026-09-01T14:30:00-04:00",
+          "pair_return_net_est": 0.0013800337479269729,
+          "price_a": 254.88499450683594,
+          "price_b": 105.33000183105469,
+          "spread": 84.91597913501806,
+          "z": -2.012923333194365
+        }
+      ],
       "pair_key": "AMZN|EBAY",
       "resolution_reason": null,
       "resolved_at_utc": null,
@@ -421,6 +478,72 @@
       "stock_a": "AMZN",
       "stock_b": "EBAY",
       "sub_industry": "Broadline Retail"
+    },
+    {
+      "action": "LONG SPREAD",
+      "beta": -0.045143399430577026,
+      "catalyst_context": "BEN: No detected catalyst\nNTRS: No detected catalyst",
+      "catalyst_present": false,
+      "cointegration_p_value": 0.036753463504049046,
+      "created_at_utc": "2026-09-01T18:34:51.995677+00:00",
+      "entry_price_a": 33.154998779296875,
+      "entry_price_b": 182.57000732421875,
+      "entry_spread": 41.396829543977454,
+      "entry_spread_mean": 42.669737506601784,
+      "entry_spread_std": 0.5083290718176392,
+      "entry_z_recomputed": -2.504102230613677,
+      "entry_z_reported": -2.504102230613677,
+      "half_life_days": 2.817591587854207,
+      "historical_sharpe": 1.1495635715904704,
+      "last_observed_market_timestamp": "2026-09-01T14:30:00-04:00",
+      "latest_pair_return": 0.0,
+      "latest_z": -2.504102230613677,
+      "market_timestamp": "2026-09-01T14:30:00-04:00",
+      "max_adverse_return": 0.0,
+      "max_favorable_return": 0.0,
+      "observation_count": 0,
+      "observations": [],
+      "pair_key": "BEN|NTRS",
+      "resolution_reason": null,
+      "resolved_at_utc": null,
+      "signal_id": "20260901T183451Z-BEN-NTRS-LONG",
+      "status": "OPEN",
+      "stock_a": "BEN",
+      "stock_b": "NTRS",
+      "sub_industry": "Asset Management & Custody Banks"
+    },
+    {
+      "action": "LONG SPREAD",
+      "beta": 0.22790175445968927,
+      "catalyst_context": "FTV: No detected catalyst\nXYL: No detected catalyst",
+      "catalyst_present": false,
+      "cointegration_p_value": 0.026563922417008556,
+      "created_at_utc": "2026-09-01T18:35:01.516530+00:00",
+      "entry_price_a": 57.33000183105469,
+      "entry_price_b": 107.19999694824219,
+      "entry_spread": 32.89893444847696,
+      "entry_spread_mean": 33.98065525254507,
+      "entry_spread_std": 0.4442250811033769,
+      "entry_z_recomputed": -2.4350736824253785,
+      "entry_z_reported": -2.4350736824253785,
+      "half_life_days": 0.9910412555528371,
+      "historical_sharpe": 2.178194828677711,
+      "last_observed_market_timestamp": "2026-09-01T14:30:00-04:00",
+      "latest_pair_return": 0.0,
+      "latest_z": -2.4350736824253785,
+      "market_timestamp": "2026-09-01T14:30:00-04:00",
+      "max_adverse_return": 0.0,
+      "max_favorable_return": 0.0,
+      "observation_count": 0,
+      "observations": [],
+      "pair_key": "FTV|XYL",
+      "resolution_reason": null,
+      "resolved_at_utc": null,
+      "signal_id": "20260901T183501Z-FTV-XYL-LONG",
+      "status": "OPEN",
+      "stock_a": "FTV",
+      "stock_b": "XYL",
+      "sub_industry": "Industrial Machinery & Supplies & Components"
     }
   ]
 }
