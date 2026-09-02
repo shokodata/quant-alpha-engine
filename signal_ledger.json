@@ -17,13 +17,13 @@
       "entry_z_reported": -2.6177135411271952,
       "half_life_days": 0.42828382508220825,
       "historical_sharpe": 1.5735005751180557,
-      "last_observed_market_timestamp": "2026-09-02T09:30:00-04:00",
-      "latest_pair_return": 0.006176214607601654,
-      "latest_z": -1.26989660528407,
+      "last_observed_market_timestamp": "2026-09-02T10:30:00-04:00",
+      "latest_pair_return": -0.004306197413828031,
+      "latest_z": -2.208716120024654,
       "market_timestamp": "2026-08-31T09:30:00-04:00",
       "max_adverse_return": -0.006846572742514525,
       "max_favorable_return": 0.016171916660679516,
-      "observation_count": 11,
+      "observation_count": 12,
       "observations": [
         {
           "market_timestamp": "2026-08-31T10:30:00-04:00",
@@ -112,6 +112,14 @@
           "price_b": 611.9400024414062,
           "spread": 1590.141372201345,
           "z": -1.26989660528407
+        },
+        {
+          "market_timestamp": "2026-09-02T10:30:00-04:00",
+          "pair_return_net_est": -0.004306197413828031,
+          "price_a": 1375.5224609375,
+          "price_b": 608.2224731445312,
+          "spread": 1573.5981898652794,
+          "z": -2.208716120024654
         }
       ],
       "pair_key": "MTD|TMO",
@@ -831,14 +839,23 @@
       "entry_z_reported": 2.7726762414602693,
       "half_life_days": 0.7234681266065284,
       "historical_sharpe": 1.164096149724046,
-      "last_observed_market_timestamp": "2026-09-02T09:30:00-04:00",
-      "latest_pair_return": 0.0,
-      "latest_z": 2.637217224655575,
+      "last_observed_market_timestamp": "2026-09-02T10:30:00-04:00",
+      "latest_pair_return": 0.000137037641167096,
+      "latest_z": 2.5069732730989207,
       "market_timestamp": "2026-09-02T09:30:00-04:00",
       "max_adverse_return": 0.0,
-      "max_favorable_return": 0.0,
-      "observation_count": 0,
-      "observations": [],
+      "max_favorable_return": 0.000137037641167096,
+      "observation_count": 1,
+      "observations": [
+        {
+          "market_timestamp": "2026-09-02T10:30:00-04:00",
+          "pair_return_net_est": 0.000137037641167096,
+          "price_a": 284.8800048828125,
+          "price_b": 178.72000122070312,
+          "spread": 249.6104803687477,
+          "z": 2.5069732730989207
+        }
+      ],
       "pair_key": "CI|DVA",
       "resolution_reason": null,
       "resolved_at_utc": null,
