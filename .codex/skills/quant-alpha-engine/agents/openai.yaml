@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quant Alpha Engine"
+  short_description: "Build and validate the intraday pairs research engine"
+  default_prompt: "Use $quant-alpha-engine to review or extend the quant-alpha-engine project safely."
