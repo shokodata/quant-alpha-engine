@@ -1,4 +1,32 @@
 {
-  "alerts": [],
-  "workflow_run_time": null
+  "alerts": [
+    {
+      "Stock A": "ADBE",
+      "Stock B": "TYL",
+      "action": "LONG SPREAD",
+      "delivery_status": "delivered",
+      "market_timestamp": "2026-09-04T15:30:00-04:00",
+      "signal_id": "20260904T182716Z-ADBE-TYL-LONG",
+      "workflow_run_time": "2026-09-07T10:20:31.698491+00:00"
+    },
+    {
+      "Stock A": "PPL",
+      "Stock B": "WEC",
+      "action": "SHORT SPREAD",
+      "delivery_status": "delivered",
+      "market_timestamp": "2026-09-04T15:30:00-04:00",
+      "signal_id": "20260904T182722Z-PPL-WEC-SHORT",
+      "workflow_run_time": "2026-09-07T10:20:31.698491+00:00"
+    },
+    {
+      "Stock A": "MTD",
+      "Stock B": "TMO",
+      "action": "LONG SPREAD",
+      "delivery_status": "delivered",
+      "market_timestamp": "2026-09-04T15:30:00-04:00",
+      "signal_id": "20260831T135621Z-MTD-TMO-LONG",
+      "workflow_run_time": "2026-09-07T10:20:31.698491+00:00"
+    }
+  ],
+  "workflow_run_time": "2026-09-07T10:20:31.698491+00:00"
 }
