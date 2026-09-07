@@ -50,6 +50,14 @@ class AlphaCastHandoffTests(unittest.TestCase):
             "Stock A": "AAA",
             "Stock B": "BBB",
             "Action State": "SHORT SPREAD",
+            "Current Intraday Z-Score": 2.6,
+            "Beta": 0.4,
+            "Cointegration P-Value": 0.012,
+            "Historical Sharpe Ratio": 1.4,
+            "Half-Life Days": 3.2,
+            "Price A": 35.1,
+            "Price B": 105.9,
+            "Catalyst Context": "No detected catalyst",
         }
         second = {
             "Stock A": "CCC",
@@ -78,6 +86,9 @@ class AlphaCastHandoffTests(unittest.TestCase):
         self.assertEqual(record_signal.call_count, 2)
         self.assertEqual([item["signal_id"] for item in deliveries], ["signal-1"])
         self.assertEqual(deliveries[0]["delivery_status"], "delivered")
+        self.assertEqual(deliveries[0]["entry_z"], 2.6)
+        self.assertEqual(deliveries[0]["p_value"], 0.012)
+        self.assertEqual(deliveries[0]["half_life_days"], 3.2)
 
     def test_atomic_handoff_contains_exact_successful_delivery_fields(self):
         alert = {
@@ -88,6 +99,15 @@ class AlphaCastHandoffTests(unittest.TestCase):
             "Stock B": "BBB",
             "action": "SHORT SPREAD",
             "delivery_status": "delivered",
+            "entry_z": 2.6,
+            "beta": 0.4,
+            "p_value": 0.012,
+            "historical_sharpe": 1.4,
+            "half_life_days": 3.2,
+            "price_a": 35.1,
+            "price_b": 105.9,
+            "catalyst_present": False,
+            "catalyst_context": "No detected catalyst",
         }
         with tempfile.TemporaryDirectory() as directory:
             target = Path(directory) / "latest_discord_dispatch.json"
@@ -114,6 +134,15 @@ class AlphaCastHandoffTests(unittest.TestCase):
                     "Stock B",
                     "action",
                     "delivery_status",
+                    "entry_z",
+                    "beta",
+                    "p_value",
+                    "historical_sharpe",
+                    "half_life_days",
+                    "price_a",
+                    "price_b",
+                    "catalyst_present",
+                    "catalyst_context",
                 },
             )
             self.assertEqual(list(Path(directory).glob("*.tmp")), [])

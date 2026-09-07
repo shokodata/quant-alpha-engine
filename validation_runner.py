@@ -109,8 +109,25 @@ def _dispatch_and_capture(data, original_dispatch, workflow_run_time, alerts):
         "Stock B": data["Stock B"],
         "action": data["Action State"],
         "delivery_status": "delivered",
+        # Snapshot the diagnostics from this exact sweep. The stable signal ID
+        # may point at an older OPEN ledger observation when duplicate
+        # prevention is active, so AlphaCast must not recover these values from
+        # that historical entry.
+        "entry_z": _optional_float(data.get("Current Intraday Z-Score")),
+        "beta": _optional_float(data.get("Beta")),
+        "p_value": _optional_float(data.get("Cointegration P-Value")),
+        "historical_sharpe": _optional_float(data.get("Historical Sharpe Ratio")),
+        "half_life_days": _optional_float(data.get("Half-Life Days")),
+        "price_a": _optional_float(data.get("Price A")),
+        "price_b": _optional_float(data.get("Price B")),
+        "catalyst_present": "⚠️" in str(data.get("Catalyst Context", "")),
+        "catalyst_context": str(data.get("Catalyst Context", "")),
     })
     return True
+
+
+def _optional_float(value):
+    return None if value is None else float(value)
 
 
 def main():
