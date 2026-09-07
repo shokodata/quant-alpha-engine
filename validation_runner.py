@@ -3,10 +3,17 @@ import datetime
 import json
 import logging
 import os
+import tempfile
 import urllib.request
+from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import signal_validation
+
+
+DISPATCH_PATH = Path(
+    os.environ.get("LATEST_DISCORD_DISPATCH_PATH", "latest_discord_dispatch.json")
+)
 
 
 def _is_us_market_hours(now=None):
@@ -52,7 +59,67 @@ def _dispatch_sweep_heartbeat(signal_count):
         logging.error(f"Discord sweep heartbeat delivery failed: {err}")
 
 
+def _write_latest_discord_dispatch(workflow_run_time, alerts):
+    """Atomically replace AlphaCast's read-only view of this sweep's deliveries."""
+    if any(alert.get("workflow_run_time") != workflow_run_time for alert in alerts):
+        raise ValueError("All handoff alerts must belong to the current workflow run")
+    payload = {
+        "workflow_run_time": workflow_run_time,
+        "alerts": alerts,
+    }
+    DISPATCH_PATH.parent.mkdir(parents=True, exist_ok=True)
+    temporary_path = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=DISPATCH_PATH.parent,
+            prefix=f".{DISPATCH_PATH.name}.",
+            suffix=".tmp",
+            delete=False,
+        ) as temporary_file:
+            temporary_path = Path(temporary_file.name)
+            json.dump(payload, temporary_file, indent=2, sort_keys=True)
+            temporary_file.write("\n")
+            temporary_file.flush()
+            os.fsync(temporary_file.fileno())
+        os.replace(temporary_path, DISPATCH_PATH)
+    finally:
+        if temporary_path is not None and temporary_path.exists():
+            temporary_path.unlink()
+
+
+def _dispatch_and_capture(data, original_dispatch, workflow_run_time, alerts):
+    """Record every qualification, but expose only confirmed Discord deliveries."""
+    signal_validation.record_signal(data)
+    identity = signal_validation.signal_identity(data)
+    delivered = original_dispatch(data)
+    if delivered is not True:
+        return False
+    if not identity or not identity.get("signal_id"):
+        logging.error(
+            "Discord alert delivered but no signal ledger identity was found."
+        )
+        return True
+    alerts.append({
+        "workflow_run_time": workflow_run_time,
+        "market_timestamp": identity.get("market_timestamp"),
+        "signal_id": identity["signal_id"],
+        "Stock A": data["Stock A"],
+        "Stock B": data["Stock B"],
+        "action": data["Action State"],
+        "delivery_status": "delivered",
+    })
+    return True
+
+
 def main():
+    workflow_run_time = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    delivered_alerts = []
+    # Establish this run's empty handoff immediately so an early sweep failure
+    # can never leave AlphaCast reading successful deliveries from a prior run.
+    _write_latest_discord_dispatch(workflow_run_time, delivered_alerts)
+
     # First advance previously-recorded signals using the newest hourly bar.
     signal_validation.update_open_signals()
 
@@ -66,8 +133,9 @@ def main():
     def tracked_dispatch(data):
         nonlocal signal_count
         signal_count += 1
-        signal_validation.record_signal(data)
-        original_dispatch(data)
+        _dispatch_and_capture(
+            data, original_dispatch, workflow_run_time, delivered_alerts
+        )
 
     alpha_engine.dispatch_discord_alert = tracked_dispatch
 
@@ -83,7 +151,10 @@ def main():
         "__name__": "__main__",
         "dispatch_discord_alert": tracked_dispatch,
     }
-    exec(compile(source, "alpha_engine.py", "exec"), namespace, namespace)
+    try:
+        exec(compile(source, "alpha_engine.py", "exec"), namespace, namespace)
+    finally:
+        _write_latest_discord_dispatch(workflow_run_time, delivered_alerts)
 
     print("VALIDATION SUMMARY:", signal_validation.build_summary())
     _dispatch_sweep_heartbeat(signal_count)

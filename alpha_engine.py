@@ -34,7 +34,8 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 # TELEMETRY DISPATCH HOOK (High-Conviction Design Layout)
 # =====================================================================
 def dispatch_discord_alert(data):
-    if not DISCORD_WEBHOOK_URL: return
+    if not DISCORD_WEBHOOK_URL:
+        return False
     
     emoji = "🔥 HIGH-CONVICTION SHORT" if "SHORT" in data["Action State"] else "🔥 HIGH-CONVICTION LONG"
     color_hex = 16720436 if "SHORT" in data["Action State"] else 3394611
@@ -70,8 +71,10 @@ def dispatch_discord_alert(data):
         with urllib.request.urlopen(req) as response:
             if response.status in [200, 204]:
                 logging.info(f"High-conviction alert broadcasted for {data['Pair Name']}")
+                return True
     except Exception as err:
         logging.error(f"Discord telemetry payload delivery failed: {err}")
+    return False
 
 # =====================================================================
 # CATALYST CONTEXT (Non-Blocking Trade Annotation)
@@ -702,6 +705,7 @@ if __name__ == "__main__":
                         "Cointegration P-Value": p_val, "Historical Sharpe Ratio": macro["Sharpe"],
                         "Current Intraday Z-Score": z_val, "Action State": action, "Beta": beta,
                         "Price A": df_intra_p[t1].iloc[-1], "Price B": df_intra_p[t2].iloc[-1],
+                        "Market Timestamp": pd.Timestamp(latest_intraday_timestamp).isoformat(),
                         "Half-Life Days": half_life_days,
                         "Catalyst Context": format_catalyst_context(
                             catalyst_contexts, multiline=True

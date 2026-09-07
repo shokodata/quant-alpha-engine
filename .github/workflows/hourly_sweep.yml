@@ -47,16 +47,16 @@ jobs:
         DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
       run: python validation_runner.py
 
-    - name: Persist Signal Validation Ledger
+    - name: Persist Signal Ledger and AlphaCast Handoff
       if: always()
       run: |
-        if git diff --quiet -- signal_ledger.json; then
-          echo "No signal-ledger changes to persist."
+        if git diff --quiet -- signal_ledger.json latest_discord_dispatch.json; then
+          echo "No signal-ledger or AlphaCast handoff changes to persist."
           exit 0
         fi
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git add signal_ledger.json
-        git commit -m "Update live signal validation ledger"
+        git add signal_ledger.json latest_discord_dispatch.json
+        git commit -m "Update signal ledger and AlphaCast handoff"
         git pull --rebase origin main
         git push origin HEAD:main

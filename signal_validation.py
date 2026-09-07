@@ -142,6 +142,25 @@ def record_signal(data):
     return True
 
 
+def signal_identity(data):
+    """Return the stable ledger identity for an alert, without mutating history."""
+    ledger = _load()
+    pair_key = "|".join(sorted([data["Stock A"], data["Stock B"]]))
+    action = data["Action State"]
+    matches = [
+        signal for signal in ledger.get("signals", [])
+        if signal.get("pair_key") == pair_key and signal.get("action") == action
+    ]
+    if not matches:
+        return None
+    signal = matches[-1]
+    return {
+        "signal_id": signal.get("signal_id"),
+        "market_timestamp": data.get("Market Timestamp")
+        or signal.get("market_timestamp"),
+    }
+
+
 def _pair_return(signal, price_a, price_b):
     a0 = signal.get("entry_price_a")
     b0 = signal.get("entry_price_b")
