@@ -5,7 +5,7 @@
       "Stock B": "TYL",
       "action": "LONG SPREAD",
       "beta": 0.5071838957327913,
-      "catalyst_context": "ADBE: \u26a0\ufe0f Earnings 10.0h ago: Five Market Events to Watch This Week: U.S. Inflation, ECB Rates, Iran and Earnings; \u26a0\ufe0f Major News 44.4h ago: Adobe\u2019s New CEO Takes Over in December. Is the Open CFO Search the Bigger Risk?\nTYL: No detected catalyst",
+      "catalyst_context": "ADBE: \u26a0\ufe0f Earnings 12.9h ago: Five Market Events to Watch This Week: U.S. Inflation, ECB Rates, Iran and Earnings; \u26a0\ufe0f Major News 47.3h ago: Adobe\u2019s New CEO Takes Over in December. Is the Open CFO Search the Bigger Risk?\nTYL: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
       "entry_z": -2.9106892725810893,
@@ -16,7 +16,7 @@
       "price_a": 266.5,
       "price_b": 364.114990234375,
       "signal_id": "20260904T182716Z-ADBE-TYL-LONG",
-      "workflow_run_time": "2026-09-07T20:35:19.876761+00:00"
+      "workflow_run_time": "2026-09-07T23:30:57.205585+00:00"
     },
     {
       "Stock A": "PPL",
@@ -28,13 +28,13 @@
       "delivery_status": "delivered",
       "entry_z": 2.521905839588895,
       "half_life_days": 3.5909098296871664,
-      "historical_sharpe": 1.375402159067859,
+      "historical_sharpe": 1.3753974301251175,
       "market_timestamp": "2026-09-04T15:30:00-04:00",
-      "p_value": 0.0007115612578957746,
+      "p_value": 0.0007115535902626706,
       "price_a": 35.099998474121094,
       "price_b": 105.94000244140625,
       "signal_id": "20260904T182722Z-PPL-WEC-SHORT",
-      "workflow_run_time": "2026-09-07T20:35:19.876761+00:00"
+      "workflow_run_time": "2026-09-07T23:30:57.205585+00:00"
     },
     {
       "Stock A": "MTD",
@@ -46,14 +46,14 @@
       "delivery_status": "delivered",
       "entry_z": -2.3036289703741617,
       "half_life_days": 1.6251094424639088,
-      "historical_sharpe": 1.5667281969998466,
+      "historical_sharpe": 1.5667280778560966,
       "market_timestamp": "2026-09-04T15:30:00-04:00",
-      "p_value": 0.012249324280098367,
+      "p_value": 0.01224930990345471,
       "price_a": 1344.0999755859375,
       "price_b": 613.780029296875,
       "signal_id": "20260831T135621Z-MTD-TMO-LONG",
-      "workflow_run_time": "2026-09-07T20:35:19.876761+00:00"
+      "workflow_run_time": "2026-09-07T23:30:57.205585+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-07T20:35:19.876761+00:00"
+  "workflow_run_time": "2026-09-07T23:30:57.205585+00:00"
 }
