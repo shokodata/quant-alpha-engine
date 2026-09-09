@@ -1,41 +1,23 @@
 {
   "alerts": [
     {
-      "Stock A": "AIG",
-      "Stock B": "AIZ",
+      "Stock A": "FTV",
+      "Stock B": "IEX",
       "action": "LONG SPREAD",
-      "beta": 0.17757879710874466,
-      "catalyst_context": "AIG: No detected catalyst\nAIZ: No detected catalyst",
+      "beta": 0.2736604979599538,
+      "catalyst_context": "FTV: No detected catalyst\nIEX: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": -2.6842044495475066,
-      "half_life_days": 0.9415721752864934,
-      "historical_sharpe": 1.0575548487969608,
-      "market_timestamp": "2026-09-09T14:30:00-04:00",
-      "p_value": 0.02699038152121436,
-      "price_a": 74.55500030517578,
-      "price_b": 280.489990234375,
-      "signal_id": "20260909T135354Z-AIG-AIZ-LONG",
-      "workflow_run_time": "2026-09-09T18:38:03.701040+00:00"
-    },
-    {
-      "Stock A": "AIG",
-      "Stock B": "L",
-      "action": "LONG SPREAD",
-      "beta": 0.15735385309312216,
-      "catalyst_context": "AIG: No detected catalyst\nL: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": -2.7021388955814887,
-      "half_life_days": 1.0564916748089694,
-      "historical_sharpe": 1.1803121410323292,
-      "market_timestamp": "2026-09-09T14:30:00-04:00",
-      "p_value": 0.03585302840813905,
-      "price_a": 74.55500030517578,
-      "price_b": 108.75,
-      "signal_id": "20260909T135355Z-AIG-L-LONG",
-      "workflow_run_time": "2026-09-09T18:38:03.701040+00:00"
+      "entry_z": -2.4547692720085106,
+      "half_life_days": 1.4443567591192714,
+      "historical_sharpe": 1.0461708459202426,
+      "market_timestamp": "2026-09-09T15:30:00-04:00",
+      "p_value": 0.020351575208589382,
+      "price_a": 55.81999969482422,
+      "price_b": 225.15499877929688,
+      "signal_id": "20260908T140107Z-FTV-IEX-LONG",
+      "workflow_run_time": "2026-09-09T21:42:58.857547+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-09T18:38:03.701040+00:00"
+  "workflow_run_time": "2026-09-09T21:42:58.857547+00:00"
 }
