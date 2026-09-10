@@ -4,20 +4,20 @@
       "Stock A": "FTV",
       "Stock B": "IEX",
       "action": "LONG SPREAD",
-      "beta": 0.2736604979599537,
+      "beta": 0.2736604979599538,
       "catalyst_context": "FTV: No detected catalyst\nIEX: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": -2.4547692720085177,
-      "half_life_days": 1.4443567591192736,
-      "historical_sharpe": 1.0836685801029253,
+      "entry_z": -2.4547692720085106,
+      "half_life_days": 1.4443567591192714,
+      "historical_sharpe": 1.04617054275495,
       "market_timestamp": "2026-09-09T15:30:00-04:00",
-      "p_value": 0.01578129279428206,
+      "p_value": 0.020351586566421945,
       "price_a": 55.81999969482422,
       "price_b": 225.15499877929688,
       "signal_id": "20260908T140107Z-FTV-IEX-LONG",
-      "workflow_run_time": "2026-09-10T00:15:59.479849+00:00"
+      "workflow_run_time": "2026-09-10T04:51:37.821343+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-10T00:15:59.479849+00:00"
+  "workflow_run_time": "2026-09-10T04:51:37.821343+00:00"
 }
