@@ -503,13 +503,13 @@
       "entry_z_reported": -2.4296071545604607,
       "half_life_days": 1.8236588808505956,
       "historical_sharpe": 1.3399475190505261,
-      "last_observed_market_timestamp": "2026-09-10T14:30:00-04:00",
-      "latest_pair_return": 0.0005244393955945383,
-      "latest_z": -0.8350737239057942,
+      "last_observed_market_timestamp": "2026-09-10T15:30:00-04:00",
+      "latest_pair_return": -0.0021948986367119417,
+      "latest_z": -1.3172564412542906,
       "market_timestamp": "2026-08-31T12:30:00-04:00",
       "max_adverse_return": -0.0028332891832227713,
       "max_favorable_return": 0.0018415753923591062,
-      "observation_count": 30,
+      "observation_count": 31,
       "observations": [
         {
           "market_timestamp": "2026-08-31T15:30:00-04:00",
@@ -750,6 +750,14 @@
           "price_b": 39.189998626708984,
           "spread": 41.908171836255676,
           "z": -0.8350737239057942
+        },
+        {
+          "market_timestamp": "2026-09-10T15:30:00-04:00",
+          "pair_return_net_est": -0.0021948986367119417,
+          "price_a": 104.95999908447266,
+          "price_b": 39.130001068115234,
+          "spread": 41.4455602005974,
+          "z": -1.3172564412542906
         }
       ],
       "pair_key": "AEE|CNP",
