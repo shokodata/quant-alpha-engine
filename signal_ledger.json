@@ -17,13 +17,13 @@
       "entry_z_reported": -2.6177135411271952,
       "half_life_days": 0.42828382508220825,
       "historical_sharpe": 1.5735005751180557,
-      "last_observed_market_timestamp": "2026-09-10T14:30:00-04:00",
-      "latest_pair_return": -0.06621507515689813,
-      "latest_z": -2.524596329182218,
+      "last_observed_market_timestamp": "2026-09-10T15:30:00-04:00",
+      "latest_pair_return": -0.06587321855185088,
+      "latest_z": -2.429467471888343,
       "market_timestamp": "2026-08-31T09:30:00-04:00",
       "max_adverse_return": -0.06775095537555237,
       "max_favorable_return": 0.016171916660679516,
-      "observation_count": 34,
+      "observation_count": 35,
       "observations": [
         {
           "market_timestamp": "2026-08-31T10:30:00-04:00",
@@ -296,13 +296,21 @@
           "price_b": 603.375,
           "spread": 1475.8945458345897,
           "z": -2.524596329182218
+        },
+        {
+          "market_timestamp": "2026-09-10T15:30:00-04:00",
+          "pair_return_net_est": -0.06587321855185088,
+          "price_a": 1280.02001953125,
+          "price_b": 603.1199951171875,
+          "spread": 1476.434058700381,
+          "z": -2.429467471888343
         }
       ],
       "pair_key": "MTD|TMO",
-      "resolution_reason": null,
-      "resolved_at_utc": null,
+      "resolution_reason": "no convergence in 35 hourly observations",
+      "resolved_at_utc": "2026-09-11T09:43:34.311038+00:00",
       "signal_id": "20260831T135621Z-MTD-TMO-LONG",
-      "status": "OPEN",
+      "status": "TIMEOUT",
       "stock_a": "MTD",
       "stock_b": "TMO",
       "sub_industry": "Life Sciences Tools & Services"

@@ -10,13 +10,13 @@
       "delivery_status": "delivered",
       "entry_z": -4.033836352922589,
       "half_life_days": 2.870596508880701,
-      "historical_sharpe": 0.8791779469790711,
+      "historical_sharpe": 0.8791769520115964,
       "market_timestamp": "2026-09-10T15:30:00-04:00",
-      "p_value": 0.024003986735709755,
+      "p_value": 0.024003824761270554,
       "price_a": 69.0,
       "price_b": 81.36000061035156,
       "signal_id": "20260910T214127Z-ES-EVRG-LONG",
-      "workflow_run_time": "2026-09-11T04:42:25.564090+00:00"
+      "workflow_run_time": "2026-09-11T09:43:33.681277+00:00"
     },
     {
       "Stock A": "FTV",
@@ -28,32 +28,32 @@
       "delivery_status": "delivered",
       "entry_z": -2.364085961370462,
       "half_life_days": 1.92961611844533,
-      "historical_sharpe": 1.916741055545983,
+      "historical_sharpe": 1.916741856391973,
       "market_timestamp": "2026-09-10T15:30:00-04:00",
-      "p_value": 0.03755702430026937,
+      "p_value": 0.03755703823615399,
       "price_a": 54.5099983215332,
       "price_b": 106.54000091552734,
       "signal_id": "20260901T183501Z-FTV-XYL-LONG",
-      "workflow_run_time": "2026-09-11T04:42:25.564090+00:00"
+      "workflow_run_time": "2026-09-11T09:43:33.681277+00:00"
     },
     {
       "Stock A": "ALL",
       "Stock B": "TRV",
       "action": "LONG SPREAD",
       "beta": 0.6795506821273912,
-      "catalyst_context": "ALL: \u26a0\ufe0f Earnings 6.3h ago: Reflecting On Property & Casualty Insurance Stocks\u2019 Q2 Earnings: Allstate (NYSE:ALL)\nTRV: No detected catalyst",
+      "catalyst_context": "ALL: \u26a0\ufe0f Earnings 11.4h ago: Reflecting On Property & Casualty Insurance Stocks\u2019 Q2 Earnings: Allstate (NYSE:ALL)\nTRV: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
       "entry_z": -2.658214782258399,
       "half_life_days": 2.3790225334983264,
-      "historical_sharpe": 2.1848800840498868,
+      "historical_sharpe": 2.184882452639512,
       "market_timestamp": "2026-09-10T15:30:00-04:00",
-      "p_value": 0.00037731141032998485,
+      "p_value": 0.00037731052773197054,
       "price_a": 251.77000427246094,
       "price_b": 367.54998779296875,
       "signal_id": "20260908T215638Z-ALL-TRV-LONG",
-      "workflow_run_time": "2026-09-11T04:42:25.564090+00:00"
+      "workflow_run_time": "2026-09-11T09:43:33.681277+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-11T04:42:25.564090+00:00"
+  "workflow_run_time": "2026-09-11T09:43:33.681277+00:00"
 }
