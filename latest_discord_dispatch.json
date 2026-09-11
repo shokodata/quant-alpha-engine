@@ -1,41 +1,23 @@
 {
   "alerts": [
     {
-      "Stock A": "ES",
-      "Stock B": "FE",
-      "action": "LONG SPREAD",
-      "beta": 1.2534476546573876,
-      "catalyst_context": "ES: No detected catalyst\nFE: \u26a0\ufe0f Earnings 22.5h ago: Can EXC's Rising Revenues Support Sustainable Earnings Growth?",
-      "catalyst_present": true,
-      "delivery_status": "delivered",
-      "entry_z": -3.845204283070328,
-      "half_life_days": 4.2305304784171645,
-      "historical_sharpe": 1.6860026715303187,
-      "market_timestamp": "2026-09-11T09:30:00-04:00",
-      "p_value": 0.010865736483941242,
-      "price_a": 68.90499877929688,
-      "price_b": 46.095001220703125,
-      "signal_id": "20260911T140502Z-ES-FE-LONG",
-      "workflow_run_time": "2026-09-11T14:02:29.980922+00:00"
-    },
-    {
       "Stock A": "ALL",
       "Stock B": "TRV",
       "action": "LONG SPREAD",
-      "beta": 0.6545982528734366,
-      "catalyst_context": "ALL: \u26a0\ufe0f Earnings 15.7h ago: Reflecting On Property & Casualty Insurance Stocks\u2019 Q2 Earnings: Allstate (NYSE:ALL)\nTRV: No detected catalyst",
+      "beta": 0.6330859302751478,
+      "catalyst_context": "ALL: \u26a0\ufe0f Earnings 16.1h ago: Reflecting On Property & Casualty Insurance Stocks\u2019 Q2 Earnings: Allstate (NYSE:ALL)\nTRV: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": -3.494736655855042,
-      "half_life_days": 4.277437030920013,
-      "historical_sharpe": 2.182563728930283,
-      "market_timestamp": "2026-09-11T09:30:00-04:00",
-      "p_value": 0.00038205301007263065,
-      "price_a": 251.83999633789062,
-      "price_b": 371.30999755859375,
+      "entry_z": -3.1230439792050046,
+      "half_life_days": 3.09634474058381,
+      "historical_sharpe": 2.1825689181190815,
+      "market_timestamp": "2026-09-11T10:30:00-04:00",
+      "p_value": 0.00038107654656357835,
+      "price_a": 252.00999450683594,
+      "price_b": 370.7699890136719,
       "signal_id": "20260908T215638Z-ALL-TRV-LONG",
-      "workflow_run_time": "2026-09-11T14:02:29.980922+00:00"
+      "workflow_run_time": "2026-09-11T14:27:09.066854+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-11T14:02:29.980922+00:00"
+  "workflow_run_time": "2026-09-11T14:27:09.066854+00:00"
 }
