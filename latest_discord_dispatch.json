@@ -1,23 +1,41 @@
 {
   "alerts": [
     {
+      "Stock A": "AIG",
+      "Stock B": "AIZ",
+      "action": "LONG SPREAD",
+      "beta": 0.21179501284581678,
+      "catalyst_context": "AIG: No detected catalyst\nAIZ: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": -2.5940031110599784,
+      "half_life_days": 1.1822244726025182,
+      "historical_sharpe": 1.0602958131214764,
+      "market_timestamp": "2026-09-11T10:30:00-04:00",
+      "p_value": 0.021217040474352064,
+      "price_a": 74.5199966430664,
+      "price_b": 281.6400146484375,
+      "signal_id": "20260909T135354Z-AIG-AIZ-LONG",
+      "workflow_run_time": "2026-09-11T15:17:52.692433+00:00"
+    },
+    {
       "Stock A": "ALL",
       "Stock B": "TRV",
       "action": "LONG SPREAD",
-      "beta": 0.6330859302751478,
-      "catalyst_context": "ALL: \u26a0\ufe0f Earnings 16.1h ago: Reflecting On Property & Casualty Insurance Stocks\u2019 Q2 Earnings: Allstate (NYSE:ALL)\nTRV: No detected catalyst",
+      "beta": 0.6224858423870128,
+      "catalyst_context": "ALL: \u26a0\ufe0f Earnings 16.9h ago: Reflecting On Property & Casualty Insurance Stocks\u2019 Q2 Earnings: Allstate (NYSE:ALL)\nTRV: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": -3.1230439792050046,
-      "half_life_days": 3.09634474058381,
-      "historical_sharpe": 2.1825689181190815,
+      "entry_z": -3.4586065433903315,
+      "half_life_days": 4.283382891283539,
+      "historical_sharpe": 2.1825291713770243,
       "market_timestamp": "2026-09-11T10:30:00-04:00",
-      "p_value": 0.00038107654656357835,
-      "price_a": 252.00999450683594,
-      "price_b": 370.7699890136719,
+      "p_value": 0.00039132079562445213,
+      "price_a": 251.6649932861328,
+      "price_b": 371.69500732421875,
       "signal_id": "20260908T215638Z-ALL-TRV-LONG",
-      "workflow_run_time": "2026-09-11T14:27:09.066854+00:00"
+      "workflow_run_time": "2026-09-11T15:17:52.692433+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-11T14:27:09.066854+00:00"
+  "workflow_run_time": "2026-09-11T15:17:52.692433+00:00"
 }
