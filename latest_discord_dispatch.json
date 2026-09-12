@@ -4,20 +4,20 @@
       "Stock A": "ALL",
       "Stock B": "TRV",
       "action": "LONG SPREAD",
-      "beta": 0.4138268547838727,
-      "catalyst_context": "ALL: \u26a0\ufe0f Major News 18.9h ago: Allstate (ALL) Upgraded to Strong Buy: Here's What You Should Know; \u26a0\ufe0f Earnings 36.5h ago: Reflecting On Property & Casualty Insurance Stocks\u2019 Q2 Earnings: Allstate (NYSE:ALL)\nTRV: No detected catalyst",
+      "beta": 0.41382685478387177,
+      "catalyst_context": "ALL: \u26a0\ufe0f Major News 22.2h ago: Allstate (ALL) Upgraded to Strong Buy: Here's What You Should Know; \u26a0\ufe0f Earnings 39.8h ago: Reflecting On Property & Casualty Insurance Stocks\u2019 Q2 Earnings: Allstate (NYSE:ALL)\nTRV: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": -2.4864028893163135,
-      "half_life_days": 3.310116010645689,
-      "historical_sharpe": 2.1847962076476635,
+      "entry_z": -2.4864028893162984,
+      "half_life_days": 3.3101160106457526,
+      "historical_sharpe": 2.184795282624287,
       "market_timestamp": "2026-09-11T15:30:00-04:00",
-      "p_value": 0.0003934618931574543,
+      "p_value": 0.00039346864547290907,
       "price_a": 253.69000244140625,
       "price_b": 375.239990234375,
       "signal_id": "20260908T215638Z-ALL-TRV-LONG",
-      "workflow_run_time": "2026-09-12T10:48:54.142106+00:00"
+      "workflow_run_time": "2026-09-12T14:09:20.210197+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-12T10:48:54.142106+00:00"
+  "workflow_run_time": "2026-09-12T14:09:20.210197+00:00"
 }
