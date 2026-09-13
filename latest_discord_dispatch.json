@@ -10,14 +10,14 @@
       "delivery_status": "delivered",
       "entry_z": -2.4864028893162984,
       "half_life_days": 3.3101160106457526,
-      "historical_sharpe": 2.184797589491294,
+      "historical_sharpe": 2.1847973016835978,
       "market_timestamp": "2026-09-11T15:30:00-04:00",
-      "p_value": 0.00039346852617520563,
+      "p_value": 0.00039346789993554985,
       "price_a": 253.69000244140625,
       "price_b": 375.239990234375,
       "signal_id": "20260908T215638Z-ALL-TRV-LONG",
-      "workflow_run_time": "2026-09-13T16:18:55.472214+00:00"
+      "workflow_run_time": "2026-09-13T19:28:21.808452+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-13T16:18:55.472214+00:00"
+  "workflow_run_time": "2026-09-13T19:28:21.808452+00:00"
 }
