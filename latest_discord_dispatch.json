@@ -1,4 +1,41 @@
 {
-  "alerts": [],
-  "workflow_run_time": "2026-09-15T14:39:22.194907+00:00"
+  "alerts": [
+    {
+      "Stock A": "CI",
+      "Stock B": "CVS",
+      "action": "SHORT SPREAD",
+      "beta": 1.2491525497175906,
+      "catalyst_context": "CI: No detected catalyst\nCVS: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": 3.166200199015204,
+      "half_life_days": 2.480592862621067,
+      "historical_sharpe": 1.4064140140771146,
+      "market_timestamp": "2026-09-15T10:30:00-04:00",
+      "p_value": 0.0061934559753971325,
+      "price_a": 288.6449890136719,
+      "price_b": 94.20500183105469,
+      "signal_id": "20260914T135236Z-CI-CVS-SHORT",
+      "workflow_run_time": "2026-09-15T15:12:33.541783+00:00"
+    },
+    {
+      "Stock A": "CI",
+      "Stock B": "DGX",
+      "action": "SHORT SPREAD",
+      "beta": -0.05021850082303968,
+      "catalyst_context": "CI: No detected catalyst\nDGX: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": 2.423496181399055,
+      "half_life_days": 1.345382401600014,
+      "historical_sharpe": 0.8890446202559753,
+      "market_timestamp": "2026-09-15T10:30:00-04:00",
+      "p_value": 0.006241111425926064,
+      "price_a": 288.6449890136719,
+      "price_b": 246.16000366210938,
+      "signal_id": "20260914T135239Z-CI-DGX-SHORT",
+      "workflow_run_time": "2026-09-15T15:12:33.541783+00:00"
+    }
+  ],
+  "workflow_run_time": "2026-09-15T15:12:33.541783+00:00"
 }
