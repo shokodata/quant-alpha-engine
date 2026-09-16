@@ -4,20 +4,20 @@
       "Stock A": "CI",
       "Stock B": "CVS",
       "action": "SHORT SPREAD",
-      "beta": 1.150849702040082,
+      "beta": 1.1508497020400843,
       "catalyst_context": "CI: No detected catalyst\nCVS: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 2.525340601124375,
-      "half_life_days": 2.3797204944648316,
-      "historical_sharpe": 1.4064168936124852,
+      "entry_z": 2.5253406011243835,
+      "half_life_days": 2.379720494464818,
+      "historical_sharpe": 1.4077756726028643,
       "market_timestamp": "2026-09-15T15:30:00-04:00",
-      "p_value": 0.006218826077189026,
+      "p_value": 0.006386023165003808,
       "price_a": 288.9800109863281,
       "price_b": 94.4800033569336,
       "signal_id": "20260914T135236Z-CI-CVS-SHORT",
-      "workflow_run_time": "2026-09-15T21:23:12.099080+00:00"
+      "workflow_run_time": "2026-09-16T00:22:04.415915+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-15T21:23:12.099080+00:00"
+  "workflow_run_time": "2026-09-16T00:22:04.415915+00:00"
 }
