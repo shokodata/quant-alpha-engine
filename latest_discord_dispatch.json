@@ -1,23 +1,4 @@
 {
-  "alerts": [
-    {
-      "Stock A": "AIG",
-      "Stock B": "AIZ",
-      "action": "LONG SPREAD",
-      "beta": 0.25363437049334836,
-      "catalyst_context": "AIG: No detected catalyst\nAIZ: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": -2.813455442909981,
-      "half_life_days": 0.9147574178089365,
-      "historical_sharpe": 1.063537963503833,
-      "market_timestamp": "2026-09-16T09:30:00-04:00",
-      "p_value": 0.02197161279636175,
-      "price_a": 75.36000061035156,
-      "price_b": 286.385009765625,
-      "signal_id": "20260915T181606Z-AIG-AIZ-LONG",
-      "workflow_run_time": "2026-09-16T14:21:19.381588+00:00"
-    }
-  ],
-  "workflow_run_time": "2026-09-16T14:21:19.381588+00:00"
+  "alerts": [],
+  "workflow_run_time": "2026-09-16T14:44:12.086992+00:00"
 }
