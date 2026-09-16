@@ -1,23 +1,23 @@
 {
   "alerts": [
     {
-      "Stock A": "CI",
-      "Stock B": "CVS",
-      "action": "SHORT SPREAD",
-      "beta": 1.150849702040082,
-      "catalyst_context": "CI: No detected catalyst\nCVS: No detected catalyst",
-      "catalyst_present": false,
+      "Stock A": "AMZN",
+      "Stock B": "EBAY",
+      "action": "LONG SPREAD",
+      "beta": -0.49134992992465065,
+      "catalyst_context": "AMZN: \u26a0\ufe0f Earnings 2.3h ago: These 7 Stocks Are Analyst Favorites For Magnificent Earnings Growth; Cloudflare Hits Buy Point\nEBAY: \u26a0\ufe0f Guidance 20.9h ago: Etsy Could Meet High End of GMS Guidance Amid AI Search, Product Improvements, Oppenheimer Says in Upgrade; \u26a0\ufe0f Major News 22.4h ago: How to Play GME Stock as GameStop CEO Ryan Cohen Buys $20.3 Million in Shares",
+      "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": 2.525340601124375,
-      "half_life_days": 2.3797204944648316,
-      "historical_sharpe": 1.4064183174239802,
-      "market_timestamp": "2026-09-15T15:30:00-04:00",
-      "p_value": 0.006218802837820045,
-      "price_a": 288.9800109863281,
-      "price_b": 94.4800033569336,
-      "signal_id": "20260914T135236Z-CI-CVS-SHORT",
-      "workflow_run_time": "2026-09-16T13:23:21.580085+00:00"
+      "entry_z": -2.399483690673712,
+      "half_life_days": 1.144250795520295,
+      "historical_sharpe": 1.5366827285558602,
+      "market_timestamp": "2026-09-16T09:30:00-04:00",
+      "p_value": 0.005140311994369812,
+      "price_a": 246.9499969482422,
+      "price_b": 106.31999969482422,
+      "signal_id": "20260916T134037Z-AMZN-EBAY-LONG",
+      "workflow_run_time": "2026-09-16T13:38:05.147370+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-16T13:23:21.580085+00:00"
+  "workflow_run_time": "2026-09-16T13:38:05.147370+00:00"
 }
