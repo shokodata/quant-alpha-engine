@@ -4,20 +4,20 @@
       "Stock A": "EW",
       "Stock B": "SYK",
       "action": "SHORT SPREAD",
-      "beta": 0.08998093787354175,
+      "beta": 0.08998637473127166,
       "catalyst_context": "EW: No detected catalyst\nSYK: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 2.4216310054256813,
-      "half_life_days": 1.2680849363790692,
-      "historical_sharpe": 2.0010125500070175,
+      "entry_z": 2.4078281007090276,
+      "half_life_days": 1.2632074801546662,
+      "historical_sharpe": 2.0006179693315804,
       "market_timestamp": "2026-09-16T15:30:00-04:00",
-      "p_value": 0.047978509172339784,
-      "price_a": 89.30000305175781,
-      "price_b": 284.7950134277344,
+      "p_value": 0.04798654273832022,
+      "price_a": 89.29000091552734,
+      "price_b": 284.8299865722656,
       "signal_id": "20260916T201129Z-EW-SYK-SHORT",
-      "workflow_run_time": "2026-09-16T20:08:53.348704+00:00"
+      "workflow_run_time": "2026-09-16T22:57:40.431299+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-16T20:08:53.348704+00:00"
+  "workflow_run_time": "2026-09-16T22:57:40.431299+00:00"
 }
