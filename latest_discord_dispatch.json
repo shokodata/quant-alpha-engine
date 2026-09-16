@@ -10,14 +10,14 @@
       "delivery_status": "delivered",
       "entry_z": 2.525340601124375,
       "half_life_days": 2.3797204944648316,
-      "historical_sharpe": 1.4064176856896113,
+      "historical_sharpe": 1.4064183174239802,
       "market_timestamp": "2026-09-15T15:30:00-04:00",
-      "p_value": 0.00621880813073306,
+      "p_value": 0.006218802837820045,
       "price_a": 288.9800109863281,
       "price_b": 94.4800033569336,
       "signal_id": "20260914T135236Z-CI-CVS-SHORT",
-      "workflow_run_time": "2026-09-16T11:36:22.175352+00:00"
+      "workflow_run_time": "2026-09-16T13:23:21.580085+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-16T11:36:22.175352+00:00"
+  "workflow_run_time": "2026-09-16T13:23:21.580085+00:00"
 }
