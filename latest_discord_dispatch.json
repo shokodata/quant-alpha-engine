@@ -1,4 +1,23 @@
 {
-  "alerts": [],
-  "workflow_run_time": "2026-09-16T16:59:23.792724+00:00"
+  "alerts": [
+    {
+      "Stock A": "EW",
+      "Stock B": "SYK",
+      "action": "SHORT SPREAD",
+      "beta": 0.08998093787354175,
+      "catalyst_context": "EW: No detected catalyst\nSYK: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": 2.4216310054256813,
+      "half_life_days": 1.2680849363790692,
+      "historical_sharpe": 2.0010125500070175,
+      "market_timestamp": "2026-09-16T15:30:00-04:00",
+      "p_value": 0.047978509172339784,
+      "price_a": 89.30000305175781,
+      "price_b": 284.7950134277344,
+      "signal_id": "20260916T201129Z-EW-SYK-SHORT",
+      "workflow_run_time": "2026-09-16T20:08:53.348704+00:00"
+    }
+  ],
+  "workflow_run_time": "2026-09-16T20:08:53.348704+00:00"
 }
