@@ -4,20 +4,20 @@
       "Stock A": "CI",
       "Stock B": "DVA",
       "action": "LONG SPREAD",
-      "beta": 0.434574932285971,
+      "beta": 0.43640731310508385,
       "catalyst_context": "CI: No detected catalyst\nDVA: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": -2.5306436030550796,
-      "half_life_days": 1.4220943859769164,
-      "historical_sharpe": 1.1632823656381168,
+      "entry_z": -2.596736479985314,
+      "half_life_days": 1.4487186739397113,
+      "historical_sharpe": 1.163280610629703,
       "market_timestamp": "2026-09-17T10:30:00-04:00",
-      "p_value": 0.014548867686153518,
-      "price_a": 277.9150085449219,
-      "price_b": 192.83999633789062,
+      "p_value": 0.014598897741530524,
+      "price_a": 277.32501220703125,
+      "price_b": 191.9250030517578,
       "signal_id": "20260917T133316Z-CI-DVA-LONG",
-      "workflow_run_time": "2026-09-17T15:05:37.927844+00:00"
+      "workflow_run_time": "2026-09-17T15:27:36.046769+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-17T15:05:37.927844+00:00"
+  "workflow_run_time": "2026-09-17T15:27:36.046769+00:00"
 }
