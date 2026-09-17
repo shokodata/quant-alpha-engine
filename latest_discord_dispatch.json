@@ -1,59 +1,23 @@
 {
   "alerts": [
     {
-      "Stock A": "EW",
-      "Stock B": "SYK",
-      "action": "SHORT SPREAD",
-      "beta": 0.08982193133907952,
-      "catalyst_context": "EW: No detected catalyst\nSYK: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": 2.3436353478625627,
-      "half_life_days": 1.4107877787832865,
-      "historical_sharpe": 2.0006171561383366,
-      "market_timestamp": "2026-09-17T09:30:00-04:00",
-      "p_value": 0.04798648581925179,
-      "price_a": 89.3550033569336,
-      "price_b": 285.4549865722656,
-      "signal_id": "20260916T201129Z-EW-SYK-SHORT",
-      "workflow_run_time": "2026-09-17T13:28:59.893739+00:00"
-    },
-    {
       "Stock A": "CI",
       "Stock B": "DVA",
       "action": "LONG SPREAD",
-      "beta": 0.4517578081761136,
+      "beta": 0.4508241064331856,
       "catalyst_context": "CI: No detected catalyst\nDVA: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": -2.4996651808128627,
-      "half_life_days": 1.3081747359580653,
-      "historical_sharpe": 1.1645542721338713,
+      "entry_z": -2.4348679048248614,
+      "half_life_days": 1.2877681489490838,
+      "historical_sharpe": 1.1632891723211134,
       "market_timestamp": "2026-09-17T09:30:00-04:00",
-      "p_value": 0.02160928784682833,
-      "price_a": 279.20001220703125,
-      "price_b": 194.57000732421875,
+      "p_value": 0.021571942140919894,
+      "price_a": 279.70001220703125,
+      "price_b": 195.2550048828125,
       "signal_id": "20260917T133316Z-CI-DVA-LONG",
-      "workflow_run_time": "2026-09-17T13:28:59.893739+00:00"
-    },
-    {
-      "Stock A": "ACGL",
-      "Stock B": "HIG",
-      "action": "SHORT SPREAD",
-      "beta": 1.0349335679112959,
-      "catalyst_context": "ACGL: No detected catalyst\nHIG: \u26a0\ufe0f Major News 23.8h ago: Starbucks initiated, Expedia downgraded: Wall Street's top analyst calls",
-      "catalyst_present": true,
-      "delivery_status": "delivered",
-      "entry_z": 2.363331492162041,
-      "half_life_days": 1.1758325781082701,
-      "historical_sharpe": 1.468481391000338,
-      "market_timestamp": "2026-09-17T09:30:00-04:00",
-      "p_value": 0.020149856385675596,
-      "price_a": 96.97000122070312,
-      "price_b": 134.27999877929688,
-      "signal_id": "20260917T133325Z-ACGL-HIG-SHORT",
-      "workflow_run_time": "2026-09-17T13:28:59.893739+00:00"
+      "workflow_run_time": "2026-09-17T13:43:53.348046+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-17T13:28:59.893739+00:00"
+  "workflow_run_time": "2026-09-17T13:43:53.348046+00:00"
 }
