@@ -9,15 +9,15 @@
       "catalyst_present": false,
       "delivery_status": "delivered",
       "entry_z": 2.4078281007090276,
-      "half_life_days": 1.2632074801546662,
-      "historical_sharpe": 2.0006179862048072,
+      "half_life_days": 1.2632074801546642,
+      "historical_sharpe": 2.000617887294118,
       "market_timestamp": "2026-09-16T15:30:00-04:00",
-      "p_value": 0.047986446014127514,
+      "p_value": 0.04798648611384757,
       "price_a": 89.29000091552734,
       "price_b": 284.8299865722656,
       "signal_id": "20260916T201129Z-EW-SYK-SHORT",
-      "workflow_run_time": "2026-09-17T01:26:49.000133+00:00"
+      "workflow_run_time": "2026-09-17T07:41:17.919587+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-17T01:26:49.000133+00:00"
+  "workflow_run_time": "2026-09-17T07:41:17.919587+00:00"
 }
