@@ -1,41 +1,4 @@
 {
-  "alerts": [
-    {
-      "Stock A": "ACGL",
-      "Stock B": "HIG",
-      "action": "SHORT SPREAD",
-      "beta": 0.762309009222579,
-      "catalyst_context": "ACGL: No detected catalyst\nHIG: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": 2.3077487507286722,
-      "half_life_days": 1.6900276277077013,
-      "historical_sharpe": 1.6033797432449808,
-      "market_timestamp": "2026-09-18T09:30:00-04:00",
-      "p_value": 0.01631980237714259,
-      "price_a": 95.88999938964844,
-      "price_b": 131.7550048828125,
-      "signal_id": "20260917T133325Z-ACGL-HIG-SHORT",
-      "workflow_run_time": "2026-09-18T13:42:54.324011+00:00"
-    },
-    {
-      "Stock A": "ALL",
-      "Stock B": "TRV",
-      "action": "LONG SPREAD",
-      "beta": -0.02705881808014712,
-      "catalyst_context": "ALL: No detected catalyst\nTRV: \u26a0\ufe0f Earnings 22.7h ago: SIGI's Investment Income Boosts Earnings Despite Underwriting Pressure",
-      "catalyst_present": true,
-      "delivery_status": "delivered",
-      "entry_z": -2.606363694105929,
-      "half_life_days": 2.550605995051838,
-      "historical_sharpe": 2.160588619099509,
-      "market_timestamp": "2026-09-18T09:30:00-04:00",
-      "p_value": 0.0004658825616979849,
-      "price_a": 248.6199951171875,
-      "price_b": 373.5899963378906,
-      "signal_id": "20260908T215638Z-ALL-TRV-LONG",
-      "workflow_run_time": "2026-09-18T13:42:54.324011+00:00"
-    }
-  ],
-  "workflow_run_time": "2026-09-18T13:42:54.324011+00:00"
+  "alerts": [],
+  "workflow_run_time": "2026-09-18T14:33:04.281226+00:00"
 }
