@@ -4991,13 +4991,13 @@
       "entry_z_reported": -2.367138658100182,
       "half_life_days": 0.9895018619980421,
       "historical_sharpe": 2.184870577754145,
-      "last_observed_market_timestamp": "2026-09-18T10:30:00-04:00",
-      "latest_pair_return": -0.021029339745577448,
-      "latest_z": -2.226691049907581,
+      "last_observed_market_timestamp": "2026-09-18T11:30:00-04:00",
+      "latest_pair_return": -0.022243678172889997,
+      "latest_z": -2.2814560154197308,
       "market_timestamp": "2026-09-08T15:30:00-04:00",
       "max_adverse_return": -0.023190479565942244,
       "max_favorable_return": 0.0003016688627153262,
-      "observation_count": 34,
+      "observation_count": 35,
       "observations": [
         {
           "market_timestamp": "2026-09-09T09:30:00-04:00",
@@ -5270,13 +5270,21 @@
           "price_b": 374.9700012207031,
           "spread": 38.861166187568756,
           "z": -2.226691049907581
+        },
+        {
+          "market_timestamp": "2026-09-18T11:30:00-04:00",
+          "pair_return_net_est": -0.022243678172889997,
+          "price_a": 249.02999877929688,
+          "price_b": 374.7699890136719,
+          "spread": 38.303631254965154,
+          "z": -2.2814560154197308
         }
       ],
       "pair_key": "ALL|TRV",
-      "resolution_reason": null,
-      "resolved_at_utc": null,
+      "resolution_reason": "no convergence in 35 hourly observations",
+      "resolved_at_utc": "2026-09-18T15:50:01.600627+00:00",
       "signal_id": "20260908T215638Z-ALL-TRV-LONG",
-      "status": "OPEN",
+      "status": "TIMEOUT",
       "stock_a": "ALL",
       "stock_b": "TRV",
       "sub_industry": "Property & Casualty Insurance"
@@ -6801,13 +6809,13 @@
       "entry_z_reported": 2.4216310054256813,
       "half_life_days": 1.2680849363790692,
       "historical_sharpe": 2.0010125500070175,
-      "last_observed_market_timestamp": "2026-09-18T10:30:00-04:00",
-      "latest_pair_return": 0.004395642492128625,
-      "latest_z": 1.3902967571790803,
+      "last_observed_market_timestamp": "2026-09-18T11:30:00-04:00",
+      "latest_pair_return": 0.003169076705659301,
+      "latest_z": 1.4951322895252932,
       "market_timestamp": "2026-09-16T15:30:00-04:00",
       "max_adverse_return": -0.001222987137097068,
       "max_favorable_return": 0.004783513544110474,
-      "observation_count": 8,
+      "observation_count": 9,
       "observations": [
         {
           "market_timestamp": "2026-09-17T09:30:00-04:00",
@@ -6872,6 +6880,14 @@
           "price_b": 278.75,
           "spread": 63.00780990564086,
           "z": 1.3902967571790803
+        },
+        {
+          "market_timestamp": "2026-09-18T11:30:00-04:00",
+          "pair_return_net_est": 0.003169076705659301,
+          "price_a": 88.05999755859375,
+          "price_b": 276.8500061035156,
+          "spread": 63.148774359103655,
+          "z": 1.4951322895252932
         }
       ],
       "pair_key": "EW|SYK",
@@ -6899,13 +6915,13 @@
       "entry_z_reported": -2.4996651808128627,
       "half_life_days": 1.3081747359580653,
       "historical_sharpe": 1.1645542721338713,
-      "last_observed_market_timestamp": "2026-09-18T10:30:00-04:00",
-      "latest_pair_return": 0.002753673183666765,
-      "latest_z": -1.6762168685433878,
+      "last_observed_market_timestamp": "2026-09-18T11:30:00-04:00",
+      "latest_pair_return": 0.0022728621214514024,
+      "latest_z": -1.6918035577323371,
       "market_timestamp": "2026-09-17T09:30:00-04:00",
       "max_adverse_return": -0.0037119784638358832,
       "max_favorable_return": 0.0037459227924808193,
-      "observation_count": 7,
+      "observation_count": 8,
       "observations": [
         {
           "market_timestamp": "2026-09-17T10:30:00-04:00",
@@ -6962,6 +6978,14 @@
           "price_b": 182.44000244140625,
           "spread": 192.826299490613,
           "z": -1.6762168685433878
+        },
+        {
+          "market_timestamp": "2026-09-18T11:30:00-04:00",
+          "pair_return_net_est": 0.0022728621214514024,
+          "price_a": 274.75,
+          "price_b": 181.73500061035156,
+          "spread": 192.6497944553829,
+          "z": -1.6918035577323371
         }
       ],
       "pair_key": "CI|DVA",
@@ -6989,13 +7013,13 @@
       "entry_z_reported": 2.363331492162041,
       "half_life_days": 1.1758325781082701,
       "historical_sharpe": 1.468481391000338,
-      "last_observed_market_timestamp": "2026-09-18T10:30:00-04:00",
-      "latest_pair_return": -0.005711631442880347,
-      "latest_z": 3.012954219005958,
+      "last_observed_market_timestamp": "2026-09-18T11:30:00-04:00",
+      "latest_pair_return": -0.00909665758232471,
+      "latest_z": 3.575113138237835,
       "market_timestamp": "2026-09-17T09:30:00-04:00",
-      "max_adverse_return": -0.008624956757891657,
+      "max_adverse_return": -0.00909665758232471,
       "max_favorable_return": 0.0,
-      "observation_count": 7,
+      "observation_count": 8,
       "observations": [
         {
           "market_timestamp": "2026-09-17T10:30:00-04:00",
@@ -7052,6 +7076,14 @@
           "price_b": 132.63999938964844,
           "spread": -40.98358690055363,
           "z": 3.012954219005958
+        },
+        {
+          "market_timestamp": "2026-09-18T11:30:00-04:00",
+          "pair_return_net_est": -0.00909665758232471,
+          "price_a": 96.9800033569336,
+          "price_b": 132.53500366210938,
+          "spread": -40.18492085622992,
+          "z": 3.575113138237835
         }
       ],
       "pair_key": "ACGL|HIG",
@@ -7104,6 +7136,39 @@
       "stock_a": "AIG",
       "stock_b": "AIZ",
       "sub_industry": "Multi-line Insurance"
+    },
+    {
+      "action": "LONG SPREAD",
+      "beta": -0.04943023837971783,
+      "catalyst_context": "ALL: No detected catalyst\nTRV: \u26a0\ufe0f Earnings 24.8h ago: SIGI's Investment Income Boosts Earnings Despite Underwriting Pressure",
+      "catalyst_present": true,
+      "cointegration_p_value": 0.0004545631326499629,
+      "created_at_utc": "2026-09-18T15:52:45.032238+00:00",
+      "entry_price_a": 248.9149932861328,
+      "entry_price_b": 374.6400146484375,
+      "entry_spread": 267.6155841320542,
+      "entry_spread_mean": 275.54500955087127,
+      "entry_spread_std": 3.4667181970324634,
+      "entry_z_recomputed": -2.2873002557879403,
+      "entry_z_reported": -2.339812633466637,
+      "half_life_days": 2.5351388099951593,
+      "historical_sharpe": 2.165439077295926,
+      "last_observed_market_timestamp": "2026-09-18T11:30:00-04:00",
+      "latest_pair_return": 0.0,
+      "latest_z": -2.2873002557879403,
+      "market_timestamp": "2026-09-18T11:30:00-04:00",
+      "max_adverse_return": 0.0,
+      "max_favorable_return": 0.0,
+      "observation_count": 0,
+      "observations": [],
+      "pair_key": "ALL|TRV",
+      "resolution_reason": null,
+      "resolved_at_utc": null,
+      "signal_id": "20260918T155245Z-ALL-TRV-LONG",
+      "status": "OPEN",
+      "stock_a": "ALL",
+      "stock_b": "TRV",
+      "sub_industry": "Property & Casualty Insurance"
     }
   ]
 }
