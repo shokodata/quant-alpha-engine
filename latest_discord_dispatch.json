@@ -1,23 +1,4 @@
 {
-  "alerts": [
-    {
-      "Stock A": "ACGL",
-      "Stock B": "HIG",
-      "action": "SHORT SPREAD",
-      "beta": 0.5766886033371115,
-      "catalyst_context": "ACGL: No detected catalyst\nHIG: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": 2.477133978184543,
-      "half_life_days": 1.7467659213831543,
-      "historical_sharpe": 1.6032223630990738,
-      "market_timestamp": "2026-09-18T14:30:00-04:00",
-      "p_value": 0.017521016604592776,
-      "price_a": 97.65499877929688,
-      "price_b": 132.56500244140625,
-      "signal_id": "20260917T133325Z-ACGL-HIG-SHORT",
-      "workflow_run_time": "2026-09-18T18:30:17.701107+00:00"
-    }
-  ],
-  "workflow_run_time": "2026-09-18T18:30:17.701107+00:00"
+  "alerts": [],
+  "workflow_run_time": "2026-09-18T21:42:35.144865+00:00"
 }
