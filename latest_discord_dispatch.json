@@ -4,20 +4,20 @@
       "Stock A": "ACGL",
       "Stock B": "HIG",
       "action": "SHORT SPREAD",
-      "beta": 0.8124163403752653,
-      "catalyst_context": "ACGL: No detected catalyst\nHIG: \u26a0\ufe0f Major News 40.3h ago: Starbucks initiated, Expedia downgraded: Wall Street's top analyst calls",
+      "beta": 0.8124163403752646,
+      "catalyst_context": "ACGL: No detected catalyst\nHIG: \u26a0\ufe0f Major News 45.6h ago: Starbucks initiated, Expedia downgraded: Wall Street's top analyst calls",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": 2.301866142872475,
-      "half_life_days": 1.5926533491595884,
-      "historical_sharpe": 1.6050587235713636,
+      "entry_z": 2.301866142872483,
+      "half_life_days": 1.5926533491596035,
+      "historical_sharpe": 1.6050584506720007,
       "market_timestamp": "2026-09-17T15:30:00-04:00",
-      "p_value": 0.016950263297953048,
+      "p_value": 0.01695026617473121,
       "price_a": 96.69999694824219,
       "price_b": 133.1199951171875,
       "signal_id": "20260917T133325Z-ACGL-HIG-SHORT",
-      "workflow_run_time": "2026-09-18T05:56:36.720689+00:00"
+      "workflow_run_time": "2026-09-18T11:16:59.816809+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-18T05:56:36.720689+00:00"
+  "workflow_run_time": "2026-09-18T11:16:59.816809+00:00"
 }
