@@ -1,23 +1,4 @@
 {
-  "alerts": [
-    {
-      "Stock A": "ALL",
-      "Stock B": "TRV",
-      "action": "LONG SPREAD",
-      "beta": -0.12237823589717249,
-      "catalyst_context": "ALL: No detected catalyst\nTRV: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": -2.416752757590866,
-      "half_life_days": 2.986557147646455,
-      "historical_sharpe": 2.147680084257098,
-      "market_timestamp": "2026-09-21T13:30:00-04:00",
-      "p_value": 0.0004466551151650684,
-      "price_a": 246.69000244140625,
-      "price_b": 372.4200134277344,
-      "signal_id": "20260918T155245Z-ALL-TRV-LONG",
-      "workflow_run_time": "2026-09-21T17:49:13.603702+00:00"
-    }
-  ],
-  "workflow_run_time": "2026-09-21T17:49:13.603702+00:00"
+  "alerts": [],
+  "workflow_run_time": "2026-09-21T19:28:46.644470+00:00"
 }
