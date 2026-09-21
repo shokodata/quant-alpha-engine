@@ -1,4 +1,23 @@
 {
-  "alerts": [],
-  "workflow_run_time": "2026-09-21T13:39:50.062845+00:00"
+  "alerts": [
+    {
+      "Stock A": "MSCI",
+      "Stock B": "SPGI",
+      "action": "SHORT SPREAD",
+      "beta": 0.5961223809212011,
+      "catalyst_context": "MSCI: No detected catalyst\nSPGI: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": 2.3080502825179137,
+      "half_life_days": 0.7051020820508737,
+      "historical_sharpe": 1.6083327805411063,
+      "market_timestamp": "2026-09-21T09:30:00-04:00",
+      "p_value": 0.0003301662822058698,
+      "price_a": 555.8699951171875,
+      "price_b": 404.489013671875,
+      "signal_id": "20260921T140704Z-MSCI-SPGI-SHORT",
+      "workflow_run_time": "2026-09-21T14:04:16.926426+00:00"
+    }
+  ],
+  "workflow_run_time": "2026-09-21T14:04:16.926426+00:00"
 }
