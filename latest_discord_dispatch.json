@@ -1,23 +1,41 @@
 {
   "alerts": [
     {
-      "Stock A": "MSCI",
-      "Stock B": "SPGI",
-      "action": "SHORT SPREAD",
-      "beta": 0.551863336129482,
-      "catalyst_context": "MSCI: No detected catalyst\nSPGI: No detected catalyst",
-      "catalyst_present": false,
+      "Stock A": "FIX",
+      "Stock B": "PWR",
+      "action": "LONG SPREAD",
+      "beta": 2.967384222270743,
+      "catalyst_context": "FIX: \u26a0\ufe0f Earnings 1.9h ago: Thor Industries (THO) Q4 Earnings Lag Estimates; \u26a0\ufe0f Earnings 4.3h ago: 3 Undervalued Stocks With At Least 20% Earnings Growth; \u26a0\ufe0f Earnings 14.8h ago: Reflecting On Construction and Maintenance Services Stocks\u2019 Q2 Earnings: Comfort Systems (NYSE:FIX)\nPWR: No detected catalyst",
+      "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": 2.5075303594306027,
-      "half_life_days": 0.9363336915079902,
-      "historical_sharpe": 1.6083988057342258,
-      "market_timestamp": "2026-09-21T15:30:00-04:00",
-      "p_value": 0.00032310681346588247,
-      "price_a": 559.3200073242188,
-      "price_b": 404.4700012207031,
-      "signal_id": "20260921T140704Z-MSCI-SPGI-SHORT",
-      "workflow_run_time": "2026-09-22T09:58:55.713733+00:00"
+      "entry_z": -3.913790489655374,
+      "half_life_days": 0.32240879176979886,
+      "historical_sharpe": 0.9692790524058205,
+      "market_timestamp": "2026-09-22T09:30:00-04:00",
+      "p_value": 0.023572922151261323,
+      "price_a": 1600.9300537109375,
+      "price_b": 639.6599731445312,
+      "signal_id": "20260922T133424Z-FIX-PWR-LONG",
+      "workflow_run_time": "2026-09-22T13:32:28.669983+00:00"
+    },
+    {
+      "Stock A": "AFL",
+      "Stock B": "GL",
+      "action": "LONG SPREAD",
+      "beta": 0.5163960262534762,
+      "catalyst_context": "AFL: \u26a0\ufe0f Earnings 15.3h ago: Is Aflac (AFL) Fairly Valued Following Mixed Earnings And Another Dividend Increase?\nGL: No detected catalyst",
+      "catalyst_present": true,
+      "delivery_status": "delivered",
+      "entry_z": -2.681505441354566,
+      "half_life_days": 0.7184006316331644,
+      "historical_sharpe": 1.812555338422784,
+      "market_timestamp": "2026-09-22T09:30:00-04:00",
+      "p_value": 0.0288674016716344,
+      "price_a": 114.8550033569336,
+      "price_b": 173.24000549316406,
+      "signal_id": "20260922T133434Z-AFL-GL-LONG",
+      "workflow_run_time": "2026-09-22T13:32:28.669983+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-22T09:58:55.713733+00:00"
+  "workflow_run_time": "2026-09-22T13:32:28.669983+00:00"
 }

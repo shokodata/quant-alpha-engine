@@ -6809,13 +6809,13 @@
       "entry_z_reported": 2.4216310054256813,
       "half_life_days": 1.2680849363790692,
       "historical_sharpe": 2.0010125500070175,
-      "last_observed_market_timestamp": "2026-09-21T15:30:00-04:00",
-      "latest_pair_return": -0.0013333969445609214,
-      "latest_z": 1.5705230236242658,
+      "last_observed_market_timestamp": "2026-09-22T09:30:00-04:00",
+      "latest_pair_return": -0.005338122438420289,
+      "latest_z": 1.9279299789388562,
       "market_timestamp": "2026-09-16T15:30:00-04:00",
-      "max_adverse_return": -0.003161367785495511,
+      "max_adverse_return": -0.005338122438420289,
       "max_favorable_return": 0.004783513544110474,
-      "observation_count": 17,
+      "observation_count": 18,
       "observations": [
         {
           "market_timestamp": "2026-09-17T09:30:00-04:00",
@@ -6952,6 +6952,14 @@
           "price_b": 274.1000061035156,
           "spread": 63.66622621071683,
           "z": 1.5705230236242658
+        },
+        {
+          "market_timestamp": "2026-09-22T09:30:00-04:00",
+          "pair_return_net_est": -0.005338122438420289,
+          "price_a": 89.00530242919922,
+          "price_b": 276.489990234375,
+          "spread": 64.12647379526376,
+          "z": 1.9279299789388562
         }
       ],
       "pair_key": "EW|SYK",
@@ -6979,13 +6987,13 @@
       "entry_z_reported": -2.4996651808128627,
       "half_life_days": 1.3081747359580653,
       "historical_sharpe": 1.1645542721338713,
-      "last_observed_market_timestamp": "2026-09-21T15:30:00-04:00",
-      "latest_pair_return": 0.0008271438539199582,
-      "latest_z": -1.4780054088562034,
+      "last_observed_market_timestamp": "2026-09-22T09:30:00-04:00",
+      "latest_pair_return": 0.006369919449240098,
+      "latest_z": -0.9421275059937608,
       "market_timestamp": "2026-09-17T09:30:00-04:00",
       "max_adverse_return": -0.0037119784638358832,
-      "max_favorable_return": 0.005036025615348302,
-      "observation_count": 16,
+      "max_favorable_return": 0.006369919449240098,
+      "observation_count": 17,
       "observations": [
         {
           "market_timestamp": "2026-09-17T10:30:00-04:00",
@@ -7114,6 +7122,14 @@
           "price_b": 182.2899932861328,
           "spread": 192.11907340132132,
           "z": -1.4780054088562034
+        },
+        {
+          "market_timestamp": "2026-09-22T09:30:00-04:00",
+          "pair_return_net_est": 0.006369919449240098,
+          "price_a": 277.2749938964844,
+          "price_b": 183.9949951171875,
+          "spread": 194.15381818696903,
+          "z": -0.9421275059937608
         }
       ],
       "pair_key": "CI|DVA",
@@ -7141,13 +7157,13 @@
       "entry_z_reported": 2.363331492162041,
       "half_life_days": 1.1758325781082701,
       "historical_sharpe": 1.468481391000338,
-      "last_observed_market_timestamp": "2026-09-21T15:30:00-04:00",
-      "latest_pair_return": -0.011884217259389474,
-      "latest_z": 2.6655993282339203,
+      "last_observed_market_timestamp": "2026-09-22T09:30:00-04:00",
+      "latest_pair_return": -0.013137687037332788,
+      "latest_z": 2.7496683383695197,
       "market_timestamp": "2026-09-17T09:30:00-04:00",
-      "max_adverse_return": -0.011884217259389474,
+      "max_adverse_return": -0.013137687037332788,
       "max_favorable_return": 0.0,
-      "observation_count": 16,
+      "observation_count": 17,
       "observations": [
         {
           "market_timestamp": "2026-09-17T10:30:00-04:00",
@@ -7276,6 +7292,14 @@
           "price_b": 130.74000549316406,
           "spread": -39.52722157448582,
           "z": 2.6655993282339203
+        },
+        {
+          "market_timestamp": "2026-09-22T09:30:00-04:00",
+          "pair_return_net_est": -0.013137687037332788,
+          "price_a": 95.30999755859375,
+          "price_b": 130.00010681152344,
+          "spread": -39.23147681270575,
+          "z": 2.7496683383695197
         }
       ],
       "pair_key": "ACGL|HIG",
@@ -7345,13 +7369,13 @@
       "entry_z_reported": -2.339812633466637,
       "half_life_days": 2.5351388099951593,
       "historical_sharpe": 2.165439077295926,
-      "last_observed_market_timestamp": "2026-09-21T15:30:00-04:00",
-      "latest_pair_return": -0.02477432273872044,
-      "latest_z": -3.134457859232978,
+      "last_observed_market_timestamp": "2026-09-22T09:30:00-04:00",
+      "latest_pair_return": -0.043298243818513694,
+      "latest_z": -4.129963372092013,
       "market_timestamp": "2026-09-18T11:30:00-04:00",
-      "max_adverse_return": -0.02750072266755776,
+      "max_adverse_return": -0.043298243818513694,
       "max_favorable_return": 0.004134114863781154,
-      "observation_count": 8,
+      "observation_count": 9,
       "observations": [
         {
           "market_timestamp": "2026-09-18T14:30:00-04:00",
@@ -7416,13 +7440,21 @@
           "price_b": 371.2799987792969,
           "spread": 261.1824606763367,
           "z": -3.134457859232978
+        },
+        {
+          "market_timestamp": "2026-09-22T09:30:00-04:00",
+          "pair_return_net_est": -0.043298243818513694,
+          "price_a": 237.97000122070312,
+          "price_b": 369.3800048828125,
+          "spread": 256.2285429147619,
+          "z": -4.129963372092013
         }
       ],
       "pair_key": "ALL|TRV",
-      "resolution_reason": null,
-      "resolved_at_utc": null,
+      "resolution_reason": "adverse z >= 4.0",
+      "resolved_at_utc": "2026-09-22T13:32:29.860907+00:00",
       "signal_id": "20260918T155245Z-ALL-TRV-LONG",
-      "status": "OPEN",
+      "status": "STOPPED",
       "stock_a": "ALL",
       "stock_b": "TRV",
       "sub_industry": "Property & Casualty Insurance"
@@ -7443,13 +7475,13 @@
       "entry_z_reported": 2.3080502825179137,
       "half_life_days": 0.7051020820508737,
       "historical_sharpe": 1.6083327805411063,
-      "last_observed_market_timestamp": "2026-09-21T15:30:00-04:00",
-      "latest_pair_return": -0.005742996099307476,
-      "latest_z": 2.6782047057164906,
+      "last_observed_market_timestamp": "2026-09-22T09:30:00-04:00",
+      "latest_pair_return": -0.0006187298529071826,
+      "latest_z": 1.7605414079049686,
       "market_timestamp": "2026-09-21T09:30:00-04:00",
       "max_adverse_return": -0.005742996099307476,
       "max_favorable_return": 2.6896517229414458e-05,
-      "observation_count": 5,
+      "observation_count": 6,
       "observations": [
         {
           "market_timestamp": "2026-09-21T10:30:00-04:00",
@@ -7490,6 +7522,14 @@
           "price_b": 404.4700012207031,
           "spread": 318.2063871853321,
           "z": 2.6782047057164906
+        },
+        {
+          "market_timestamp": "2026-09-22T09:30:00-04:00",
+          "pair_return_net_est": -0.0006187298529071826,
+          "price_a": 556.469970703125,
+          "price_b": 406.5400085449219,
+          "spread": 314.1223728696008,
+          "z": 1.7605414079049686
         }
       ],
       "pair_key": "MSCI|SPGI",
@@ -7500,6 +7540,72 @@
       "stock_a": "MSCI",
       "stock_b": "SPGI",
       "sub_industry": "Financial Exchanges & Data"
+    },
+    {
+      "action": "LONG SPREAD",
+      "beta": 2.967384222270743,
+      "catalyst_context": "FIX: \u26a0\ufe0f Earnings 1.9h ago: Thor Industries (THO) Q4 Earnings Lag Estimates; \u26a0\ufe0f Earnings 4.3h ago: 3 Undervalued Stocks With At Least 20% Earnings Growth; \u26a0\ufe0f Earnings 14.8h ago: Reflecting On Construction and Maintenance Services Stocks\u2019 Q2 Earnings: Comfort Systems (NYSE:FIX)\nPWR: No detected catalyst",
+      "catalyst_present": true,
+      "cointegration_p_value": 0.023572922151261323,
+      "created_at_utc": "2026-09-22T13:34:24.097361+00:00",
+      "entry_price_a": 1600.9300537109375,
+      "entry_price_b": 639.6599731445312,
+      "entry_spread": -294.1058475520897,
+      "entry_spread_mean": -252.7197310664714,
+      "entry_spread_std": 11.361652410197317,
+      "entry_z_recomputed": -3.6426142071089407,
+      "entry_z_reported": -3.913790489655374,
+      "half_life_days": 0.32240879176979886,
+      "historical_sharpe": 0.9692790524058205,
+      "last_observed_market_timestamp": "2026-09-22T09:30:00-04:00",
+      "latest_pair_return": 0.0,
+      "latest_z": -3.6426142071089407,
+      "market_timestamp": "2026-09-22T09:30:00-04:00",
+      "max_adverse_return": 0.0,
+      "max_favorable_return": 0.0,
+      "observation_count": 0,
+      "observations": [],
+      "pair_key": "FIX|PWR",
+      "resolution_reason": null,
+      "resolved_at_utc": null,
+      "signal_id": "20260922T133424Z-FIX-PWR-LONG",
+      "status": "OPEN",
+      "stock_a": "FIX",
+      "stock_b": "PWR",
+      "sub_industry": "Construction & Engineering"
+    },
+    {
+      "action": "LONG SPREAD",
+      "beta": 0.5163960262534762,
+      "catalyst_context": "AFL: \u26a0\ufe0f Earnings 15.3h ago: Is Aflac (AFL) Fairly Valued Following Mixed Earnings And Another Dividend Increase?\nGL: No detected catalyst",
+      "catalyst_present": true,
+      "cointegration_p_value": 0.0288674016716344,
+      "created_at_utc": "2026-09-22T13:34:34.277687+00:00",
+      "entry_price_a": 114.8550033569336,
+      "entry_price_b": 173.24000549316406,
+      "entry_spread": 25.702425706416378,
+      "entry_spread_mean": 27.015455422671817,
+      "entry_spread_std": 0.6044748093890632,
+      "entry_z_recomputed": -2.17218268794775,
+      "entry_z_reported": -2.681505441354566,
+      "half_life_days": 0.7184006316331644,
+      "historical_sharpe": 1.812555338422784,
+      "last_observed_market_timestamp": "2026-09-22T09:30:00-04:00",
+      "latest_pair_return": 0.0,
+      "latest_z": -2.17218268794775,
+      "market_timestamp": "2026-09-22T09:30:00-04:00",
+      "max_adverse_return": 0.0,
+      "max_favorable_return": 0.0,
+      "observation_count": 0,
+      "observations": [],
+      "pair_key": "AFL|GL",
+      "resolution_reason": null,
+      "resolved_at_utc": null,
+      "signal_id": "20260922T133434Z-AFL-GL-LONG",
+      "status": "OPEN",
+      "stock_a": "AFL",
+      "stock_b": "GL",
+      "sub_industry": "Life & Health Insurance"
     }
   ]
 }
