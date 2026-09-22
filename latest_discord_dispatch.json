@@ -1,23 +1,41 @@
 {
   "alerts": [
     {
-      "Stock A": "FIX",
-      "Stock B": "PWR",
-      "action": "LONG SPREAD",
-      "beta": 2.7894077427040007,
-      "catalyst_context": "FIX: \u26a0\ufe0f Earnings 6.0h ago: Thor Industries (THO) Q4 Earnings Lag Estimates; \u26a0\ufe0f Earnings 8.4h ago: 3 Undervalued Stocks With At Least 20% Earnings Growth; \u26a0\ufe0f Earnings 18.9h ago: Reflecting On Construction and Maintenance Services Stocks\u2019 Q2 Earnings: Comfort Systems (NYSE:FIX)\nPWR: \u26a0\ufe0f Acquisition/M&A 3.8h ago: Construction Partners Expands Florida Presence With Roads Acquisition",
+      "Stock A": "AIG",
+      "Stock B": "AIZ",
+      "action": "SHORT SPREAD",
+      "beta": 0.17568362702711277,
+      "catalyst_context": "AIG: \u26a0\ufe0f Major News 3.7h ago: AIG names Sierra Signorelli CEO for Americas and global insurance; \u26a0\ufe0f Major News 4.8h ago: American International Group (AIG) Names Sierra Signorelli CEO As Jon Hancock Retires\nAIZ: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": -2.8494185240233456,
-      "half_life_days": 0.4961398714134462,
-      "historical_sharpe": 0.9692747921328686,
-      "market_timestamp": "2026-09-22T13:30:00-04:00",
-      "p_value": 0.024046211418776872,
-      "price_a": 1613.2099609375,
-      "price_b": 643.8900146484375,
-      "signal_id": "20260922T145949Z-FIX-PWR-LONG",
-      "workflow_run_time": "2026-09-22T17:35:58.439230+00:00"
+      "entry_z": 2.403295796832792,
+      "half_life_days": 0.8418359488639163,
+      "historical_sharpe": 1.0685936311981732,
+      "market_timestamp": "2026-09-22T14:30:00-04:00",
+      "p_value": 0.02219985805794805,
+      "price_a": 75.55500030517578,
+      "price_b": 274.7950134277344,
+      "signal_id": "20260922T185851Z-AIG-AIZ-SHORT",
+      "workflow_run_time": "2026-09-22T18:55:48.099981+00:00"
+    },
+    {
+      "Stock A": "AIG",
+      "Stock B": "L",
+      "action": "SHORT SPREAD",
+      "beta": 0.5943534156505137,
+      "catalyst_context": "AIG: \u26a0\ufe0f Major News 3.7h ago: AIG names Sierra Signorelli CEO for Americas and global insurance; \u26a0\ufe0f Major News 4.8h ago: American International Group (AIG) Names Sierra Signorelli CEO As Jon Hancock Retires\nL: No detected catalyst",
+      "catalyst_present": true,
+      "delivery_status": "delivered",
+      "entry_z": 2.352710704854775,
+      "half_life_days": 1.280592371056197,
+      "historical_sharpe": 1.2024608671971297,
+      "market_timestamp": "2026-09-22T14:30:00-04:00",
+      "p_value": 0.031148841872733535,
+      "price_a": 75.55500030517578,
+      "price_b": 106.2750015258789,
+      "signal_id": "20260922T185852Z-AIG-L-SHORT",
+      "workflow_run_time": "2026-09-22T18:55:48.099981+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-22T17:35:58.439230+00:00"
+  "workflow_run_time": "2026-09-22T18:55:48.099981+00:00"
 }
