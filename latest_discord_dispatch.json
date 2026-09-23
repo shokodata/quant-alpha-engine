@@ -10,32 +10,32 @@
       "delivery_status": "delivered",
       "entry_z": -2.38540772472548,
       "half_life_days": 0.49138746281582135,
-      "historical_sharpe": 2.0232016704869036,
+      "historical_sharpe": 2.0232009706198673,
       "market_timestamp": "2026-09-22T15:30:00-04:00",
-      "p_value": 0.0003752296093064865,
+      "p_value": 0.00037522981887875396,
       "price_a": 548.739990234375,
       "price_b": 94.48999786376953,
       "signal_id": "20260922T221151Z-MSCI-NDAQ-LONG",
-      "workflow_run_time": "2026-09-23T00:34:47.069682+00:00"
+      "workflow_run_time": "2026-09-23T05:59:38.566750+00:00"
     },
     {
       "Stock A": "AIG",
       "Stock B": "AIZ",
       "action": "SHORT SPREAD",
       "beta": 0.1611953612700472,
-      "catalyst_context": "AIG: \u26a0\ufe0f Major News 9.3h ago: AIG names Sierra Signorelli CEO for Americas and global insurance; \u26a0\ufe0f Major News 10.5h ago: American International Group (AIG) Names Sierra Signorelli CEO As Jon Hancock Retires\nAIZ: No detected catalyst",
+      "catalyst_context": "AIG: \u26a0\ufe0f Major News 14.7h ago: AIG names Sierra Signorelli CEO for Americas and global insurance; \u26a0\ufe0f Major News 15.8h ago: American International Group (AIG) Names Sierra Signorelli CEO As Jon Hancock Retires\nAIZ: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
       "entry_z": 2.586155233343044,
       "half_life_days": 0.8805624885216581,
-      "historical_sharpe": 1.0695135691892221,
+      "historical_sharpe": 1.0695132514062107,
       "market_timestamp": "2026-09-22T15:30:00-04:00",
-      "p_value": 0.02345356816229363,
+      "p_value": 0.023453603530938148,
       "price_a": 75.19000244140625,
       "price_b": 271.0199890136719,
       "signal_id": "20260922T185851Z-AIG-AIZ-SHORT",
-      "workflow_run_time": "2026-09-23T00:34:47.069682+00:00"
+      "workflow_run_time": "2026-09-23T05:59:38.566750+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-23T00:34:47.069682+00:00"
+  "workflow_run_time": "2026-09-23T05:59:38.566750+00:00"
 }
