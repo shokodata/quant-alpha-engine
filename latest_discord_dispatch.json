@@ -4,20 +4,20 @@
       "Stock A": "CI",
       "Stock B": "DVA",
       "action": "LONG SPREAD",
-      "beta": 0.3782450379950264,
-      "catalyst_context": "CI: \u26a0\ufe0f Earnings 22.9h ago: Can UNH Stock Keep Growing Earnings While Its Sales Stall?\nDVA: No detected catalyst",
+      "beta": 0.37476640912199816,
+      "catalyst_context": "CI: \u26a0\ufe0f Earnings 26.3h ago: Can UNH Stock Keep Growing Earnings While Its Sales Stall?\nDVA: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": -2.3185561197970284,
-      "half_life_days": 4.060656295787647,
-      "historical_sharpe": 1.4147167262290745,
-      "market_timestamp": "2026-09-23T12:30:00-04:00",
-      "p_value": 0.013226663952394701,
-      "price_a": 269.875,
-      "price_b": 183.76499938964844,
+      "entry_z": -2.3659964128690367,
+      "half_life_days": 5.951217897265326,
+      "historical_sharpe": 1.274617828372443,
+      "market_timestamp": "2026-09-23T15:30:00-04:00",
+      "p_value": 0.016589263066975262,
+      "price_a": 268.29998779296875,
+      "price_b": 183.16000366210938,
       "signal_id": "20260917T133316Z-CI-DVA-LONG",
-      "workflow_run_time": "2026-09-23T17:01:07.447900+00:00"
+      "workflow_run_time": "2026-09-23T20:23:19.450403+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-23T17:01:07.447900+00:00"
+  "workflow_run_time": "2026-09-23T20:23:19.450403+00:00"
 }
