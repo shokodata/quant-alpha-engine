@@ -1,41 +1,23 @@
 {
   "alerts": [
     {
-      "Stock A": "AIG",
-      "Stock B": "AIZ",
-      "action": "SHORT SPREAD",
-      "beta": 0.14217898653757194,
-      "catalyst_context": "AIG: \u26a0\ufe0f Major News 22.7h ago: AIG names Sierra Signorelli CEO for Americas and global insurance; \u26a0\ufe0f Major News 23.8h ago: American International Group (AIG) Names Sierra Signorelli CEO As Jon Hancock Retires\nAIZ: No detected catalyst",
-      "catalyst_present": true,
+      "Stock A": "EXC",
+      "Stock B": "WEC",
+      "action": "LONG SPREAD",
+      "beta": 0.5985868544862413,
+      "catalyst_context": "EXC: No detected catalyst\nWEC: No detected catalyst",
+      "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 3.329100693729989,
-      "half_life_days": 1.0763972060180975,
-      "historical_sharpe": 1.068516969216258,
-      "market_timestamp": "2026-09-23T09:30:00-04:00",
-      "p_value": 0.021932251541394426,
-      "price_a": 75.88999938964844,
-      "price_b": 271.1654052734375,
-      "signal_id": "20260922T185851Z-AIG-AIZ-SHORT",
-      "workflow_run_time": "2026-09-23T13:56:02.930055+00:00"
-    },
-    {
-      "Stock A": "AIG",
-      "Stock B": "L",
-      "action": "SHORT SPREAD",
-      "beta": 0.5234518250953323,
-      "catalyst_context": "AIG: \u26a0\ufe0f Major News 22.7h ago: AIG names Sierra Signorelli CEO for Americas and global insurance; \u26a0\ufe0f Major News 23.8h ago: American International Group (AIG) Names Sierra Signorelli CEO As Jon Hancock Retires\nL: No detected catalyst",
-      "catalyst_present": true,
-      "delivery_status": "delivered",
-      "entry_z": 2.934226543665444,
-      "half_life_days": 1.4338870402589319,
-      "historical_sharpe": 1.2024543361267197,
-      "market_timestamp": "2026-09-23T09:30:00-04:00",
-      "p_value": 0.030498616193231246,
-      "price_a": 75.88999938964844,
-      "price_b": 105.9000015258789,
-      "signal_id": "20260922T185852Z-AIG-L-SHORT",
-      "workflow_run_time": "2026-09-23T13:56:02.930055+00:00"
+      "entry_z": -2.4290562958186386,
+      "half_life_days": 0.36695182688645245,
+      "historical_sharpe": 1.0980254965137923,
+      "market_timestamp": "2026-09-23T10:30:00-04:00",
+      "p_value": 0.0017970570450972973,
+      "price_a": 41.05500030517578,
+      "price_b": 102.51000213623047,
+      "signal_id": "20260923T143207Z-EXC-WEC-LONG",
+      "workflow_run_time": "2026-09-23T14:24:23.159694+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-23T13:56:02.930055+00:00"
+  "workflow_run_time": "2026-09-23T14:24:23.159694+00:00"
 }
