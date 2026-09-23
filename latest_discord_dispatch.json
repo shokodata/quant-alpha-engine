@@ -1,23 +1,23 @@
 {
   "alerts": [
     {
-      "Stock A": "EXC",
-      "Stock B": "WEC",
-      "action": "LONG SPREAD",
-      "beta": 0.5985868544862413,
-      "catalyst_context": "EXC: No detected catalyst\nWEC: No detected catalyst",
-      "catalyst_present": false,
+      "Stock A": "AIG",
+      "Stock B": "AIZ",
+      "action": "SHORT SPREAD",
+      "beta": 0.13141701747585466,
+      "catalyst_context": "AIG: \u26a0\ufe0f Major News 24.1h ago: AIG names Sierra Signorelli CEO for Americas and global insurance; \u26a0\ufe0f Major News 25.2h ago: American International Group (AIG) Names Sierra Signorelli CEO As Jon Hancock Retires\nAIZ: No detected catalyst",
+      "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": -2.4290562958186386,
-      "half_life_days": 0.36695182688645245,
-      "historical_sharpe": 1.0980254965137923,
+      "entry_z": 2.479264233776645,
+      "half_life_days": 0.9520853161642544,
+      "historical_sharpe": 1.0685336202110884,
       "market_timestamp": "2026-09-23T10:30:00-04:00",
-      "p_value": 0.0017970570450972973,
-      "price_a": 41.05500030517578,
-      "price_b": 102.51000213623047,
-      "signal_id": "20260923T143207Z-EXC-WEC-LONG",
-      "workflow_run_time": "2026-09-23T14:24:23.159694+00:00"
+      "p_value": 0.021994510962254306,
+      "price_a": 75.69999694824219,
+      "price_b": 271.7799987792969,
+      "signal_id": "20260922T185851Z-AIG-AIZ-SHORT",
+      "workflow_run_time": "2026-09-23T15:21:00.067413+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-23T14:24:23.159694+00:00"
+  "workflow_run_time": "2026-09-23T15:21:00.067413+00:00"
 }
