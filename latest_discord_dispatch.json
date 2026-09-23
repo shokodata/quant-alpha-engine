@@ -9,33 +9,33 @@
       "catalyst_present": false,
       "delivery_status": "delivered",
       "entry_z": -2.38540772472548,
-      "half_life_days": 0.4913874628158217,
-      "historical_sharpe": 1.9694848921609376,
+      "half_life_days": 0.49138746281582135,
+      "historical_sharpe": 2.0232016704869036,
       "market_timestamp": "2026-09-22T15:30:00-04:00",
-      "p_value": 0.00040434352756996703,
+      "p_value": 0.0003752296093064865,
       "price_a": 548.739990234375,
       "price_b": 94.48999786376953,
       "signal_id": "20260922T221151Z-MSCI-NDAQ-LONG",
-      "workflow_run_time": "2026-09-22T22:10:06.370716+00:00"
+      "workflow_run_time": "2026-09-23T00:34:47.069682+00:00"
     },
     {
       "Stock A": "AIG",
       "Stock B": "AIZ",
       "action": "SHORT SPREAD",
-      "beta": 0.16119536127004683,
-      "catalyst_context": "AIG: \u26a0\ufe0f Major News 6.9h ago: AIG names Sierra Signorelli CEO for Americas and global insurance; \u26a0\ufe0f Major News 8.0h ago: American International Group (AIG) Names Sierra Signorelli CEO As Jon Hancock Retires\nAIZ: No detected catalyst",
+      "beta": 0.1611953612700472,
+      "catalyst_context": "AIG: \u26a0\ufe0f Major News 9.3h ago: AIG names Sierra Signorelli CEO for Americas and global insurance; \u26a0\ufe0f Major News 10.5h ago: American International Group (AIG) Names Sierra Signorelli CEO As Jon Hancock Retires\nAIZ: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": 2.58615523334303,
-      "half_life_days": 0.8805624885216542,
-      "historical_sharpe": 1.0686419067691204,
+      "entry_z": 2.586155233343044,
+      "half_life_days": 0.8805624885216581,
+      "historical_sharpe": 1.0695135691892221,
       "market_timestamp": "2026-09-22T15:30:00-04:00",
-      "p_value": 0.02247873976436546,
+      "p_value": 0.02345356816229363,
       "price_a": 75.19000244140625,
       "price_b": 271.0199890136719,
       "signal_id": "20260922T185851Z-AIG-AIZ-SHORT",
-      "workflow_run_time": "2026-09-22T22:10:06.370716+00:00"
+      "workflow_run_time": "2026-09-23T00:34:47.069682+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-22T22:10:06.370716+00:00"
+  "workflow_run_time": "2026-09-23T00:34:47.069682+00:00"
 }
