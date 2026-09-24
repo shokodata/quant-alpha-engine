@@ -1,41 +1,4 @@
 {
-  "alerts": [
-    {
-      "Stock A": "GD",
-      "Stock B": "GE",
-      "action": "LONG SPREAD",
-      "beta": 0.38478137195888545,
-      "catalyst_context": "GD: No detected catalyst\nGE: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": -2.374247752014723,
-      "half_life_days": 4.842349844258395,
-      "historical_sharpe": 2.172892464347479,
-      "market_timestamp": "2026-09-24T14:30:00-04:00",
-      "p_value": 0.04296436496652821,
-      "price_a": 339.6700134277344,
-      "price_b": 320.42498779296875,
-      "signal_id": "20260924T191353Z-GD-GE-LONG",
-      "workflow_run_time": "2026-09-24T19:11:24.869785+00:00"
-    },
-    {
-      "Stock A": "EXC",
-      "Stock B": "WEC",
-      "action": "LONG SPREAD",
-      "beta": 0.6471436047348736,
-      "catalyst_context": "EXC: No detected catalyst\nWEC: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": -2.837568009065811,
-      "half_life_days": 0.42429728443307324,
-      "historical_sharpe": 1.0981678479068269,
-      "market_timestamp": "2026-09-24T14:30:00-04:00",
-      "p_value": 0.0018005167238882476,
-      "price_a": 40.275001525878906,
-      "price_b": 101.73500061035156,
-      "signal_id": "20260924T162715Z-EXC-WEC-LONG",
-      "workflow_run_time": "2026-09-24T19:11:24.869785+00:00"
-    }
-  ],
-  "workflow_run_time": "2026-09-24T19:11:24.869785+00:00"
+  "alerts": [],
+  "workflow_run_time": "2026-09-24T22:25:44.444976+00:00"
 }
