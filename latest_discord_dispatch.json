@@ -2,22 +2,40 @@
   "alerts": [
     {
       "Stock A": "CI",
-      "Stock B": "DVA",
+      "Stock B": "DGX",
       "action": "LONG SPREAD",
-      "beta": 0.3747664091219977,
-      "catalyst_context": "CI: \u26a0\ufe0f Earnings 39.9h ago: Can UNH Stock Keep Growing Earnings While Its Sales Stall?\nDVA: No detected catalyst",
+      "beta": 0.2090250489856075,
+      "catalyst_context": "CI: \u26a0\ufe0f Earnings 43.5h ago: Can UNH Stock Keep Growing Earnings While Its Sales Stall?\nDGX: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": -2.3659964128690296,
-      "half_life_days": 5.951217897265287,
-      "historical_sharpe": 1.2746179790317096,
-      "market_timestamp": "2026-09-23T15:30:00-04:00",
-      "p_value": 0.016589165116865544,
-      "price_a": 268.29998779296875,
-      "price_b": 183.16000366210938,
-      "signal_id": "20260917T133316Z-CI-DVA-LONG",
-      "workflow_run_time": "2026-09-24T10:02:55.497880+00:00"
+      "entry_z": -2.4205430679021287,
+      "half_life_days": 5.397092466475436,
+      "historical_sharpe": 1.183918312812757,
+      "market_timestamp": "2026-09-24T09:30:00-04:00",
+      "p_value": 0.003959760499896502,
+      "price_a": 266.42999267578125,
+      "price_b": 234.52999877929688,
+      "signal_id": "20260924T134005Z-CI-DGX-LONG",
+      "workflow_run_time": "2026-09-24T13:37:08.974336+00:00"
+    },
+    {
+      "Stock A": "AFL",
+      "Stock B": "GL",
+      "action": "SHORT SPREAD",
+      "beta": 0.5649835469690568,
+      "catalyst_context": "AFL: No detected catalyst\nGL: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": 2.5018316278206485,
+      "half_life_days": 0.5169150142409584,
+      "historical_sharpe": 1.938050642888707,
+      "market_timestamp": "2026-09-24T09:30:00-04:00",
+      "p_value": 0.030002466837898874,
+      "price_a": 115.55500030517578,
+      "price_b": 168.97000122070312,
+      "signal_id": "20260924T134009Z-AFL-GL-SHORT",
+      "workflow_run_time": "2026-09-24T13:37:08.974336+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-24T10:02:55.497880+00:00"
+  "workflow_run_time": "2026-09-24T13:37:08.974336+00:00"
 }
