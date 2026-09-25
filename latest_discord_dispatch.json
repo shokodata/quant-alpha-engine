@@ -1,23 +1,4 @@
 {
-  "alerts": [
-    {
-      "Stock A": "GD",
-      "Stock B": "GE",
-      "action": "LONG SPREAD",
-      "beta": 0.3558057706658519,
-      "catalyst_context": "GD: No detected catalyst\nGE: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": -2.512786158428298,
-      "half_life_days": 5.676446105171316,
-      "historical_sharpe": 2.1656622919348028,
-      "market_timestamp": "2026-09-25T09:30:00-04:00",
-      "p_value": 0.043835899543790385,
-      "price_a": 338.67999267578125,
-      "price_b": 323.0950012207031,
-      "signal_id": "20260924T191353Z-GD-GE-LONG",
-      "workflow_run_time": "2026-09-25T13:49:06.381240+00:00"
-    }
-  ],
-  "workflow_run_time": "2026-09-25T13:49:06.381240+00:00"
+  "alerts": [],
+  "workflow_run_time": "2026-09-25T14:13:12.195729+00:00"
 }
