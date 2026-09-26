@@ -10,32 +10,32 @@
       "delivery_status": "delivered",
       "entry_z": 2.60075007350022,
       "half_life_days": 1.6924656090559462,
-      "historical_sharpe": 1.1049806347751103,
+      "historical_sharpe": 1.1049808385395352,
       "market_timestamp": "2026-09-25T15:30:00-04:00",
-      "p_value": 0.028173103148815805,
+      "p_value": 0.02817317583650418,
       "price_a": 357.0799865722656,
       "price_b": 113.87000274658203,
       "signal_id": "20260925T222407Z-RL-TPR-SHORT",
-      "workflow_run_time": "2026-09-26T07:43:42.836707+00:00"
+      "workflow_run_time": "2026-09-26T13:07:00.080401+00:00"
     },
     {
       "Stock A": "A",
       "Stock B": "IQV",
       "action": "SHORT SPREAD",
       "beta": 1.293818592575663,
-      "catalyst_context": "A: \u26a0\ufe0f Earnings 17.3h ago: Agilent (A) Up 9.6% Since Last Earnings Report: Can It Continue?\nIQV: No detected catalyst",
+      "catalyst_context": "A: \u26a0\ufe0f Earnings 22.7h ago: Agilent (A) Up 9.6% Since Last Earnings Report: Can It Continue?\nIQV: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
       "entry_z": 2.3777286623808576,
       "half_life_days": 3.3641962013345283,
-      "historical_sharpe": 1.1789459059979241,
+      "historical_sharpe": 1.1789454982109222,
       "market_timestamp": "2026-09-25T15:30:00-04:00",
-      "p_value": 0.003994088117900621,
+      "p_value": 0.003994095652680347,
       "price_a": 172.7899932861328,
       "price_b": 269.7799987792969,
       "signal_id": "20260925T222421Z-A-IQV-SHORT",
-      "workflow_run_time": "2026-09-26T07:43:42.836707+00:00"
+      "workflow_run_time": "2026-09-26T13:07:00.080401+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-26T07:43:42.836707+00:00"
+  "workflow_run_time": "2026-09-26T13:07:00.080401+00:00"
 }
