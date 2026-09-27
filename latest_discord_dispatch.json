@@ -4,38 +4,38 @@
       "Stock A": "RL",
       "Stock B": "TPR",
       "action": "SHORT SPREAD",
-      "beta": -0.06101810257928388,
+      "beta": -0.061018102579284236,
       "catalyst_context": "RL: No detected catalyst\nTPR: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 2.60075007350022,
+      "entry_z": 2.6007500735002202,
       "half_life_days": 1.6924656090559462,
-      "historical_sharpe": 1.1049787860950826,
+      "historical_sharpe": 1.1049832294627624,
       "market_timestamp": "2026-09-25T15:30:00-04:00",
-      "p_value": 0.028173204044785533,
+      "p_value": 0.028173154253695855,
       "price_a": 357.0799865722656,
       "price_b": 113.87000274658203,
       "signal_id": "20260925T222407Z-RL-TPR-SHORT",
-      "workflow_run_time": "2026-09-27T01:28:45.511311+00:00"
+      "workflow_run_time": "2026-09-27T08:12:26.381491+00:00"
     },
     {
       "Stock A": "A",
       "Stock B": "IQV",
       "action": "SHORT SPREAD",
       "beta": 1.293818592575663,
-      "catalyst_context": "A: \u26a0\ufe0f Earnings 35.0h ago: Agilent (A) Up 9.6% Since Last Earnings Report: Can It Continue?\nIQV: No detected catalyst",
+      "catalyst_context": "A: \u26a0\ufe0f Earnings 41.7h ago: Agilent (A) Up 9.6% Since Last Earnings Report: Can It Continue?\nIQV: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
       "entry_z": 2.3777286623808576,
-      "half_life_days": 3.3641962013345283,
-      "historical_sharpe": 1.1789454173591063,
+      "half_life_days": 3.364196201334515,
+      "historical_sharpe": 1.17894570039102,
       "market_timestamp": "2026-09-25T15:30:00-04:00",
-      "p_value": 0.003994062778838452,
+      "p_value": 0.003994075711435417,
       "price_a": 172.7899932861328,
       "price_b": 269.7799987792969,
       "signal_id": "20260925T222421Z-A-IQV-SHORT",
-      "workflow_run_time": "2026-09-27T01:28:45.511311+00:00"
+      "workflow_run_time": "2026-09-27T08:12:26.381491+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-27T01:28:45.511311+00:00"
+  "workflow_run_time": "2026-09-27T08:12:26.381491+00:00"
 }
