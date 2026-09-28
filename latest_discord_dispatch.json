@@ -1,23 +1,59 @@
 {
   "alerts": [
     {
+      "Stock A": "MSCI",
+      "Stock B": "NDAQ",
+      "action": "LONG SPREAD",
+      "beta": 2.4643107063382166,
+      "catalyst_context": "MSCI: No detected catalyst\nNDAQ: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": -2.3838135843103325,
+      "half_life_days": 0.6430018885989861,
+      "historical_sharpe": 1.8151187303827028,
+      "market_timestamp": "2026-09-28T11:30:00-04:00",
+      "p_value": 0.00047398689867311934,
+      "price_a": 541.1599731445312,
+      "price_b": 92.37999725341797,
+      "signal_id": "20260928T153213Z-MSCI-NDAQ-LONG",
+      "workflow_run_time": "2026-09-28T15:29:39.091464+00:00"
+    },
+    {
       "Stock A": "A",
       "Stock B": "IQV",
       "action": "SHORT SPREAD",
-      "beta": 1.3408111587286682,
+      "beta": 1.3611165400334255,
       "catalyst_context": "A: No detected catalyst\nIQV: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 2.3740821581287865,
-      "half_life_days": 4.1996364140062035,
-      "historical_sharpe": 1.2318690096981504,
-      "market_timestamp": "2026-09-28T10:30:00-04:00",
-      "p_value": 0.004211712119397826,
-      "price_a": 173.97000122070312,
+      "entry_z": 2.3515711453741424,
+      "half_life_days": 4.300037474813561,
+      "historical_sharpe": 1.2242257008566024,
+      "market_timestamp": "2026-09-28T11:30:00-04:00",
+      "p_value": 0.004368139470910144,
+      "price_a": 174.3249969482422,
       "price_b": 269.9700012207031,
       "signal_id": "20260925T222421Z-A-IQV-SHORT",
-      "workflow_run_time": "2026-09-28T14:56:49.586049+00:00"
+      "workflow_run_time": "2026-09-28T15:29:39.091464+00:00"
+    },
+    {
+      "Stock A": "ACGL",
+      "Stock B": "CB",
+      "action": "SHORT SPREAD",
+      "beta": 0.3339095699941238,
+      "catalyst_context": "ACGL: No detected catalyst\nCB: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": 2.363887174021206,
+      "half_life_days": 0.4248911397085861,
+      "historical_sharpe": 1.3505034144333894,
+      "market_timestamp": "2026-09-28T11:30:00-04:00",
+      "p_value": 0.0008741563336378154,
+      "price_a": 95.30000305175781,
+      "price_b": 331.0849914550781,
+      "signal_id": "20260928T153225Z-ACGL-CB-SHORT",
+      "workflow_run_time": "2026-09-28T15:29:39.091464+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-28T14:56:49.586049+00:00"
+  "workflow_run_time": "2026-09-28T15:29:39.091464+00:00"
 }
