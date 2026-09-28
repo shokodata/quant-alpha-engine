@@ -1,59 +1,23 @@
 {
   "alerts": [
     {
-      "Stock A": "AEP",
-      "Stock B": "ETR",
-      "action": "SHORT SPREAD",
-      "beta": 0.7372727077907005,
-      "catalyst_context": "AEP: No detected catalyst\nETR: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": 2.8538095949311635,
-      "half_life_days": 0.40621833436539,
-      "historical_sharpe": 1.0048747866597538,
-      "market_timestamp": "2026-09-28T09:30:00-04:00",
-      "p_value": 0.015010900261542547,
-      "price_a": 118.68000030517578,
-      "price_b": 98.04000091552734,
-      "signal_id": "20260928T141247Z-AEP-ETR-SHORT",
-      "workflow_run_time": "2026-09-28T14:09:26.182674+00:00"
-    },
-    {
-      "Stock A": "EXC",
-      "Stock B": "WEC",
-      "action": "LONG SPREAD",
-      "beta": 0.671971959272986,
-      "catalyst_context": "EXC: No detected catalyst\nWEC: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": -2.4267905728930232,
-      "half_life_days": 0.38619947937902077,
-      "historical_sharpe": 1.0910010080700012,
-      "market_timestamp": "2026-09-28T09:30:00-04:00",
-      "p_value": 0.0027304230526886716,
-      "price_a": 40.35499954223633,
-      "price_b": 101.8949966430664,
-      "signal_id": "20260924T162715Z-EXC-WEC-LONG",
-      "workflow_run_time": "2026-09-28T14:09:26.182674+00:00"
-    },
-    {
       "Stock A": "A",
       "Stock B": "IQV",
       "action": "SHORT SPREAD",
-      "beta": 1.321614579229714,
+      "beta": 1.3408111587286682,
       "catalyst_context": "A: No detected catalyst\nIQV: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 2.5051790650063004,
-      "half_life_days": 4.5578424098111645,
-      "historical_sharpe": 1.233255457026006,
-      "market_timestamp": "2026-09-28T09:30:00-04:00",
-      "p_value": 0.004184225750825997,
-      "price_a": 173.33999633789062,
-      "price_b": 269.2950134277344,
+      "entry_z": 2.3740821581287865,
+      "half_life_days": 4.1996364140062035,
+      "historical_sharpe": 1.2318690096981504,
+      "market_timestamp": "2026-09-28T10:30:00-04:00",
+      "p_value": 0.004211712119397826,
+      "price_a": 173.97000122070312,
+      "price_b": 269.9700012207031,
       "signal_id": "20260925T222421Z-A-IQV-SHORT",
-      "workflow_run_time": "2026-09-28T14:09:26.182674+00:00"
+      "workflow_run_time": "2026-09-28T14:56:49.586049+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-28T14:09:26.182674+00:00"
+  "workflow_run_time": "2026-09-28T14:56:49.586049+00:00"
 }
