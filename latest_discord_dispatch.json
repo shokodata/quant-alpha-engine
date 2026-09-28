@@ -10,13 +10,13 @@
       "delivery_status": "delivered",
       "entry_z": 2.6007500735002202,
       "half_life_days": 1.6924656090559462,
-      "historical_sharpe": 1.1049816857762076,
+      "historical_sharpe": 1.1049801240055435,
       "market_timestamp": "2026-09-25T15:30:00-04:00",
-      "p_value": 0.028173176253578108,
+      "p_value": 0.02817317428307563,
       "price_a": 357.0799865722656,
       "price_b": 113.87000274658203,
       "signal_id": "20260925T222407Z-RL-TPR-SHORT",
-      "workflow_run_time": "2026-09-28T00:48:39.911499+00:00"
+      "workflow_run_time": "2026-09-28T06:55:52.152391+00:00"
     },
     {
       "Stock A": "A",
@@ -28,14 +28,14 @@
       "delivery_status": "delivered",
       "entry_z": 2.3777286623808576,
       "half_life_days": 3.364196201334515,
-      "historical_sharpe": 1.178946329753689,
+      "historical_sharpe": 1.1789464930054352,
       "market_timestamp": "2026-09-25T15:30:00-04:00",
-      "p_value": 0.003994084445265231,
+      "p_value": 0.003994090410484961,
       "price_a": 172.7899932861328,
       "price_b": 269.7799987792969,
       "signal_id": "20260925T222421Z-A-IQV-SHORT",
-      "workflow_run_time": "2026-09-28T00:48:39.911499+00:00"
+      "workflow_run_time": "2026-09-28T06:55:52.152391+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-28T00:48:39.911499+00:00"
+  "workflow_run_time": "2026-09-28T06:55:52.152391+00:00"
 }
