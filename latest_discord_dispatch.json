@@ -1,41 +1,4 @@
 {
-  "alerts": [
-    {
-      "Stock A": "EXC",
-      "Stock B": "WEC",
-      "action": "LONG SPREAD",
-      "beta": 0.6896714708460094,
-      "catalyst_context": "EXC: No detected catalyst\nWEC: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": -3.592324691462701,
-      "half_life_days": 0.6670643480065752,
-      "historical_sharpe": 1.089919363038614,
-      "market_timestamp": "2026-09-29T13:30:00-04:00",
-      "p_value": 0.0030396543887321204,
-      "price_a": 40.29999923706055,
-      "price_b": 102.62000274658203,
-      "signal_id": "20260924T162715Z-EXC-WEC-LONG",
-      "workflow_run_time": "2026-09-29T18:02:16.603034+00:00"
-    },
-    {
-      "Stock A": "MSCI",
-      "Stock B": "NDAQ",
-      "action": "LONG SPREAD",
-      "beta": 2.3990044515265314,
-      "catalyst_context": "MSCI: No detected catalyst\nNDAQ: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": -2.3767868231418605,
-      "half_life_days": 0.8007330916814986,
-      "historical_sharpe": 1.9446496264669901,
-      "market_timestamp": "2026-09-29T13:30:00-04:00",
-      "p_value": 0.0005199959844832031,
-      "price_a": 536.8800048828125,
-      "price_b": 91.87000274658203,
-      "signal_id": "20260928T153213Z-MSCI-NDAQ-LONG",
-      "workflow_run_time": "2026-09-29T18:02:16.603034+00:00"
-    }
-  ],
-  "workflow_run_time": "2026-09-29T18:02:16.603034+00:00"
+  "alerts": [],
+  "workflow_run_time": "2026-09-29T20:48:29.732968+00:00"
 }
