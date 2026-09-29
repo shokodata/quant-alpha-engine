@@ -1,59 +1,41 @@
 {
   "alerts": [
     {
-      "Stock A": "AEP",
-      "Stock B": "ETR",
-      "action": "SHORT SPREAD",
-      "beta": 0.7368180848752137,
-      "catalyst_context": "AEP: No detected catalyst\nETR: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": 2.4179413402812746,
-      "half_life_days": 0.3293489475143846,
-      "historical_sharpe": 1.0038677005422048,
-      "market_timestamp": "2026-09-29T09:30:00-04:00",
-      "p_value": 0.01483843580339474,
-      "price_a": 118.57499694824219,
-      "price_b": 98.125,
-      "signal_id": "20260928T141247Z-AEP-ETR-SHORT",
-      "workflow_run_time": "2026-09-29T13:54:26.483192+00:00"
-    },
-    {
       "Stock A": "EXC",
       "Stock B": "WEC",
       "action": "LONG SPREAD",
-      "beta": 0.6840324431629546,
+      "beta": 0.6842884171139423,
       "catalyst_context": "EXC: No detected catalyst\nWEC: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": -2.3666634973454928,
-      "half_life_days": 0.3552454241565132,
-      "historical_sharpe": 1.0899183618445203,
-      "market_timestamp": "2026-09-29T09:30:00-04:00",
-      "p_value": 0.0027932593298673645,
-      "price_a": 40.34000015258789,
-      "price_b": 101.98999786376953,
+      "entry_z": -2.937245499956375,
+      "half_life_days": 0.4377318494708779,
+      "historical_sharpe": 1.0899190030928343,
+      "market_timestamp": "2026-09-29T10:30:00-04:00",
+      "p_value": 0.002902542687180946,
+      "price_a": 40.26499938964844,
+      "price_b": 102.11499786376953,
       "signal_id": "20260924T162715Z-EXC-WEC-LONG",
-      "workflow_run_time": "2026-09-29T13:54:26.483192+00:00"
+      "workflow_run_time": "2026-09-29T14:50:28.335226+00:00"
     },
     {
       "Stock A": "MSCI",
       "Stock B": "NDAQ",
       "action": "LONG SPREAD",
-      "beta": 2.4905050308761836,
+      "beta": 2.475128108512248,
       "catalyst_context": "MSCI: No detected catalyst\nNDAQ: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": -3.367857893726358,
-      "half_life_days": 0.868773123885025,
-      "historical_sharpe": 1.9446710406006114,
-      "market_timestamp": "2026-09-29T09:30:00-04:00",
-      "p_value": 0.00052646046026889,
-      "price_a": 536.280029296875,
-      "price_b": 92.77999877929688,
+      "entry_z": -2.912770571902625,
+      "half_life_days": 0.797137077949788,
+      "historical_sharpe": 1.9446571086294147,
+      "market_timestamp": "2026-09-29T10:30:00-04:00",
+      "p_value": 0.0005248725511972663,
+      "price_a": 536.2000122070312,
+      "price_b": 92.18000030517578,
       "signal_id": "20260928T153213Z-MSCI-NDAQ-LONG",
-      "workflow_run_time": "2026-09-29T13:54:26.483192+00:00"
+      "workflow_run_time": "2026-09-29T14:50:28.335226+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-29T13:54:26.483192+00:00"
+  "workflow_run_time": "2026-09-29T14:50:28.335226+00:00"
 }
