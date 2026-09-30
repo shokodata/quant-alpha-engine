@@ -1,4 +1,23 @@
 {
-  "alerts": [],
-  "workflow_run_time": "2026-09-30T13:45:12.773207+00:00"
+  "alerts": [
+    {
+      "Stock A": "AEP",
+      "Stock B": "ETR",
+      "action": "SHORT SPREAD",
+      "beta": 0.7389511025420203,
+      "catalyst_context": "AEP: No detected catalyst\nETR: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": 2.538559478505056,
+      "half_life_days": 0.34969071487416564,
+      "historical_sharpe": 1.0029063150220545,
+      "market_timestamp": "2026-09-30T09:30:00-04:00",
+      "p_value": 0.014737390088340395,
+      "price_a": 120.25,
+      "price_b": 100.29000091552734,
+      "signal_id": "20260928T141247Z-AEP-ETR-SHORT",
+      "workflow_run_time": "2026-09-30T13:56:28.535515+00:00"
+    }
+  ],
+  "workflow_run_time": "2026-09-30T13:56:28.535515+00:00"
 }
