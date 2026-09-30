@@ -4,20 +4,20 @@
       "Stock A": "PPL",
       "Stock B": "WEC",
       "action": "SHORT SPREAD",
-      "beta": 0.5479026081753928,
-      "catalyst_context": "PPL: \u26a0\ufe0f Earnings 47.1h ago: Can Improving Operating Efficiency Support PPL's Earnings Growth?\nWEC: No detected catalyst",
-      "catalyst_present": true,
+      "beta": 0.521388773353679,
+      "catalyst_context": "PPL: No detected catalyst\nWEC: No detected catalyst",
+      "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 2.3097017055182008,
-      "half_life_days": 0.3032394529011015,
-      "historical_sharpe": 1.3718298931102273,
-      "market_timestamp": "2026-09-30T10:30:00-04:00",
-      "p_value": 0.001204337218950196,
-      "price_a": 32.79499816894531,
-      "price_b": 101.91000366210938,
+      "entry_z": 3.908636957743616,
+      "half_life_days": 0.5350921769622808,
+      "historical_sharpe": 1.3718725964938652,
+      "market_timestamp": "2026-09-30T14:30:00-04:00",
+      "p_value": 0.000890217408557339,
+      "price_a": 33.05500030517578,
+      "price_b": 101.48999786376953,
       "signal_id": "20260930T143723Z-PPL-WEC-SHORT",
-      "workflow_run_time": "2026-09-30T14:34:06.099640+00:00"
+      "workflow_run_time": "2026-09-30T19:21:53.921953+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-30T14:34:06.099640+00:00"
+  "workflow_run_time": "2026-09-30T19:21:53.921953+00:00"
 }
