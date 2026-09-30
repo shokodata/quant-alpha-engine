@@ -1,23 +1,23 @@
 {
   "alerts": [
     {
-      "Stock A": "PPL",
-      "Stock B": "WEC",
-      "action": "SHORT SPREAD",
-      "beta": 0.521388773353679,
-      "catalyst_context": "PPL: No detected catalyst\nWEC: No detected catalyst",
+      "Stock A": "ACGL",
+      "Stock B": "HIG",
+      "action": "LONG SPREAD",
+      "beta": 0.16744325344372968,
+      "catalyst_context": "ACGL: No detected catalyst\nHIG: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 3.908636957743616,
-      "half_life_days": 0.5350921769622808,
-      "historical_sharpe": 1.3718725964938652,
-      "market_timestamp": "2026-09-30T14:30:00-04:00",
-      "p_value": 0.000890217408557339,
-      "price_a": 33.05500030517578,
-      "price_b": 101.48999786376953,
-      "signal_id": "20260930T143723Z-PPL-WEC-SHORT",
-      "workflow_run_time": "2026-09-30T19:21:53.921953+00:00"
+      "entry_z": -3.5280399267784293,
+      "half_life_days": 0.46856823222074234,
+      "historical_sharpe": 1.7909415847223662,
+      "market_timestamp": "2026-09-30T15:30:00-04:00",
+      "p_value": 0.001624757918772589,
+      "price_a": 92.36000061035156,
+      "price_b": 122.41999816894531,
+      "signal_id": "20260930T235348Z-ACGL-HIG-LONG",
+      "workflow_run_time": "2026-09-30T23:51:30.268801+00:00"
     }
   ],
-  "workflow_run_time": "2026-09-30T19:21:53.921953+00:00"
+  "workflow_run_time": "2026-09-30T23:51:30.268801+00:00"
 }
