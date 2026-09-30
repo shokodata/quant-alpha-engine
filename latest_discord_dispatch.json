@@ -1,23 +1,4 @@
 {
-  "alerts": [
-    {
-      "Stock A": "EXC",
-      "Stock B": "WEC",
-      "action": "LONG SPREAD",
-      "beta": 0.6892166899289759,
-      "catalyst_context": "EXC: No detected catalyst\nWEC: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": -2.519038957474636,
-      "half_life_days": 0.709562684710497,
-      "historical_sharpe": 1.090905942035852,
-      "market_timestamp": "2026-09-30T09:30:00-04:00",
-      "p_value": 0.002699807581043906,
-      "price_a": 40.7400016784668,
-      "price_b": 102.93499755859375,
-      "signal_id": "20260924T162715Z-EXC-WEC-LONG",
-      "workflow_run_time": "2026-09-30T13:33:19.960374+00:00"
-    }
-  ],
-  "workflow_run_time": "2026-09-30T13:33:19.960374+00:00"
+  "alerts": [],
+  "workflow_run_time": "2026-09-30T13:45:12.773207+00:00"
 }
