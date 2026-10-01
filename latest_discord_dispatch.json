@@ -1,41 +1,4 @@
 {
-  "alerts": [
-    {
-      "Stock A": "PPL",
-      "Stock B": "WEC",
-      "action": "SHORT SPREAD",
-      "beta": 0.49032184497505044,
-      "catalyst_context": "PPL: No detected catalyst\nWEC: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": 2.5757608932130895,
-      "half_life_days": 0.6954857623154129,
-      "historical_sharpe": 1.3709734153957693,
-      "market_timestamp": "2026-10-01T10:30:00-04:00",
-      "p_value": 0.0010435956249349719,
-      "price_a": 32.459999084472656,
-      "price_b": 100.56999969482422,
-      "signal_id": "20261001T135829Z-PPL-WEC-SHORT",
-      "workflow_run_time": "2026-10-01T14:56:15.968965+00:00"
-    },
-    {
-      "Stock A": "AFL",
-      "Stock B": "GL",
-      "action": "LONG SPREAD",
-      "beta": 0.5243896274723192,
-      "catalyst_context": "AFL: No detected catalyst\nGL: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": -2.6163387464465053,
-      "half_life_days": 0.6196521618610301,
-      "historical_sharpe": 2.1516662693972815,
-      "market_timestamp": "2026-10-01T10:30:00-04:00",
-      "p_value": 0.012302150400481368,
-      "price_a": 111.40499877929688,
-      "price_b": 166.05999755859375,
-      "signal_id": "20261001T135836Z-AFL-GL-LONG",
-      "workflow_run_time": "2026-10-01T14:56:15.968965+00:00"
-    }
-  ],
-  "workflow_run_time": "2026-10-01T14:56:15.968965+00:00"
+  "alerts": [],
+  "workflow_run_time": "2026-10-01T16:47:53.649472+00:00"
 }
