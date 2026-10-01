@@ -10,14 +10,14 @@
       "delivery_status": "delivered",
       "entry_z": -3.5280399267784293,
       "half_life_days": 0.46856823222074234,
-      "historical_sharpe": 1.7909421713032558,
+      "historical_sharpe": 1.790941921568274,
       "market_timestamp": "2026-09-30T15:30:00-04:00",
-      "p_value": 0.0016247588975671359,
+      "p_value": 0.001624760880412278,
       "price_a": 92.36000061035156,
       "price_b": 122.41999816894531,
       "signal_id": "20260930T235348Z-ACGL-HIG-LONG",
-      "workflow_run_time": "2026-10-01T05:56:20.289786+00:00"
+      "workflow_run_time": "2026-10-01T13:17:38.708074+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-01T05:56:20.289786+00:00"
+  "workflow_run_time": "2026-10-01T13:17:38.708074+00:00"
 }
