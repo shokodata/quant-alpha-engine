@@ -4,20 +4,20 @@
       "Stock A": "DUK",
       "Stock B": "SO",
       "action": "LONG SPREAD",
-      "beta": 1.232508902677538,
+      "beta": 1.2325089026775382,
       "catalyst_context": "DUK: No detected catalyst\nSO: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": -2.3534783031908053,
-      "half_life_days": 0.3750780394412995,
-      "historical_sharpe": 1.0382010246515665,
+      "entry_z": -2.3534783031908395,
+      "half_life_days": 0.3750780394413013,
+      "historical_sharpe": 1.0382010055968645,
       "market_timestamp": "2026-10-01T15:30:00-04:00",
-      "p_value": 0.04459520549515586,
+      "p_value": 0.044595541810599326,
       "price_a": 113.75,
       "price_b": 83.4749984741211,
       "signal_id": "20261001T235645Z-DUK-SO-LONG",
-      "workflow_run_time": "2026-10-01T23:53:33.770070+00:00"
+      "workflow_run_time": "2026-10-02T05:39:11.062141+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-01T23:53:33.770070+00:00"
+  "workflow_run_time": "2026-10-02T05:39:11.062141+00:00"
 }
