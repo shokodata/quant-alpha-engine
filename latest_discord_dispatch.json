@@ -10,14 +10,14 @@
       "delivery_status": "delivered",
       "entry_z": -3.790286211078785,
       "half_life_days": 1.6304606754682254,
-      "historical_sharpe": 1.2692282902565575,
+      "historical_sharpe": 1.2692273707949069,
       "market_timestamp": "2026-10-02T15:30:00-04:00",
-      "p_value": 0.021427187856455785,
+      "p_value": 0.02142731468325335,
       "price_a": 99.94999694824219,
       "price_b": 37.79999923706055,
       "signal_id": "20261002T133930Z-AEE-CNP-LONG",
-      "workflow_run_time": "2026-10-03T13:24:02.919049+00:00"
+      "workflow_run_time": "2026-10-03T17:57:40.641636+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-03T13:24:02.919049+00:00"
+  "workflow_run_time": "2026-10-03T17:57:40.641636+00:00"
 }
