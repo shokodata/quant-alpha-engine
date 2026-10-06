@@ -1,4 +1,23 @@
 {
-  "alerts": [],
-  "workflow_run_time": "2026-10-06T02:59:24.610408+00:00"
+  "alerts": [
+    {
+      "Stock A": "AEE",
+      "Stock B": "CNP",
+      "action": "LONG SPREAD",
+      "beta": 2.4032755467401996,
+      "catalyst_context": "AEE: No detected catalyst\nCNP: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": -2.5627900516738564,
+      "half_life_days": 4.57872658072867,
+      "historical_sharpe": 1.2702007317631423,
+      "market_timestamp": "2026-10-05T15:30:00-04:00",
+      "p_value": 0.022228077259862034,
+      "price_a": 99.69499969482422,
+      "price_b": 37.75,
+      "signal_id": "20261005T160432Z-AEE-CNP-LONG",
+      "workflow_run_time": "2026-10-06T10:19:57.403785+00:00"
+    }
+  ],
+  "workflow_run_time": "2026-10-06T10:19:57.403785+00:00"
 }
