@@ -1,23 +1,41 @@
 {
   "alerts": [
     {
-      "Stock A": "AEE",
-      "Stock B": "CNP",
-      "action": "LONG SPREAD",
-      "beta": 2.4032755467401996,
-      "catalyst_context": "AEE: No detected catalyst\nCNP: No detected catalyst",
+      "Stock A": "ADSK",
+      "Stock B": "INTU",
+      "action": "SHORT SPREAD",
+      "beta": 0.2582059611621483,
+      "catalyst_context": "ADSK: No detected catalyst\nINTU: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": -2.5627900516738564,
-      "half_life_days": 4.57872658072867,
-      "historical_sharpe": 1.2702007317631423,
-      "market_timestamp": "2026-10-05T15:30:00-04:00",
-      "p_value": 0.022228077259862034,
-      "price_a": 99.69499969482422,
-      "price_b": 37.75,
-      "signal_id": "20261005T160432Z-AEE-CNP-LONG",
-      "workflow_run_time": "2026-10-06T10:19:57.403785+00:00"
+      "entry_z": 2.8454175949432234,
+      "half_life_days": 1.498588467551983,
+      "historical_sharpe": 1.5594409295624028,
+      "market_timestamp": "2026-10-06T12:30:00-04:00",
+      "p_value": 0.01871986465875293,
+      "price_a": 226.23500061035156,
+      "price_b": 288.7300109863281,
+      "signal_id": "20261005T160416Z-ADSK-INTU-SHORT",
+      "workflow_run_time": "2026-10-06T17:12:09.017665+00:00"
+    },
+    {
+      "Stock A": "FTV",
+      "Stock B": "XYL",
+      "action": "SHORT SPREAD",
+      "beta": -0.05124370087689257,
+      "catalyst_context": "FTV: No detected catalyst\nXYL: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": 2.9646485801649916,
+      "half_life_days": 3.8675649825344074,
+      "historical_sharpe": 1.945490062853629,
+      "market_timestamp": "2026-10-06T12:30:00-04:00",
+      "p_value": 0.031817577925379106,
+      "price_a": 58.15999984741211,
+      "price_b": 104.68000030517578,
+      "signal_id": "20261005T160428Z-FTV-XYL-SHORT",
+      "workflow_run_time": "2026-10-06T17:12:09.017665+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-06T10:19:57.403785+00:00"
+  "workflow_run_time": "2026-10-06T17:12:09.017665+00:00"
 }
