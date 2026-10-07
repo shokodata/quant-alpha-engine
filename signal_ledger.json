@@ -11645,13 +11645,13 @@
       "entry_z_reported": -4.077705254841608,
       "half_life_days": 3.4632687107573994,
       "historical_sharpe": 1.2612870615929326,
-      "last_observed_market_timestamp": "2026-10-06T14:30:00-04:00",
-      "latest_pair_return": -0.0005090936716010632,
-      "latest_z": -2.264562126928345,
+      "last_observed_market_timestamp": "2026-10-06T15:30:00-04:00",
+      "latest_pair_return": 0.0006538779627510794,
+      "latest_z": -1.9128013602341718,
       "market_timestamp": "2026-10-05T11:30:00-04:00",
       "max_adverse_return": -0.0019904714405913613,
-      "max_favorable_return": 0.0005791968188975703,
-      "observation_count": 4,
+      "max_favorable_return": 0.0006538779627510794,
+      "observation_count": 5,
       "observations": [
         {
           "market_timestamp": "2026-10-05T14:30:00-04:00",
@@ -11684,6 +11684,14 @@
           "price_b": 38.30500030517578,
           "spread": 6.970014564262371,
           "z": -2.264562126928345
+        },
+        {
+          "market_timestamp": "2026-10-06T15:30:00-04:00",
+          "pair_return_net_est": 0.0006538779627510794,
+          "price_a": 101.66999816894531,
+          "price_b": 38.54999923706055,
+          "spread": 7.194586730405902,
+          "z": -1.9128013602341718
         }
       ],
       "pair_key": "AEE|CNP",
@@ -11694,6 +11702,39 @@
       "stock_a": "AEE",
       "stock_b": "CNP",
       "sub_industry": "Multi-Utilities"
+    },
+    {
+      "action": "SHORT SPREAD",
+      "beta": 4.024751834478389,
+      "catalyst_context": "MTD: No detected catalyst\nTMO: No detected catalyst",
+      "catalyst_present": false,
+      "cointegration_p_value": 0.00778367607270708,
+      "created_at_utc": "2026-10-07T01:37:57.198589+00:00",
+      "entry_price_a": 1532.0400390625,
+      "entry_price_b": 656.6300048828125,
+      "entry_spread": -1110.7327776631532,
+      "entry_spread_mean": -1191.0002154351616,
+      "entry_spread_std": 32.5734594377218,
+      "entry_z_recomputed": 2.4641975140980708,
+      "entry_z_reported": 2.4641975140980708,
+      "half_life_days": 2.087269755394393,
+      "historical_sharpe": 2.1239486408907684,
+      "last_observed_market_timestamp": "2026-10-06T15:30:00-04:00",
+      "latest_pair_return": 0.0,
+      "latest_z": 2.4641975140980708,
+      "market_timestamp": "2026-10-06T15:30:00-04:00",
+      "max_adverse_return": 0.0,
+      "max_favorable_return": 0.0,
+      "observation_count": 0,
+      "observations": [],
+      "pair_key": "MTD|TMO",
+      "resolution_reason": null,
+      "resolved_at_utc": null,
+      "signal_id": "20261007T013757Z-MTD-TMO-SHORT",
+      "status": "OPEN",
+      "stock_a": "MTD",
+      "stock_b": "TMO",
+      "sub_industry": "Life Sciences Tools & Services"
     }
   ]
 }
