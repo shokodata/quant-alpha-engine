@@ -4,20 +4,38 @@
       "Stock A": "AMZN",
       "Stock B": "EBAY",
       "action": "SHORT SPREAD",
-      "beta": 0.35174778507298315,
+      "beta": 0.35174778507298354,
       "catalyst_context": "AMZN: No detected catalyst\nEBAY: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
       "entry_z": 2.5059088956812823,
-      "half_life_days": 2.297094443827066,
-      "historical_sharpe": 1.6433665630586225,
+      "half_life_days": 2.297094443827017,
+      "historical_sharpe": 1.643366891455766,
       "market_timestamp": "2026-10-07T15:30:00-04:00",
-      "p_value": 0.003760852311885469,
+      "p_value": 0.0037608499110060025,
       "price_a": 259.8800048828125,
       "price_b": 107.5999984741211,
       "signal_id": "20261007T163321Z-AMZN-EBAY-SHORT",
-      "workflow_run_time": "2026-10-07T21:59:27.769525+00:00"
+      "workflow_run_time": "2026-10-08T01:57:03.824335+00:00"
+    },
+    {
+      "Stock A": "ES",
+      "Stock B": "FE",
+      "action": "LONG SPREAD",
+      "beta": 1.789911535635986,
+      "catalyst_context": "ES: No detected catalyst\nFE: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": -2.5637962586878555,
+      "half_life_days": 0.8174036055056902,
+      "historical_sharpe": 1.63034349857599,
+      "market_timestamp": "2026-10-07T15:30:00-04:00",
+      "p_value": 0.013124392881844213,
+      "price_a": 65.23999786376953,
+      "price_b": 44.56999969482422,
+      "signal_id": "20261007T163326Z-ES-FE-LONG",
+      "workflow_run_time": "2026-10-08T01:57:03.824335+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-07T21:59:27.769525+00:00"
+  "workflow_run_time": "2026-10-08T01:57:03.824335+00:00"
 }
