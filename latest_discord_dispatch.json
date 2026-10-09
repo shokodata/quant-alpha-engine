@@ -10,13 +10,13 @@
       "delivery_status": "delivered",
       "entry_z": 2.6206127962633174,
       "half_life_days": 0.8726241019976663,
-      "historical_sharpe": 1.5583825886434939,
+      "historical_sharpe": 1.5583835677456461,
       "market_timestamp": "2026-10-08T15:30:00-04:00",
-      "p_value": 0.004869415428088108,
+      "p_value": 0.0048694254390032,
       "price_a": 280.989990234375,
       "price_b": 87.80000305175781,
       "signal_id": "20261008T220812Z-CI-CVS-SHORT",
-      "workflow_run_time": "2026-10-09T02:11:22.091063+00:00"
+      "workflow_run_time": "2026-10-09T09:06:33.510272+00:00"
     },
     {
       "Stock A": "CI",
@@ -28,13 +28,13 @@
       "delivery_status": "delivered",
       "entry_z": 2.437323888496824,
       "half_life_days": 0.96480054704221,
-      "historical_sharpe": 1.2792940530730486,
+      "historical_sharpe": 1.2792943251817843,
       "market_timestamp": "2026-10-08T15:30:00-04:00",
-      "p_value": 0.012217142831200487,
+      "p_value": 0.012217165106349856,
       "price_a": 280.989990234375,
       "price_b": 176.92999267578125,
       "signal_id": "20261007T163332Z-CI-DVA-SHORT",
-      "workflow_run_time": "2026-10-09T02:11:22.091063+00:00"
+      "workflow_run_time": "2026-10-09T09:06:33.510272+00:00"
     },
     {
       "Stock A": "AFL",
@@ -46,13 +46,13 @@
       "delivery_status": "delivered",
       "entry_z": 2.384295584862904,
       "half_life_days": 1.5019827545058904,
-      "historical_sharpe": 2.1548584725406035,
+      "historical_sharpe": 2.1548596013581296,
       "market_timestamp": "2026-10-08T15:30:00-04:00",
-      "p_value": 0.012036863705780634,
+      "p_value": 0.012036910426330007,
       "price_a": 114.95999908447266,
       "price_b": 166.13999938964844,
       "signal_id": "20261008T220817Z-AFL-GL-SHORT",
-      "workflow_run_time": "2026-10-09T02:11:22.091063+00:00"
+      "workflow_run_time": "2026-10-09T09:06:33.510272+00:00"
     },
     {
       "Stock A": "AIG",
@@ -64,14 +64,14 @@
       "delivery_status": "delivered",
       "entry_z": 2.5257752010818577,
       "half_life_days": 1.034792050536687,
-      "historical_sharpe": 1.2680552814182289,
+      "historical_sharpe": 1.2680554169734453,
       "market_timestamp": "2026-10-08T15:30:00-04:00",
-      "p_value": 0.017349581416607297,
+      "p_value": 0.017349526235800886,
       "price_a": 77.0,
       "price_b": 272.8599853515625,
       "signal_id": "20261008T220821Z-AIG-AIZ-SHORT",
-      "workflow_run_time": "2026-10-09T02:11:22.091063+00:00"
+      "workflow_run_time": "2026-10-09T09:06:33.510272+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-09T02:11:22.091063+00:00"
+  "workflow_run_time": "2026-10-09T09:06:33.510272+00:00"
 }
