@@ -11877,13 +11877,13 @@
       "entry_z_reported": -4.077705254841608,
       "half_life_days": 3.4632687107573994,
       "historical_sharpe": 1.2612870615929326,
-      "last_observed_market_timestamp": "2026-10-08T14:30:00-04:00",
-      "latest_pair_return": 0.0014839114963759623,
-      "latest_z": -1.271109320662091,
+      "last_observed_market_timestamp": "2026-10-08T15:30:00-04:00",
+      "latest_pair_return": 0.0033744828311649032,
+      "latest_z": -0.8867514446576454,
       "market_timestamp": "2026-10-05T11:30:00-04:00",
       "max_adverse_return": -0.0019904714405913613,
-      "max_favorable_return": 0.002079099183638955,
-      "observation_count": 10,
+      "max_favorable_return": 0.0033744828311649032,
+      "observation_count": 11,
       "observations": [
         {
           "market_timestamp": "2026-10-05T14:30:00-04:00",
@@ -11964,6 +11964,14 @@
           "price_b": 38.505001068115234,
           "spread": 7.354867878382251,
           "z": -1.271109320662091
+        },
+        {
+          "market_timestamp": "2026-10-08T15:30:00-04:00",
+          "pair_return_net_est": 0.0033744828311649032,
+          "price_a": 101.83999633789062,
+          "price_b": 38.404998779296875,
+          "spread": 7.719941012895035,
+          "z": -0.8867514446576454
         }
       ],
       "pair_key": "AEE|CNP",
@@ -11991,13 +11999,13 @@
       "entry_z_reported": 2.4641975140980708,
       "half_life_days": 2.087269755394393,
       "historical_sharpe": 2.1239486408907684,
-      "last_observed_market_timestamp": "2026-10-08T14:30:00-04:00",
-      "latest_pair_return": -0.004895815827999851,
-      "latest_z": 2.0699637593223805,
+      "last_observed_market_timestamp": "2026-10-08T15:30:00-04:00",
+      "latest_pair_return": -0.005304479917243825,
+      "latest_z": 2.0143375916643995,
       "market_timestamp": "2026-10-06T15:30:00-04:00",
       "max_adverse_return": -0.013212483611159925,
       "max_favorable_return": 0.006506582842965498,
-      "observation_count": 5,
+      "observation_count": 6,
       "observations": [
         {
           "market_timestamp": "2026-10-07T12:30:00-04:00",
@@ -12038,6 +12046,14 @@
           "price_b": 650.7999877929688,
           "spread": -1096.1384008029513,
           "z": 2.0699637593223805
+        },
+        {
+          "market_timestamp": "2026-10-08T15:30:00-04:00",
+          "pair_return_net_est": -0.005304479917243825,
+          "price_a": 1528.739990234375,
+          "price_b": 651.760009765625,
+          "spread": -1094.4323047094767,
+          "z": 2.0143375916643995
         }
       ],
       "pair_key": "MTD|TMO",
