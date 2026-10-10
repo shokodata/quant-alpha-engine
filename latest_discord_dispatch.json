@@ -1,41 +1,59 @@
 {
   "alerts": [
     {
+      "Stock A": "FIX",
+      "Stock B": "PWR",
+      "action": "LONG SPREAD",
+      "beta": 1.9421690666514229,
+      "catalyst_context": "FIX: No detected catalyst\nPWR: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": -2.6392000897601626,
+      "half_life_days": 0.6407847447843399,
+      "historical_sharpe": 0.9898171325105938,
+      "market_timestamp": "2026-10-09T15:30:00-04:00",
+      "p_value": 0.032159512435995054,
+      "price_a": 1714.97998046875,
+      "price_b": 705.989990234375,
+      "signal_id": "20261007T163323Z-FIX-PWR-LONG",
+      "workflow_run_time": "2026-10-10T00:52:46.115894+00:00"
+    },
+    {
       "Stock A": "CI",
       "Stock B": "CVS",
       "action": "SHORT SPREAD",
-      "beta": 1.7280386125812799,
+      "beta": 1.7281334659719132,
       "catalyst_context": "CI: No detected catalyst\nCVS: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 3.0337629684704814,
-      "half_life_days": 2.3541777996164255,
-      "historical_sharpe": 1.56459545656522,
+      "entry_z": 3.0339053729808927,
+      "half_life_days": 2.352949087605469,
+      "historical_sharpe": 1.5601551288460647,
       "market_timestamp": "2026-10-09T15:30:00-04:00",
-      "p_value": 0.0034930451594090734,
+      "p_value": 0.003549466306248214,
       "price_a": 282.44000244140625,
       "price_b": 86.16999816894531,
       "signal_id": "20261008T220812Z-CI-CVS-SHORT",
-      "workflow_run_time": "2026-10-09T20:57:00.194690+00:00"
+      "workflow_run_time": "2026-10-10T00:52:46.115894+00:00"
     },
     {
       "Stock A": "CI",
       "Stock B": "LH",
       "action": "SHORT SPREAD",
-      "beta": 0.5283761894500985,
+      "beta": 0.5283527566885826,
       "catalyst_context": "CI: No detected catalyst\nLH: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 2.519819206799616,
-      "half_life_days": 1.0184002119154472,
-      "historical_sharpe": 1.3008089732935586,
+      "entry_z": 2.5197980174153374,
+      "half_life_days": 1.0183470524246536,
+      "historical_sharpe": 1.301695044184597,
       "market_timestamp": "2026-10-09T15:30:00-04:00",
-      "p_value": 0.0013505570199781967,
+      "p_value": 0.0013568001963142153,
       "price_a": 282.44000244140625,
       "price_b": 312.3900146484375,
       "signal_id": "20261009T161725Z-CI-LH-SHORT",
-      "workflow_run_time": "2026-10-09T20:57:00.194690+00:00"
+      "workflow_run_time": "2026-10-10T00:52:46.115894+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-09T20:57:00.194690+00:00"
+  "workflow_run_time": "2026-10-10T00:52:46.115894+00:00"
 }
