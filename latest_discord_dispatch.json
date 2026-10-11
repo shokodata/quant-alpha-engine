@@ -10,13 +10,13 @@
       "delivery_status": "delivered",
       "entry_z": 3.0337629684704814,
       "half_life_days": 2.3541777996164255,
-      "historical_sharpe": 1.5645943846420605,
+      "historical_sharpe": 1.5645952357772328,
       "market_timestamp": "2026-10-09T15:30:00-04:00",
-      "p_value": 0.0034930308227464875,
+      "p_value": 0.0034930463929466367,
       "price_a": 282.44000244140625,
       "price_b": 86.16999816894531,
       "signal_id": "20261008T220812Z-CI-CVS-SHORT",
-      "workflow_run_time": "2026-10-11T08:53:20.601302+00:00"
+      "workflow_run_time": "2026-10-11T15:42:38.540884+00:00"
     },
     {
       "Stock A": "CI",
@@ -28,14 +28,14 @@
       "delivery_status": "delivered",
       "entry_z": 2.519819206799616,
       "half_life_days": 1.0184002119154472,
-      "historical_sharpe": 1.300807564143068,
+      "historical_sharpe": 1.3008090876385887,
       "market_timestamp": "2026-10-09T15:30:00-04:00",
-      "p_value": 0.0013505606836759494,
+      "p_value": 0.0013505541162532845,
       "price_a": 282.44000244140625,
       "price_b": 312.3900146484375,
       "signal_id": "20261009T161725Z-CI-LH-SHORT",
-      "workflow_run_time": "2026-10-11T08:53:20.601302+00:00"
+      "workflow_run_time": "2026-10-11T15:42:38.540884+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-11T08:53:20.601302+00:00"
+  "workflow_run_time": "2026-10-11T15:42:38.540884+00:00"
 }
