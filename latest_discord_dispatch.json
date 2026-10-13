@@ -1,23 +1,59 @@
 {
   "alerts": [
     {
+      "Stock A": "BEN",
+      "Stock B": "NTRS",
+      "action": "LONG SPREAD",
+      "beta": 0.11549699731785872,
+      "catalyst_context": "BEN: No detected catalyst\nNTRS: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": -3.0921011056846788,
+      "half_life_days": 1.5367874638860193,
+      "historical_sharpe": 1.0238995599250582,
+      "market_timestamp": "2026-10-13T11:30:00-04:00",
+      "p_value": 0.012605088714592422,
+      "price_a": 30.96500015258789,
+      "price_b": 167.49000549316406,
+      "signal_id": "20261013T160413Z-BEN-NTRS-LONG",
+      "workflow_run_time": "2026-10-13T16:00:22.778186+00:00"
+    },
+    {
+      "Stock A": "BF-B",
+      "Stock B": "STZ",
+      "action": "SHORT SPREAD",
+      "beta": 0.04763120327247994,
+      "catalyst_context": "BF-B: No detected catalyst\nSTZ: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": 2.3052131785270293,
+      "half_life_days": 0.39189238258480413,
+      "historical_sharpe": 1.1379244210159285,
+      "market_timestamp": "2026-10-13T11:30:00-04:00",
+      "p_value": 0.024923279228961384,
+      "price_a": 27.18000030517578,
+      "price_b": 127.29000091552734,
+      "signal_id": "20261013T160417Z-BF-B-STZ-SHORT",
+      "workflow_run_time": "2026-10-13T16:00:22.778186+00:00"
+    },
+    {
       "Stock A": "AIG",
       "Stock B": "AIZ",
       "action": "SHORT SPREAD",
-      "beta": 0.048542243903845594,
+      "beta": 0.05496345808215733,
       "catalyst_context": "AIG: No detected catalyst\nAIZ: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 2.3118748761321624,
-      "half_life_days": 3.2563553751907626,
-      "historical_sharpe": 1.2703819993265075,
-      "market_timestamp": "2026-10-12T15:30:00-04:00",
-      "p_value": 0.021565532786956797,
-      "price_a": 77.69000244140625,
-      "price_b": 268.6300048828125,
+      "entry_z": 2.4172973817503904,
+      "half_life_days": 4.784497121776729,
+      "historical_sharpe": 1.268720415879349,
+      "market_timestamp": "2026-10-13T11:30:00-04:00",
+      "p_value": 0.021967827377951624,
+      "price_a": 78.12999725341797,
+      "price_b": 270.0400085449219,
       "signal_id": "20261008T220821Z-AIG-AIZ-SHORT",
-      "workflow_run_time": "2026-10-13T07:43:40.312011+00:00"
+      "workflow_run_time": "2026-10-13T16:00:22.778186+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-13T07:43:40.312011+00:00"
+  "workflow_run_time": "2026-10-13T16:00:22.778186+00:00"
 }
