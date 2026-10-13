@@ -10,14 +10,14 @@
       "delivery_status": "delivered",
       "entry_z": 2.3118748761321624,
       "half_life_days": 3.2563553751907626,
-      "historical_sharpe": 1.2703826269824798,
+      "historical_sharpe": 1.2703819993265075,
       "market_timestamp": "2026-10-12T15:30:00-04:00",
-      "p_value": 0.021565505010970484,
+      "p_value": 0.021565532786956797,
       "price_a": 77.69000244140625,
       "price_b": 268.6300048828125,
       "signal_id": "20261008T220821Z-AIG-AIZ-SHORT",
-      "workflow_run_time": "2026-10-13T00:41:43.568413+00:00"
+      "workflow_run_time": "2026-10-13T07:43:40.312011+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-13T00:41:43.568413+00:00"
+  "workflow_run_time": "2026-10-13T07:43:40.312011+00:00"
 }
