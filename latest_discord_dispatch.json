@@ -1,4 +1,23 @@
 {
-  "alerts": [],
-  "workflow_run_time": "2026-10-14T06:09:38.623344+00:00"
+  "alerts": [
+    {
+      "Stock A": "MTD",
+      "Stock B": "TMO",
+      "action": "SHORT SPREAD",
+      "beta": 1.0066661603815852,
+      "catalyst_context": "MTD: No detected catalyst\nTMO: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": 2.3180937900062,
+      "half_life_days": 2.7151094848496338,
+      "historical_sharpe": 2.058986459579756,
+      "market_timestamp": "2026-10-13T15:30:00-04:00",
+      "p_value": 0.012175740081856018,
+      "price_a": 1598.81005859375,
+      "price_b": 663.3400268554688,
+      "signal_id": "20261007T013757Z-MTD-TMO-SHORT",
+      "workflow_run_time": "2026-10-14T11:54:27.820871+00:00"
+    }
+  ],
+  "workflow_run_time": "2026-10-14T11:54:27.820871+00:00"
 }
