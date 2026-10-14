@@ -10,13 +10,13 @@
       "delivery_status": "delivered",
       "entry_z": 3.805822930045603,
       "half_life_days": 3.0155773829792247,
-      "historical_sharpe": 1.1410098780461975,
+      "historical_sharpe": 1.141009952724128,
       "market_timestamp": "2026-10-14T15:30:00-04:00",
-      "p_value": 0.026072862416620005,
+      "p_value": 0.02607291129814507,
       "price_a": 28.28499984741211,
       "price_b": 127.47000122070312,
       "signal_id": "20261014T204526Z-BF-B-STZ-SHORT",
-      "workflow_run_time": "2026-10-14T20:42:35.285125+00:00"
+      "workflow_run_time": "2026-10-14T23:55:34.430097+00:00"
     },
     {
       "Stock A": "CI",
@@ -28,13 +28,13 @@
       "delivery_status": "delivered",
       "entry_z": 2.354661519209954,
       "half_life_days": 4.539679585831046,
-      "historical_sharpe": 1.2787256218248888,
+      "historical_sharpe": 1.2787240455960063,
       "market_timestamp": "2026-10-14T15:30:00-04:00",
-      "p_value": 0.007091391842691093,
+      "p_value": 0.007091363741180099,
       "price_a": 289.5450134277344,
       "price_b": 180.61000061035156,
       "signal_id": "20261007T163332Z-CI-DVA-SHORT",
-      "workflow_run_time": "2026-10-14T20:42:35.285125+00:00"
+      "workflow_run_time": "2026-10-14T23:55:34.430097+00:00"
     },
     {
       "Stock A": "CI",
@@ -46,14 +46,14 @@
       "delivery_status": "delivered",
       "entry_z": 2.5222986315670743,
       "half_life_days": 3.122854546177875,
-      "historical_sharpe": 1.4086886242549916,
+      "historical_sharpe": 1.408687810505146,
       "market_timestamp": "2026-10-14T15:30:00-04:00",
-      "p_value": 0.0009108747166495683,
+      "p_value": 0.0009108655425663206,
       "price_a": 289.5450134277344,
       "price_b": 233.42999267578125,
       "signal_id": "20261014T171510Z-CI-DGX-SHORT",
-      "workflow_run_time": "2026-10-14T20:42:35.285125+00:00"
+      "workflow_run_time": "2026-10-14T23:55:34.430097+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-14T20:42:35.285125+00:00"
+  "workflow_run_time": "2026-10-14T23:55:34.430097+00:00"
 }
