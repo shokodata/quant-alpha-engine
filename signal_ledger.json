@@ -12335,13 +12335,13 @@
       "entry_z_reported": 2.4641975140980708,
       "half_life_days": 2.087269755394393,
       "historical_sharpe": 2.1239486408907684,
-      "last_observed_market_timestamp": "2026-10-14T14:30:00-04:00",
-      "latest_pair_return": -0.0016282875485672515,
-      "latest_z": 0.8538033223502285,
+      "last_observed_market_timestamp": "2026-10-14T15:30:00-04:00",
+      "latest_pair_return": -0.0038737342566881492,
+      "latest_z": 1.046418218080747,
       "market_timestamp": "2026-10-06T15:30:00-04:00",
       "max_adverse_return": -0.013212483611159925,
       "max_favorable_return": 0.006506582842965498,
-      "observation_count": 19,
+      "observation_count": 20,
       "observations": [
         {
           "market_timestamp": "2026-10-07T12:30:00-04:00",
@@ -12494,6 +12494,14 @@
           "price_b": 676.7050170898438,
           "spread": -1109.779719870578,
           "z": 0.8538033223502285
+        },
+        {
+          "market_timestamp": "2026-10-14T15:30:00-04:00",
+          "pair_return_net_est": -0.0038737342566881492,
+          "price_a": 1609.4599609375,
+          "price_b": 673.2999877929688,
+          "spread": -1100.4054000865276,
+          "z": 1.046418218080747
         }
       ],
       "pair_key": "MTD|TMO",
