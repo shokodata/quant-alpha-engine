@@ -1,4 +1,41 @@
 {
-  "alerts": [],
-  "workflow_run_time": "2026-10-16T17:25:28.231947+00:00"
+  "alerts": [
+    {
+      "Stock A": "GD",
+      "Stock B": "GE",
+      "action": "SHORT SPREAD",
+      "beta": 0.45210013111998154,
+      "catalyst_context": "GD: No detected catalyst\nGE: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": 3.1360149238728625,
+      "half_life_days": 1.6989742281389422,
+      "historical_sharpe": 2.7071957425804625,
+      "market_timestamp": "2026-10-16T15:30:00-04:00",
+      "p_value": 0.002749183280061812,
+      "price_a": 344.239990234375,
+      "price_b": 313.9599914550781,
+      "signal_id": "20261016T211202Z-GD-GE-SHORT",
+      "workflow_run_time": "2026-10-16T21:10:12.260479+00:00"
+    },
+    {
+      "Stock A": "CI",
+      "Stock B": "LH",
+      "action": "SHORT SPREAD",
+      "beta": 1.9059784735827043,
+      "catalyst_context": "CI: No detected catalyst\nLH: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": 3.9128015507567353,
+      "half_life_days": 0.3079459863425017,
+      "historical_sharpe": 1.294103259663898,
+      "market_timestamp": "2026-10-16T15:30:00-04:00",
+      "p_value": 0.0036733807236473343,
+      "price_a": 302.5199890136719,
+      "price_b": 317.8399963378906,
+      "signal_id": "20261009T161725Z-CI-LH-SHORT",
+      "workflow_run_time": "2026-10-16T21:10:12.260479+00:00"
+    }
+  ],
+  "workflow_run_time": "2026-10-16T21:10:12.260479+00:00"
 }
