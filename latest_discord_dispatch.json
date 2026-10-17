@@ -4,20 +4,20 @@
       "Stock A": "GD",
       "Stock B": "GE",
       "action": "SHORT SPREAD",
-      "beta": 0.4520973533765632,
+      "beta": 0.45210013111998154,
       "catalyst_context": "GD: No detected catalyst\nGE: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 3.136001582284251,
-      "half_life_days": 1.6985619703291572,
-      "historical_sharpe": 2.7071917929154115,
+      "entry_z": 3.1360149238728625,
+      "half_life_days": 1.6989742281389386,
+      "historical_sharpe": 2.7071926588120907,
       "market_timestamp": "2026-10-16T15:30:00-04:00",
-      "p_value": 0.002749188511703538,
+      "p_value": 0.002749209429122674,
       "price_a": 344.239990234375,
       "price_b": 313.9599914550781,
       "signal_id": "20261016T211202Z-GD-GE-SHORT",
-      "workflow_run_time": "2026-10-16T23:36:49.983269+00:00"
+      "workflow_run_time": "2026-10-17T04:28:29.050600+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-16T23:36:49.983269+00:00"
+  "workflow_run_time": "2026-10-17T04:28:29.050600+00:00"
 }
