@@ -10,14 +10,14 @@
       "delivery_status": "delivered",
       "entry_z": 3.136001582284251,
       "half_life_days": 1.6985619703291572,
-      "historical_sharpe": 2.7071940199193145,
+      "historical_sharpe": 2.707192898037947,
       "market_timestamp": "2026-10-16T15:30:00-04:00",
-      "p_value": 0.002749185951763482,
+      "p_value": 0.002749191050262952,
       "price_a": 344.239990234375,
       "price_b": 313.9599914550781,
       "signal_id": "20261016T211202Z-GD-GE-SHORT",
-      "workflow_run_time": "2026-10-17T13:44:20.852462+00:00"
+      "workflow_run_time": "2026-10-17T17:11:56.001670+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-17T13:44:20.852462+00:00"
+  "workflow_run_time": "2026-10-17T17:11:56.001670+00:00"
 }
