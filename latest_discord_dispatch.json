@@ -4,38 +4,38 @@
       "Stock A": "GD",
       "Stock B": "GE",
       "action": "SHORT SPREAD",
-      "beta": 0.15135195767663312,
+      "beta": 0.15135475664549908,
       "catalyst_context": "GD: No detected catalyst\nGE: \u26a0\ufe0f Earnings scheduled today",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": 2.567216756275456,
-      "half_life_days": 4.32533871263194,
-      "historical_sharpe": 2.774419485010861,
+      "entry_z": 2.5672222650859755,
+      "half_life_days": 4.3248761077505415,
+      "historical_sharpe": 2.774421990019327,
       "market_timestamp": "2026-10-20T15:30:00-04:00",
-      "p_value": 0.00741096807887546,
+      "p_value": 0.007410999712231323,
       "price_a": 344.4750061035156,
       "price_b": 299.92999267578125,
       "signal_id": "20261016T211202Z-GD-GE-SHORT",
-      "workflow_run_time": "2026-10-20T20:36:27.523266+00:00"
+      "workflow_run_time": "2026-10-20T23:53:54.150543+00:00"
     },
     {
       "Stock A": "FTV",
       "Stock B": "IEX",
       "action": "SHORT SPREAD",
-      "beta": 0.2992142425931862,
+      "beta": 0.2992246474373681,
       "catalyst_context": "FTV: No detected catalyst\nIEX: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 2.8115802971364894,
-      "half_life_days": 0.886474314139348,
-      "historical_sharpe": 0.9328853293034741,
+      "entry_z": 2.8117127365425896,
+      "half_life_days": 0.8863913749587937,
+      "historical_sharpe": 0.9328846449966036,
       "market_timestamp": "2026-10-20T15:30:00-04:00",
-      "p_value": 0.0345756067874824,
+      "p_value": 0.03457574235424341,
       "price_a": 58.380001068115234,
       "price_b": 233.1300048828125,
       "signal_id": "20261020T171146Z-FTV-IEX-SHORT",
-      "workflow_run_time": "2026-10-20T20:36:27.523266+00:00"
+      "workflow_run_time": "2026-10-20T23:53:54.150543+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-20T20:36:27.523266+00:00"
+  "workflow_run_time": "2026-10-20T23:53:54.150543+00:00"
 }
