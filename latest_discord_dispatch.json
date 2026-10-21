@@ -2,40 +2,22 @@
   "alerts": [
     {
       "Stock A": "GD",
-      "Stock B": "GE",
-      "action": "SHORT SPREAD",
-      "beta": 0.08280113542333745,
-      "catalyst_context": "GD: No detected catalyst\nGE: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": 2.6423536474950495,
-      "half_life_days": 4.8915153495723676,
-      "historical_sharpe": 2.771524048760062,
-      "market_timestamp": "2026-10-21T10:30:00-04:00",
-      "p_value": 0.00722702255525571,
-      "price_a": 346.45001220703125,
-      "price_b": 301.885009765625,
-      "signal_id": "20261016T211202Z-GD-GE-SHORT",
-      "workflow_run_time": "2026-10-21T15:16:25.221719+00:00"
-    },
-    {
-      "Stock A": "GD",
       "Stock B": "RTX",
       "action": "SHORT SPREAD",
-      "beta": 1.383616554589097,
+      "beta": 1.4548571977777232,
       "catalyst_context": "GD: No detected catalyst\nRTX: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 2.729949112906602,
-      "half_life_days": 0.6735114625722678,
-      "historical_sharpe": 0.6990857574201786,
-      "market_timestamp": "2026-10-21T10:30:00-04:00",
-      "p_value": 0.019899720752646243,
-      "price_a": 346.45001220703125,
-      "price_b": 191.6649932861328,
+      "entry_z": 2.5989333303149764,
+      "half_life_days": 0.856458777453063,
+      "historical_sharpe": 0.7112378056939016,
+      "market_timestamp": "2026-10-21T14:30:00-04:00",
+      "p_value": 0.019550964298514634,
+      "price_a": 345.0799865722656,
+      "price_b": 189.97999572753906,
       "signal_id": "20261021T151947Z-GD-RTX-SHORT",
-      "workflow_run_time": "2026-10-21T15:16:25.221719+00:00"
+      "workflow_run_time": "2026-10-21T19:21:06.532512+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-21T15:16:25.221719+00:00"
+  "workflow_run_time": "2026-10-21T19:21:06.532512+00:00"
 }
