@@ -1,23 +1,4 @@
 {
-  "alerts": [
-    {
-      "Stock A": "GD",
-      "Stock B": "RTX",
-      "action": "SHORT SPREAD",
-      "beta": 1.4548571977777232,
-      "catalyst_context": "GD: No detected catalyst\nRTX: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": 2.5989333303149764,
-      "half_life_days": 0.856458777453063,
-      "historical_sharpe": 0.7112378056939016,
-      "market_timestamp": "2026-10-21T14:30:00-04:00",
-      "p_value": 0.019550964298514634,
-      "price_a": 345.0799865722656,
-      "price_b": 189.97999572753906,
-      "signal_id": "20261021T151947Z-GD-RTX-SHORT",
-      "workflow_run_time": "2026-10-21T19:21:06.532512+00:00"
-    }
-  ],
-  "workflow_run_time": "2026-10-21T19:21:06.532512+00:00"
+  "alerts": [],
+  "workflow_run_time": "2026-10-21T23:21:04.099687+00:00"
 }
