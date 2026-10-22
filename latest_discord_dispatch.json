@@ -4,20 +4,20 @@
       "Stock A": "DUK",
       "Stock B": "SO",
       "action": "SHORT SPREAD",
-      "beta": 1.0196536230311324,
+      "beta": 1.0196224900210638,
       "catalyst_context": "DUK: No detected catalyst\nSO: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 2.8828124893155986,
-      "half_life_days": 0.826567168521214,
-      "historical_sharpe": 1.1473513494166305,
+      "entry_z": 2.859226221698386,
+      "half_life_days": 0.8249033578907082,
+      "historical_sharpe": 1.147358685631222,
       "market_timestamp": "2026-10-22T15:30:00-04:00",
-      "p_value": 0.04982584744257204,
-      "price_a": 125.4198989868164,
+      "p_value": 0.04976536550666333,
+      "price_a": 125.41000366210938,
       "price_b": 93.80999755859375,
       "signal_id": "20261022T201121Z-DUK-SO-SHORT",
-      "workflow_run_time": "2026-10-22T20:07:52.393314+00:00"
+      "workflow_run_time": "2026-10-22T23:23:23.678614+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-22T20:07:52.393314+00:00"
+  "workflow_run_time": "2026-10-22T23:23:23.678614+00:00"
 }
