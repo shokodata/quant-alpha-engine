@@ -1,23 +1,23 @@
 {
   "alerts": [
     {
-      "Stock A": "DUK",
-      "Stock B": "SO",
+      "Stock A": "GD",
+      "Stock B": "RTX",
       "action": "SHORT SPREAD",
-      "beta": 1.019622490021063,
-      "catalyst_context": "DUK: No detected catalyst\nSO: No detected catalyst",
+      "beta": 1.6004281335862363,
+      "catalyst_context": "GD: No detected catalyst\nRTX: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 2.859226221698408,
-      "half_life_days": 0.8249033578907135,
-      "historical_sharpe": 1.1473567242168612,
-      "market_timestamp": "2026-10-22T15:30:00-04:00",
-      "p_value": 0.04976547066679046,
-      "price_a": 125.41000366210938,
-      "price_b": 93.80999755859375,
-      "signal_id": "20261022T201121Z-DUK-SO-SHORT",
-      "workflow_run_time": "2026-10-23T10:05:15.133735+00:00"
+      "entry_z": 2.3064020303592643,
+      "half_life_days": 0.6422184109346467,
+      "historical_sharpe": 0.720098556685812,
+      "market_timestamp": "2026-10-23T10:30:00-04:00",
+      "p_value": 0.025546273914791147,
+      "price_a": 348.6099853515625,
+      "price_b": 191.77499389648438,
+      "signal_id": "20261021T151947Z-GD-RTX-SHORT",
+      "workflow_run_time": "2026-10-23T15:05:22.678119+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-23T10:05:15.133735+00:00"
+  "workflow_run_time": "2026-10-23T15:05:22.678119+00:00"
 }
