@@ -10,13 +10,13 @@
       "delivery_status": "delivered",
       "entry_z": 2.5665363398213277,
       "half_life_days": 0.8082096196330486,
-      "historical_sharpe": 0.7743593024510266,
+      "historical_sharpe": 0.7743577089391981,
       "market_timestamp": "2026-10-23T15:30:00-04:00",
-      "p_value": 0.025219882213554982,
+      "p_value": 0.02521984714734072,
       "price_a": 349.3900146484375,
       "price_b": 191.02999877929688,
       "signal_id": "20261021T151947Z-GD-RTX-SHORT",
-      "workflow_run_time": "2026-10-24T20:51:23.286397+00:00"
+      "workflow_run_time": "2026-10-24T23:16:31.134554+00:00"
     },
     {
       "Stock A": "DUK",
@@ -28,13 +28,13 @@
       "delivery_status": "delivered",
       "entry_z": 3.0020991334402924,
       "half_life_days": 0.8456567391521351,
-      "historical_sharpe": 1.1471965454484656,
+      "historical_sharpe": 1.147199113759505,
       "market_timestamp": "2026-10-23T15:30:00-04:00",
-      "p_value": 0.04335396789680504,
+      "p_value": 0.043354044732559834,
       "price_a": 124.95999908447266,
       "price_b": 92.9000015258789,
       "signal_id": "20261022T201121Z-DUK-SO-SHORT",
-      "workflow_run_time": "2026-10-24T20:51:23.286397+00:00"
+      "workflow_run_time": "2026-10-24T23:16:31.134554+00:00"
     },
     {
       "Stock A": "ACGL",
@@ -46,14 +46,14 @@
       "delivery_status": "delivered",
       "entry_z": 2.396786218299107,
       "half_life_days": 1.279402159641807,
-      "historical_sharpe": 1.4365180711301448,
+      "historical_sharpe": 1.4365183621739026,
       "market_timestamp": "2026-10-23T15:30:00-04:00",
-      "p_value": 0.0006769195003153763,
+      "p_value": 0.0006769217068186666,
       "price_a": 101.69000244140625,
       "price_b": 355.1300048828125,
       "signal_id": "20261015T150611Z-ACGL-CB-SHORT",
-      "workflow_run_time": "2026-10-24T20:51:23.286397+00:00"
+      "workflow_run_time": "2026-10-24T23:16:31.134554+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-24T20:51:23.286397+00:00"
+  "workflow_run_time": "2026-10-24T23:16:31.134554+00:00"
 }
