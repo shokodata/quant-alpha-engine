@@ -10,13 +10,13 @@
       "delivery_status": "delivered",
       "entry_z": 2.5665363398213277,
       "half_life_days": 0.8082096196330486,
-      "historical_sharpe": 0.7743593455362662,
+      "historical_sharpe": 0.7743581138546319,
       "market_timestamp": "2026-10-23T15:30:00-04:00",
-      "p_value": 0.02521991454239343,
+      "p_value": 0.02521989017049372,
       "price_a": 349.3900146484375,
       "price_b": 191.02999877929688,
       "signal_id": "20261021T151947Z-GD-RTX-SHORT",
-      "workflow_run_time": "2026-10-25T06:15:03.059797+00:00"
+      "workflow_run_time": "2026-10-25T11:39:26.180667+00:00"
     },
     {
       "Stock A": "DUK",
@@ -28,32 +28,32 @@
       "delivery_status": "delivered",
       "entry_z": 3.0020991334402924,
       "half_life_days": 0.8456567391521351,
-      "historical_sharpe": 1.1472012032939802,
+      "historical_sharpe": 1.147198129176367,
       "market_timestamp": "2026-10-23T15:30:00-04:00",
-      "p_value": 0.04335441321613575,
+      "p_value": 0.043354078442719025,
       "price_a": 124.95999908447266,
       "price_b": 92.9000015258789,
       "signal_id": "20261022T201121Z-DUK-SO-SHORT",
-      "workflow_run_time": "2026-10-25T06:15:03.059797+00:00"
+      "workflow_run_time": "2026-10-25T11:39:26.180667+00:00"
     },
     {
       "Stock A": "ACGL",
       "Stock B": "CB",
       "action": "SHORT SPREAD",
       "beta": 0.27998996306561236,
-      "catalyst_context": "ACGL: \u26a0\ufe0f Earnings in 41.7h\nCB: No detected catalyst",
+      "catalyst_context": "ACGL: \u26a0\ufe0f Earnings in 36.3h\nCB: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
       "entry_z": 2.396786218299107,
       "half_life_days": 1.279402159641807,
-      "historical_sharpe": 1.4365187371426906,
+      "historical_sharpe": 1.436518396719115,
       "market_timestamp": "2026-10-23T15:30:00-04:00",
-      "p_value": 0.0006769221483422618,
+      "p_value": 0.0006769206003743253,
       "price_a": 101.69000244140625,
       "price_b": 355.1300048828125,
       "signal_id": "20261015T150611Z-ACGL-CB-SHORT",
-      "workflow_run_time": "2026-10-25T06:15:03.059797+00:00"
+      "workflow_run_time": "2026-10-25T11:39:26.180667+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-25T06:15:03.059797+00:00"
+  "workflow_run_time": "2026-10-25T11:39:26.180667+00:00"
 }
