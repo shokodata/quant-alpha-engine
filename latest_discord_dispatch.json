@@ -10,31 +10,31 @@
       "delivery_status": "delivered",
       "entry_z": -2.997043101480541,
       "half_life_days": 1.5567776497725798,
-      "historical_sharpe": 0.9952214134564331,
+      "historical_sharpe": 1.0191460814622928,
       "market_timestamp": "2026-10-27T15:30:00-04:00",
-      "p_value": 0.021378751010225044,
+      "p_value": 0.016253884327177285,
       "price_a": 298.25,
       "price_b": 331.3900146484375,
       "signal_id": "20261023T191738Z-CI-LH-LONG",
-      "workflow_run_time": "2026-10-28T01:23:43.859796+00:00"
+      "workflow_run_time": "2026-10-28T08:34:44.125003+00:00"
     },
     {
       "Stock A": "FTV",
       "Stock B": "IEX",
       "action": "SHORT SPREAD",
-      "beta": -0.16290005216792688,
+      "beta": -0.1629081625283502,
       "catalyst_context": "FTV: \u26a0\ufe0f Earnings scheduled today\nIEX: \u26a0\ufe0f Earnings scheduled today",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": 2.7599045987420845,
-      "half_life_days": 3.1867177475185278,
-      "historical_sharpe": 1.1897546137239268,
+      "entry_z": 2.760019408480642,
+      "half_life_days": 3.187128541126642,
+      "historical_sharpe": 1.1885903527160777,
       "market_timestamp": "2026-10-27T15:30:00-04:00",
-      "p_value": 0.02546593919248573,
+      "p_value": 0.025398491592859583,
       "price_a": 61.61000061035156,
       "price_b": 233.14999389648438,
       "signal_id": "20261022T152034Z-FTV-IEX-SHORT",
-      "workflow_run_time": "2026-10-28T01:23:43.859796+00:00"
+      "workflow_run_time": "2026-10-28T08:34:44.125003+00:00"
     },
     {
       "Stock A": "AEE",
@@ -46,14 +46,32 @@
       "delivery_status": "delivered",
       "entry_z": -2.922864128373624,
       "half_life_days": 1.1860195699597136,
-      "historical_sharpe": 1.2651332817454441,
+      "historical_sharpe": 1.2641007572649343,
       "market_timestamp": "2026-10-27T15:30:00-04:00",
-      "p_value": 0.025489567571002774,
+      "p_value": 0.022632432824469546,
       "price_a": 108.7300033569336,
       "price_b": 41.96500015258789,
       "signal_id": "20261027T212343Z-AEE-CNP-LONG",
-      "workflow_run_time": "2026-10-28T01:23:43.859796+00:00"
+      "workflow_run_time": "2026-10-28T08:34:44.125003+00:00"
+    },
+    {
+      "Stock A": "ACGL",
+      "Stock B": "CINF",
+      "action": "LONG SPREAD",
+      "beta": 0.4284471511126911,
+      "catalyst_context": "ACGL: No detected catalyst\nCINF: No detected catalyst",
+      "catalyst_present": false,
+      "delivery_status": "delivered",
+      "entry_z": -2.6728827499635615,
+      "half_life_days": 3.0945214680035207,
+      "historical_sharpe": 1.1407800118243188,
+      "market_timestamp": "2026-10-27T15:30:00-04:00",
+      "p_value": 0.0006213822093929509,
+      "price_a": 100.33499908447266,
+      "price_b": 181.46499633789062,
+      "signal_id": "20261027T164348Z-ACGL-CINF-LONG",
+      "workflow_run_time": "2026-10-28T08:34:44.125003+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-28T01:23:43.859796+00:00"
+  "workflow_run_time": "2026-10-28T08:34:44.125003+00:00"
 }
