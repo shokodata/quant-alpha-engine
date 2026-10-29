@@ -16927,13 +16927,13 @@
       "entry_z_reported": -2.7950244452014132,
       "half_life_days": 1.2748098318130243,
       "historical_sharpe": 1.2640972462601099,
-      "last_observed_market_timestamp": "2026-10-28T14:30:00-04:00",
-      "latest_pair_return": -0.0015099848885365907,
-      "latest_z": -2.3933497896487568,
+      "last_observed_market_timestamp": "2026-10-28T15:30:00-04:00",
+      "latest_pair_return": -0.000664586456798666,
+      "latest_z": -1.9433574130137994,
       "market_timestamp": "2026-10-27T15:30:00-04:00",
       "max_adverse_return": -0.0023800555646982416,
       "max_favorable_return": 0.0,
-      "observation_count": 3,
+      "observation_count": 4,
       "observations": [
         {
           "market_timestamp": "2026-10-28T11:30:00-04:00",
@@ -16958,6 +16958,14 @@
           "price_b": 41.755001068115234,
           "spread": 6.432376368103306,
           "z": -2.3933497896487568
+        },
+        {
+          "market_timestamp": "2026-10-28T15:30:00-04:00",
+          "pair_return_net_est": -0.000664586456798666,
+          "price_a": 108.0199966430664,
+          "price_b": 41.61000061035156,
+          "spread": 6.610759176437682,
+          "z": -1.9433574130137994
         }
       ],
       "pair_key": "AEE|CNP",
@@ -17027,13 +17035,13 @@
       "entry_z_reported": 2.558464205405092,
       "half_life_days": 0.5677750330932764,
       "historical_sharpe": 1.6277490938032253,
-      "last_observed_market_timestamp": "2026-10-28T14:30:00-04:00",
-      "latest_pair_return": 0.002854049235194718,
-      "latest_z": 1.268797963833126,
+      "last_observed_market_timestamp": "2026-10-28T15:30:00-04:00",
+      "latest_pair_return": -8.218811761681578e-05,
+      "latest_z": 1.9606630407288912,
       "market_timestamp": "2026-10-28T11:30:00-04:00",
-      "max_adverse_return": 0.0,
+      "max_adverse_return": -8.218811761681578e-05,
       "max_favorable_return": 0.002854049235194718,
-      "observation_count": 1,
+      "observation_count": 2,
       "observations": [
         {
           "market_timestamp": "2026-10-28T14:30:00-04:00",
@@ -17042,6 +17050,14 @@
           "price_b": 250.2324981689453,
           "spread": 39.857375646777335,
           "z": 1.268797963833126
+        },
+        {
+          "market_timestamp": "2026-10-28T15:30:00-04:00",
+          "pair_return_net_est": -8.218811761681578e-05,
+          "price_a": 102.5,
+          "price_b": 250.25,
+          "spread": 40.3430264142409,
+          "z": 1.9606630407288912
         }
       ],
       "pair_key": "ACGL|ALL",
