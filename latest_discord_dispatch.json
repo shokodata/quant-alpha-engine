@@ -10,32 +10,32 @@
       "delivery_status": "delivered",
       "entry_z": 2.583037689834616,
       "half_life_days": 2.3003878637048425,
-      "historical_sharpe": 1.9560655049602962,
+      "historical_sharpe": 1.9560653292194674,
       "market_timestamp": "2026-10-30T15:30:00-04:00",
-      "p_value": 0.027700571535845656,
+      "p_value": 0.02770052278988041,
       "price_a": 91.94999694824219,
       "price_b": 291.4100036621094,
       "signal_id": "20261027T164340Z-EW-SYK-SHORT",
-      "workflow_run_time": "2026-10-31T05:43:23.766420+00:00"
+      "workflow_run_time": "2026-10-31T12:31:52.411873+00:00"
     },
     {
       "Stock A": "EXE",
       "Stock B": "FANG",
       "action": "LONG SPREAD",
       "beta": 0.1937752776346305,
-      "catalyst_context": "EXE: No detected catalyst\nFANG: \u26a0\ufe0f Earnings in 42.2h",
+      "catalyst_context": "EXE: No detected catalyst\nFANG: \u26a0\ufe0f Earnings in 35.4h",
       "catalyst_present": true,
       "delivery_status": "delivered",
       "entry_z": -2.357799719124468,
       "half_life_days": 3.184698570115294,
-      "historical_sharpe": 1.6226820806852058,
+      "historical_sharpe": 1.6226822090434392,
       "market_timestamp": "2026-10-30T15:30:00-04:00",
-      "p_value": 0.012139743196589852,
+      "p_value": 0.012139684989028654,
       "price_a": 90.56999969482422,
       "price_b": 212.05999755859375,
       "signal_id": "20261028T210933Z-EXE-FANG-LONG",
-      "workflow_run_time": "2026-10-31T05:43:23.766420+00:00"
+      "workflow_run_time": "2026-10-31T12:31:52.411873+00:00"
     }
   ],
-  "workflow_run_time": "2026-10-31T05:43:23.766420+00:00"
+  "workflow_run_time": "2026-10-31T12:31:52.411873+00:00"
 }
