@@ -4,38 +4,38 @@
       "Stock A": "EW",
       "Stock B": "SYK",
       "action": "SHORT SPREAD",
-      "beta": 0.21527437558211088,
+      "beta": 0.21526892973409928,
       "catalyst_context": "EW: No detected catalyst\nSYK: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 2.5714252089061542,
-      "half_life_days": 2.2849635492141505,
-      "historical_sharpe": 1.9560650206135237,
+      "entry_z": 2.583037689834613,
+      "half_life_days": 2.300387863704855,
+      "historical_sharpe": 1.9560650568755402,
       "market_timestamp": "2026-10-30T15:30:00-04:00",
-      "p_value": 0.027700603376264777,
-      "price_a": 91.93000030517578,
+      "p_value": 0.027700614982653745,
+      "price_a": 91.94999694824219,
       "price_b": 291.4100036621094,
       "signal_id": "20261027T164340Z-EW-SYK-SHORT",
-      "workflow_run_time": "2026-11-01T07:33:55.629897+00:00"
+      "workflow_run_time": "2026-11-01T15:11:09.711165+00:00"
     },
     {
       "Stock A": "EXE",
       "Stock B": "FANG",
       "action": "LONG SPREAD",
-      "beta": 0.1938192887321622,
-      "catalyst_context": "EXE: No detected catalyst\nFANG: \u26a0\ufe0f Earnings in 16.4h",
+      "beta": 0.19377527763463065,
+      "catalyst_context": "EXE: No detected catalyst\nFANG: \u26a0\ufe0f Earnings in 8.7h",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": -2.357452368812239,
-      "half_life_days": 3.1666568611602117,
-      "historical_sharpe": 1.6226821782021472,
+      "entry_z": -2.3577997191244675,
+      "half_life_days": 3.184698570115294,
+      "historical_sharpe": 1.6226824092026282,
       "market_timestamp": "2026-10-30T15:30:00-04:00",
-      "p_value": 0.012139726811388118,
+      "p_value": 0.01213972767524724,
       "price_a": 90.56999969482422,
       "price_b": 212.05999755859375,
       "signal_id": "20261028T210933Z-EXE-FANG-LONG",
-      "workflow_run_time": "2026-11-01T07:33:55.629897+00:00"
+      "workflow_run_time": "2026-11-01T15:11:09.711165+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-01T07:33:55.629897+00:00"
+  "workflow_run_time": "2026-11-01T15:11:09.711165+00:00"
 }
