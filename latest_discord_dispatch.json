@@ -5,37 +5,37 @@
       "Stock B": "SYK",
       "action": "SHORT SPREAD",
       "beta": 0.21526892973409922,
-      "catalyst_context": "EW: No detected catalyst\nSYK: No detected catalyst",
-      "catalyst_present": false,
+      "catalyst_context": "EW: \u26a0\ufe0f Earnings in 41.9h\nSYK: No detected catalyst",
+      "catalyst_present": true,
       "delivery_status": "delivered",
       "entry_z": 2.583037689834616,
       "half_life_days": 2.3003878637048425,
-      "historical_sharpe": 1.9560654203399888,
+      "historical_sharpe": 1.9560650198623093,
       "market_timestamp": "2026-10-30T15:30:00-04:00",
-      "p_value": 0.027700549121906528,
+      "p_value": 0.027700553073682466,
       "price_a": 91.94999694824219,
       "price_b": 291.4100036621094,
       "signal_id": "20261027T164340Z-EW-SYK-SHORT",
-      "workflow_run_time": "2026-11-01T23:37:07.894836+00:00"
+      "workflow_run_time": "2026-11-02T06:06:15.458773+00:00"
     },
     {
       "Stock A": "EXE",
       "Stock B": "FANG",
       "action": "LONG SPREAD",
       "beta": 0.1937752776346305,
-      "catalyst_context": "EXE: No detected catalyst\nFANG: \u26a0\ufe0f Earnings in 0.3h",
+      "catalyst_context": "EXE: No detected catalyst\nFANG: \u26a0\ufe0f Earnings scheduled today",
       "catalyst_present": true,
       "delivery_status": "delivered",
       "entry_z": -2.357799719124468,
       "half_life_days": 3.184698570115294,
-      "historical_sharpe": 1.6226816407914009,
+      "historical_sharpe": 1.6226823988429797,
       "market_timestamp": "2026-10-30T15:30:00-04:00",
-      "p_value": 0.01213971829456652,
+      "p_value": 0.012139723262102933,
       "price_a": 90.56999969482422,
       "price_b": 212.05999755859375,
       "signal_id": "20261028T210933Z-EXE-FANG-LONG",
-      "workflow_run_time": "2026-11-01T23:37:07.894836+00:00"
+      "workflow_run_time": "2026-11-02T06:06:15.458773+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-01T23:37:07.894836+00:00"
+  "workflow_run_time": "2026-11-02T06:06:15.458773+00:00"
 }
