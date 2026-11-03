@@ -1,23 +1,23 @@
 {
   "alerts": [
     {
-      "Stock A": "DELL",
-      "Stock B": "HPE",
+      "Stock A": "CPT",
+      "Stock B": "UDR",
       "action": "LONG SPREAD",
-      "beta": 8.484014530256424,
-      "catalyst_context": "DELL: No detected catalyst; Lookup incomplete (recent news: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***)\nHPE: No detected catalyst; Lookup incomplete (recent news: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***)",
-      "catalyst_present": false,
+      "beta": 2.1253424453647685,
+      "catalyst_context": "CPT: \u26a0\ufe0f Earnings in 26.9h; \u26a0\ufe0f Earnings 32.0h ago: What's in the Offing for Camden Property Stock This Earnings Season?\nUDR: \u26a0\ufe0f Earnings 16.5h ago: UDR: Q3 Earnings Snapshot; \u26a0\ufe0f Earnings 23.1h ago: UDR (UDR) Q3 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": -2.4233229722706287,
-      "half_life_days": 1.9745424744592837,
-      "historical_sharpe": 1.1713208191992723,
-      "market_timestamp": "2026-11-03T09:30:00-05:00",
-      "p_value": 0.03893556543696893,
-      "price_a": 410.3575134277344,
-      "price_b": 54.099998474121094,
-      "signal_id": "20261102T155928Z-DELL-HPE-LONG",
-      "workflow_run_time": "2026-11-03T15:09:57.513741+00:00"
+      "entry_z": -2.9195711622372587,
+      "half_life_days": 1.0447325427332186,
+      "historical_sharpe": 0.9350426465564071,
+      "market_timestamp": "2026-11-03T15:30:00-05:00",
+      "p_value": 0.017893648083060303,
+      "price_a": 100.69200134277344,
+      "price_b": 35.915000915527344,
+      "signal_id": "20261103T210420Z-CPT-UDR-LONG",
+      "workflow_run_time": "2026-11-03T21:00:05.751299+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-03T15:09:57.513741+00:00"
+  "workflow_run_time": "2026-11-03T21:00:05.751299+00:00"
 }
