@@ -1,23 +1,23 @@
 {
   "alerts": [
     {
-      "Stock A": "FTV",
-      "Stock B": "XYL",
-      "action": "SHORT SPREAD",
-      "beta": -0.37372234427800255,
-      "catalyst_context": "FTV: No detected catalyst; Lookup incomplete (recent news: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***)\nXYL: No detected catalyst; Lookup incomplete (recent news: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***)",
+      "Stock A": "DELL",
+      "Stock B": "HPE",
+      "action": "LONG SPREAD",
+      "beta": 8.484014530256424,
+      "catalyst_context": "DELL: No detected catalyst; Lookup incomplete (recent news: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***)\nHPE: No detected catalyst; Lookup incomplete (recent news: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***)",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 2.340194089394502,
-      "half_life_days": 3.538519945267713,
-      "historical_sharpe": 2.0292138147348213,
-      "market_timestamp": "2026-11-02T15:30:00-05:00",
-      "p_value": 0.03973831341271992,
-      "price_a": 66.83000183105469,
-      "price_b": 97.26000213623047,
-      "signal_id": "20261030T141355Z-FTV-XYL-SHORT",
-      "workflow_run_time": "2026-11-03T06:49:37.174689+00:00"
+      "entry_z": -2.4233229722706287,
+      "half_life_days": 1.9745424744592837,
+      "historical_sharpe": 1.1713208191992723,
+      "market_timestamp": "2026-11-03T09:30:00-05:00",
+      "p_value": 0.03893556543696893,
+      "price_a": 410.3575134277344,
+      "price_b": 54.099998474121094,
+      "signal_id": "20261102T155928Z-DELL-HPE-LONG",
+      "workflow_run_time": "2026-11-03T15:09:57.513741+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-03T06:49:37.174689+00:00"
+  "workflow_run_time": "2026-11-03T15:09:57.513741+00:00"
 }
