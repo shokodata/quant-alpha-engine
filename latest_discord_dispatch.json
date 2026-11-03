@@ -4,20 +4,20 @@
       "Stock A": "FTV",
       "Stock B": "XYL",
       "action": "SHORT SPREAD",
-      "beta": -0.3737231003211679,
+      "beta": -0.37372234427800255,
       "catalyst_context": "FTV: No detected catalyst; Lookup incomplete (recent news: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***)\nXYL: No detected catalyst; Lookup incomplete (recent news: *** YAHOO! FINANCE IS CURRENTLY DOWN! ***)",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": 2.3401457298930284,
-      "half_life_days": 3.535195655600179,
-      "historical_sharpe": 2.029214184114228,
+      "entry_z": 2.340194089394502,
+      "half_life_days": 3.538519945267713,
+      "historical_sharpe": 2.0292138147348213,
       "market_timestamp": "2026-11-02T15:30:00-05:00",
-      "p_value": 0.03973834891874017,
+      "p_value": 0.03973831341271992,
       "price_a": 66.83000183105469,
       "price_b": 97.26000213623047,
       "signal_id": "20261030T141355Z-FTV-XYL-SHORT",
-      "workflow_run_time": "2026-11-02T23:32:00.508788+00:00"
+      "workflow_run_time": "2026-11-03T06:49:37.174689+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-02T23:32:00.508788+00:00"
+  "workflow_run_time": "2026-11-03T06:49:37.174689+00:00"
 }
