@@ -4,20 +4,20 @@
       "Stock A": "CPT",
       "Stock B": "UDR",
       "action": "LONG SPREAD",
-      "beta": 2.1253424453647685,
-      "catalyst_context": "CPT: \u26a0\ufe0f Earnings in 26.9h; \u26a0\ufe0f Earnings 32.0h ago: What's in the Offing for Camden Property Stock This Earnings Season?\nUDR: \u26a0\ufe0f Earnings 16.5h ago: UDR: Q3 Earnings Snapshot; \u26a0\ufe0f Earnings 23.1h ago: UDR (UDR) Q3 Earnings: Taking a Look at Key Metrics Versus Estimates",
+      "beta": 2.1257664390440727,
+      "catalyst_context": "CPT: \u26a0\ufe0f Earnings in 22.6h; \u26a0\ufe0f Earnings 36.3h ago: What's in the Offing for Camden Property Stock This Earnings Season?\nUDR: \u26a0\ufe0f Earnings 4.1h ago: UDR (UDR) Q3 2026 Earnings Call Transcript; \u26a0\ufe0f Earnings 20.9h ago: UDR: Q3 Earnings Snapshot; \u26a0\ufe0f Earnings 27.4h ago: UDR (UDR) Q3 Earnings: Taking a Look at Key Metrics Versus Estimates",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": -2.9195711622372587,
-      "half_life_days": 1.0447325427332186,
-      "historical_sharpe": 0.9350426465564071,
+      "entry_z": -2.8516108241291342,
+      "half_life_days": 1.0285075744228533,
+      "historical_sharpe": 1.0130940257385697,
       "market_timestamp": "2026-11-03T15:30:00-05:00",
-      "p_value": 0.017893648083060303,
-      "price_a": 100.69200134277344,
-      "price_b": 35.915000915527344,
+      "p_value": 0.01536159782548933,
+      "price_a": 100.70999908447266,
+      "price_b": 35.90999984741211,
       "signal_id": "20261103T210420Z-CPT-UDR-LONG",
-      "workflow_run_time": "2026-11-03T21:00:05.751299+00:00"
+      "workflow_run_time": "2026-11-04T01:23:06.048609+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-03T21:00:05.751299+00:00"
+  "workflow_run_time": "2026-11-04T01:23:06.048609+00:00"
 }
