@@ -4,20 +4,20 @@
       "Stock A": "NEE",
       "Stock B": "XEL",
       "action": "SHORT SPREAD",
-      "beta": 1.3613879829267919,
-      "catalyst_context": "NEE: \u26a0\ufe0f Earnings 2.6h ago: How Will Southern Stock React To Its Upcoming Earnings?\nXEL: No detected catalyst",
+      "beta": 1.3612941365331344,
+      "catalyst_context": "NEE: \u26a0\ufe0f Earnings 9.8h ago: How Will Southern Stock React To Its Upcoming Earnings?\nXEL: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": 2.4141120632392563,
-      "half_life_days": 2.722833238464072,
-      "historical_sharpe": 1.615677285394324,
+      "entry_z": 2.414190695852523,
+      "half_life_days": 2.7234700315300038,
+      "historical_sharpe": 1.615678193667306,
       "market_timestamp": "2026-11-04T15:30:00-05:00",
-      "p_value": 0.01574243759087062,
+      "p_value": 0.015742472629626157,
       "price_a": 88.43990325927734,
       "price_b": 80.5,
       "signal_id": "20261104T172206Z-NEE-XEL-SHORT",
-      "workflow_run_time": "2026-11-04T23:40:47.961811+00:00"
+      "workflow_run_time": "2026-11-05T06:48:47.835167+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-04T23:40:47.961811+00:00"
+  "workflow_run_time": "2026-11-05T06:48:47.835167+00:00"
 }
