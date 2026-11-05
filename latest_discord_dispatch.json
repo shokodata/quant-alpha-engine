@@ -1,23 +1,23 @@
 {
   "alerts": [
     {
-      "Stock A": "NEE",
-      "Stock B": "XEL",
+      "Stock A": "ES",
+      "Stock B": "FE",
       "action": "SHORT SPREAD",
-      "beta": 1.3612941365331344,
-      "catalyst_context": "NEE: \u26a0\ufe0f Earnings 9.8h ago: How Will Southern Stock React To Its Upcoming Earnings?\nXEL: No detected catalyst",
+      "beta": 2.011560804391468,
+      "catalyst_context": "ES: \u26a0\ufe0f Earnings 12.3h ago: Is Eversource Energy (ES) Undervalued As Earnings Misses Cloud Its Fair Value?; \u26a0\ufe0f Earnings 17.7h ago: Eversource Energy (ES) Q3 Earnings and Revenues Lag Estimates; \u26a0\ufe0f Earnings 18.1h ago: Eversource: Q3 Earnings Snapshot\nFE: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": 2.414190695852523,
-      "half_life_days": 2.7234700315300038,
-      "historical_sharpe": 1.615678193667306,
-      "market_timestamp": "2026-11-04T15:30:00-05:00",
-      "p_value": 0.015742472629626157,
-      "price_a": 88.43990325927734,
-      "price_b": 80.5,
-      "signal_id": "20261104T172206Z-NEE-XEL-SHORT",
-      "workflow_run_time": "2026-11-05T06:48:47.835167+00:00"
+      "entry_z": 3.344867255183897,
+      "half_life_days": 1.6741717768184075,
+      "historical_sharpe": 1.6805633454379258,
+      "market_timestamp": "2026-11-05T10:30:00-05:00",
+      "p_value": 0.01135771337349474,
+      "price_a": 72.26000213623047,
+      "price_b": 47.40999984741211,
+      "signal_id": "20261105T153215Z-ES-FE-SHORT",
+      "workflow_run_time": "2026-11-05T15:28:42.037104+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-05T06:48:47.835167+00:00"
+  "workflow_run_time": "2026-11-05T15:28:42.037104+00:00"
 }
