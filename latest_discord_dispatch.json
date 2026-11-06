@@ -4,38 +4,38 @@
       "Stock A": "ES",
       "Stock B": "FE",
       "action": "SHORT SPREAD",
-      "beta": 2.211060311883561,
-      "catalyst_context": "ES: \u26a0\ufe0f Earnings 5.3h ago: Eversource (ES) Q3 2026 Earnings Call Transcript; \u26a0\ufe0f Earnings 9.3h ago: Eversource Energy Q3 Earnings Miss Estimates, Revenues Decline Y/Y; \u26a0\ufe0f Earnings 13.0h ago: Eversource Energy Q3 2026 Earnings Call Summary\nFE: No detected catalyst",
+      "beta": 2.2109175457314825,
+      "catalyst_context": "ES: \u26a0\ufe0f Earnings 13.7h ago: Eversource (ES) Q3 2026 Earnings Call Transcript; \u26a0\ufe0f Earnings 17.8h ago: Eversource Energy Q3 Earnings Miss Estimates, Revenues Decline Y/Y; \u26a0\ufe0f Earnings 21.4h ago: Eversource Energy Q3 2026 Earnings Call Summary\nFE: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": 2.803163332685471,
-      "half_life_days": 2.231897631838176,
-      "historical_sharpe": 1.6819266129072024,
+      "entry_z": 2.803389120031696,
+      "half_life_days": 2.2314005443402016,
+      "historical_sharpe": 1.6819280673443073,
       "market_timestamp": "2026-11-05T15:30:00-05:00",
-      "p_value": 0.011476902552255398,
+      "p_value": 0.011476888983041238,
       "price_a": 71.93000030517578,
       "price_b": 47.10499954223633,
       "signal_id": "20261105T153215Z-ES-FE-SHORT",
-      "workflow_run_time": "2026-11-06T02:27:26.581847+00:00"
+      "workflow_run_time": "2026-11-06T10:54:32.137984+00:00"
     },
     {
       "Stock A": "PSX",
       "Stock B": "VLO",
       "action": "LONG SPREAD",
-      "beta": 0.37506506577052956,
-      "catalyst_context": "PSX: \u26a0\ufe0f Earnings 34.1h ago: MPC Q3 Earnings Beat Estimates on Strong Refining Margins\nVLO: \u26a0\ufe0f Earnings 34.1h ago: MPC Q3 Earnings Beat Estimates on Strong Refining Margins",
+      "beta": 0.3750651332557361,
+      "catalyst_context": "PSX: \u26a0\ufe0f Earnings 42.5h ago: MPC Q3 Earnings Beat Estimates on Strong Refining Margins\nVLO: \u26a0\ufe0f Earnings 42.5h ago: MPC Q3 Earnings Beat Estimates on Strong Refining Margins",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": -3.1175292300834085,
-      "half_life_days": 4.585461969693602,
-      "historical_sharpe": 1.7625997454327462,
+      "entry_z": -3.1180382674057228,
+      "half_life_days": 4.566464179479808,
+      "historical_sharpe": 1.7626005283104795,
       "market_timestamp": "2026-11-05T15:30:00-05:00",
-      "p_value": 0.009519387742194692,
+      "p_value": 0.009519402622259037,
       "price_a": 246.99000549316406,
       "price_b": 351.1499938964844,
       "signal_id": "20261105T220217Z-PSX-VLO-LONG",
-      "workflow_run_time": "2026-11-06T02:27:26.581847+00:00"
+      "workflow_run_time": "2026-11-06T10:54:32.137984+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-06T02:27:26.581847+00:00"
+  "workflow_run_time": "2026-11-06T10:54:32.137984+00:00"
 }
