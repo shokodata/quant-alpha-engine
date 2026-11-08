@@ -5,37 +5,37 @@
       "Stock B": "AIZ",
       "action": "LONG SPREAD",
       "beta": 0.0031722636447877573,
-      "catalyst_context": "AIG: \u26a0\ufe0f Earnings 23.9h ago: American International Group Inc (AIG) (Q3 2026) Earnings Call Highlights: Premium Growth Cools ...\nAIZ: No detected catalyst",
+      "catalyst_context": "AIG: \u26a0\ufe0f Earnings 27.6h ago: American International Group Inc (AIG) (Q3 2026) Earnings Call Highlights: Premium Growth Cools ...\nAIZ: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
       "entry_z": -2.8448775905608175,
       "half_life_days": 1.12664125399736,
-      "historical_sharpe": 1.1798270563189754,
+      "historical_sharpe": 1.1798248346660125,
       "market_timestamp": "2026-11-06T15:30:00-05:00",
-      "p_value": 0.021687854789863212,
+      "p_value": 0.02168792646640914,
       "price_a": 77.7300033569336,
       "price_b": 307.0799865722656,
       "signal_id": "20261104T172207Z-AIG-AIZ-LONG",
-      "workflow_run_time": "2026-11-07T20:54:03.794160+00:00"
+      "workflow_run_time": "2026-11-08T00:37:39.062425+00:00"
     },
     {
       "Stock A": "AIG",
       "Stock B": "L",
       "action": "LONG SPREAD",
       "beta": 0.7858220641364673,
-      "catalyst_context": "AIG: \u26a0\ufe0f Earnings 23.9h ago: American International Group Inc (AIG) (Q3 2026) Earnings Call Highlights: Premium Growth Cools ...\nL: No detected catalyst",
+      "catalyst_context": "AIG: \u26a0\ufe0f Earnings 27.6h ago: American International Group Inc (AIG) (Q3 2026) Earnings Call Highlights: Premium Growth Cools ...\nL: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
       "entry_z": -2.7381874574442002,
       "half_life_days": 0.8189245643926631,
-      "historical_sharpe": 1.2394319874311104,
+      "historical_sharpe": 1.2394303755381266,
       "market_timestamp": "2026-11-06T15:30:00-05:00",
-      "p_value": 0.02745621281563787,
+      "p_value": 0.0274563116904449,
       "price_a": 77.7300033569336,
       "price_b": 109.69999694824219,
       "signal_id": "20261106T231306Z-AIG-L-LONG",
-      "workflow_run_time": "2026-11-07T20:54:03.794160+00:00"
+      "workflow_run_time": "2026-11-08T00:37:39.062425+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-07T20:54:03.794160+00:00"
+  "workflow_run_time": "2026-11-08T00:37:39.062425+00:00"
 }
