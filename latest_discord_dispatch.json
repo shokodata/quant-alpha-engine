@@ -5,37 +5,37 @@
       "Stock B": "AIZ",
       "action": "LONG SPREAD",
       "beta": 0.0031722636447877573,
-      "catalyst_context": "AIG: \u26a0\ufe0f Earnings 46.7h ago: American International Group Inc (AIG) (Q3 2026) Earnings Call Highlights: Premium Growth Cools ...\nAIZ: No detected catalyst",
-      "catalyst_present": true,
+      "catalyst_context": "AIG: No detected catalyst\nAIZ: No detected catalyst",
+      "catalyst_present": false,
       "delivery_status": "delivered",
       "entry_z": -2.8448775905608175,
       "half_life_days": 1.12664125399736,
-      "historical_sharpe": 1.1798259200916952,
+      "historical_sharpe": 1.17982486114523,
       "market_timestamp": "2026-11-06T15:30:00-05:00",
-      "p_value": 0.0216879300653334,
+      "p_value": 0.021687896292598714,
       "price_a": 77.7300033569336,
       "price_b": 307.0799865722656,
       "signal_id": "20261104T172207Z-AIG-AIZ-LONG",
-      "workflow_run_time": "2026-11-08T19:43:24.371859+00:00"
+      "workflow_run_time": "2026-11-08T23:43:57.678529+00:00"
     },
     {
       "Stock A": "AIG",
       "Stock B": "L",
       "action": "LONG SPREAD",
-      "beta": 0.785655031311815,
-      "catalyst_context": "AIG: \u26a0\ufe0f Earnings 46.7h ago: American International Group Inc (AIG) (Q3 2026) Earnings Call Highlights: Premium Growth Cools ...\nL: No detected catalyst",
-      "catalyst_present": true,
+      "beta": 0.7858220641364673,
+      "catalyst_context": "AIG: No detected catalyst\nL: No detected catalyst",
+      "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": -2.738061547273681,
-      "half_life_days": 0.8192866382052534,
-      "historical_sharpe": 1.2394311676777099,
+      "entry_z": -2.7381874574442002,
+      "half_life_days": 0.8189245643926631,
+      "historical_sharpe": 1.239430020654413,
       "market_timestamp": "2026-11-06T15:30:00-05:00",
-      "p_value": 0.027456300921777036,
+      "p_value": 0.027456281540331345,
       "price_a": 77.7300033569336,
       "price_b": 109.69999694824219,
       "signal_id": "20261106T231306Z-AIG-L-LONG",
-      "workflow_run_time": "2026-11-08T19:43:24.371859+00:00"
+      "workflow_run_time": "2026-11-08T23:43:57.678529+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-08T19:43:24.371859+00:00"
+  "workflow_run_time": "2026-11-08T23:43:57.678529+00:00"
 }
