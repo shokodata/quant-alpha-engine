@@ -4,38 +4,38 @@
       "Stock A": "AIG",
       "Stock B": "AIZ",
       "action": "LONG SPREAD",
-      "beta": 0.0031722636447877213,
-      "catalyst_context": "AIG: \u26a0\ufe0f Earnings 42.2h ago: American International Group Inc (AIG) (Q3 2026) Earnings Call Highlights: Premium Growth Cools ...\nAIZ: No detected catalyst",
+      "beta": 0.0031722636447877573,
+      "catalyst_context": "AIG: \u26a0\ufe0f Earnings 46.7h ago: American International Group Inc (AIG) (Q3 2026) Earnings Call Highlights: Premium Growth Cools ...\nAIZ: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": -2.8448775905608183,
-      "half_life_days": 1.126641253997357,
-      "historical_sharpe": 1.1798266151805443,
+      "entry_z": -2.8448775905608175,
+      "half_life_days": 1.12664125399736,
+      "historical_sharpe": 1.1798259200916952,
       "market_timestamp": "2026-11-06T15:30:00-05:00",
-      "p_value": 0.02168787315616511,
+      "p_value": 0.0216879300653334,
       "price_a": 77.7300033569336,
       "price_b": 307.0799865722656,
       "signal_id": "20261104T172207Z-AIG-AIZ-LONG",
-      "workflow_run_time": "2026-11-08T15:13:59.951143+00:00"
+      "workflow_run_time": "2026-11-08T19:43:24.371859+00:00"
     },
     {
       "Stock A": "AIG",
       "Stock B": "L",
       "action": "LONG SPREAD",
-      "beta": 0.7856550313118151,
-      "catalyst_context": "AIG: \u26a0\ufe0f Earnings 42.2h ago: American International Group Inc (AIG) (Q3 2026) Earnings Call Highlights: Premium Growth Cools ...\nL: No detected catalyst",
+      "beta": 0.785655031311815,
+      "catalyst_context": "AIG: \u26a0\ufe0f Earnings 46.7h ago: American International Group Inc (AIG) (Q3 2026) Earnings Call Highlights: Premium Growth Cools ...\nL: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": -2.7380615472736825,
+      "entry_z": -2.738061547273681,
       "half_life_days": 0.8192866382052534,
-      "historical_sharpe": 1.2394318747079889,
+      "historical_sharpe": 1.2394311676777099,
       "market_timestamp": "2026-11-06T15:30:00-05:00",
-      "p_value": 0.027456236540599043,
+      "p_value": 0.027456300921777036,
       "price_a": 77.7300033569336,
       "price_b": 109.69999694824219,
       "signal_id": "20261106T231306Z-AIG-L-LONG",
-      "workflow_run_time": "2026-11-08T15:13:59.951143+00:00"
+      "workflow_run_time": "2026-11-08T19:43:24.371859+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-08T15:13:59.951143+00:00"
+  "workflow_run_time": "2026-11-08T19:43:24.371859+00:00"
 }
