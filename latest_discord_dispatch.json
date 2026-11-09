@@ -10,13 +10,13 @@
       "delivery_status": "delivered",
       "entry_z": -2.8448775905608175,
       "half_life_days": 1.12664125399736,
-      "historical_sharpe": 1.17982486114523,
+      "historical_sharpe": 1.17982668063371,
       "market_timestamp": "2026-11-06T15:30:00-05:00",
-      "p_value": 0.021687896292598714,
+      "p_value": 0.0216879208059591,
       "price_a": 77.7300033569336,
       "price_b": 307.0799865722656,
       "signal_id": "20261104T172207Z-AIG-AIZ-LONG",
-      "workflow_run_time": "2026-11-08T23:43:57.678529+00:00"
+      "workflow_run_time": "2026-11-09T06:32:29.972907+00:00"
     },
     {
       "Stock A": "AIG",
@@ -28,14 +28,14 @@
       "delivery_status": "delivered",
       "entry_z": -2.7381874574442002,
       "half_life_days": 0.8189245643926631,
-      "historical_sharpe": 1.239430020654413,
+      "historical_sharpe": 1.2394319766351405,
       "market_timestamp": "2026-11-06T15:30:00-05:00",
-      "p_value": 0.027456281540331345,
+      "p_value": 0.027456292486580266,
       "price_a": 77.7300033569336,
       "price_b": 109.69999694824219,
       "signal_id": "20261106T231306Z-AIG-L-LONG",
-      "workflow_run_time": "2026-11-08T23:43:57.678529+00:00"
+      "workflow_run_time": "2026-11-09T06:32:29.972907+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-08T23:43:57.678529+00:00"
+  "workflow_run_time": "2026-11-09T06:32:29.972907+00:00"
 }
