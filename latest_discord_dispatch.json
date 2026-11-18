@@ -4,20 +4,20 @@
       "Stock A": "AEP",
       "Stock B": "ETR",
       "action": "LONG SPREAD",
-      "beta": -0.04003257081376003,
-      "catalyst_context": "AEP: \u26a0\ufe0f Earnings 11.2h ago: Will Increasing Power Demand Boost PPL's Long-Term Earnings Growth?\nETR: No detected catalyst",
+      "beta": -0.040032570813760784,
+      "catalyst_context": "AEP: \u26a0\ufe0f Earnings 20.8h ago: Will Increasing Power Demand Boost PPL's Long-Term Earnings Growth?\nETR: No detected catalyst",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": -2.3406187231434528,
-      "half_life_days": 0.5069876100578309,
-      "historical_sharpe": 1.0368492965209446,
+      "entry_z": -2.3406187231434328,
+      "half_life_days": 0.5069876100578271,
+      "historical_sharpe": 1.0368521680107445,
       "market_timestamp": "2026-11-17T15:30:00-05:00",
-      "p_value": 0.03489854426576534,
+      "p_value": 0.03489824169960795,
       "price_a": 125.97000122070312,
       "price_b": 107.58000183105469,
       "signal_id": "20261117T222813Z-AEP-ETR-LONG",
-      "workflow_run_time": "2026-11-18T04:23:17.737208+00:00"
+      "workflow_run_time": "2026-11-18T13:59:58.448303+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-18T04:23:17.737208+00:00"
+  "workflow_run_time": "2026-11-18T13:59:58.448303+00:00"
 }
