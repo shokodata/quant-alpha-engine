@@ -4,20 +4,20 @@
       "Stock A": "GD",
       "Stock B": "RTX",
       "action": "LONG SPREAD",
-      "beta": 1.7213472497523736,
+      "beta": 1.7212953028527176,
       "catalyst_context": "GD: No detected catalyst\nRTX: No detected catalyst",
       "catalyst_present": false,
       "delivery_status": "delivered",
-      "entry_z": -2.9031240426689786,
-      "half_life_days": 3.3220328303019024,
-      "historical_sharpe": 1.2070737429338554,
+      "entry_z": -2.9029357593965486,
+      "half_life_days": 3.3164407362124,
+      "historical_sharpe": 1.2070725269238836,
       "market_timestamp": "2026-11-18T15:30:00-05:00",
-      "p_value": 0.013507449871832966,
+      "p_value": 0.0135074755265137,
       "price_a": 348.82000732421875,
       "price_b": 197.4499969482422,
       "signal_id": "20261118T220125Z-GD-RTX-LONG",
-      "workflow_run_time": "2026-11-19T03:29:44.497522+00:00"
+      "workflow_run_time": "2026-11-19T13:10:26.998920+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-19T03:29:44.497522+00:00"
+  "workflow_run_time": "2026-11-19T13:10:26.998920+00:00"
 }
