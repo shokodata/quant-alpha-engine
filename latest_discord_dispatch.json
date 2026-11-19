@@ -9,51 +9,15 @@
       "catalyst_present": false,
       "delivery_status": "delivered",
       "entry_z": -2.9031240426689786,
-      "half_life_days": 3.322032830301903,
-      "historical_sharpe": 1.2070721721960367,
+      "half_life_days": 3.3220328303019024,
+      "historical_sharpe": 1.2070737429338554,
       "market_timestamp": "2026-11-18T15:30:00-05:00",
-      "p_value": 0.013507490925123732,
+      "p_value": 0.013507449871832966,
       "price_a": 348.82000732421875,
       "price_b": 197.4499969482422,
       "signal_id": "20261118T220125Z-GD-RTX-LONG",
-      "workflow_run_time": "2026-11-18T21:58:01.554815+00:00"
-    },
-    {
-      "Stock A": "CI",
-      "Stock B": "CVS",
-      "action": "LONG SPREAD",
-      "beta": 0.02246656051317977,
-      "catalyst_context": "CI: \u26a0\ufe0f Guidance 11.6h ago: Zacks Industry Outlook Highlights UnitedHealth, The Cigna, Humana, Centene and Molina\nCVS: \u26a0\ufe0f Guidance 6.7h ago: CVS Health Raised Its 2026 Outlook 3 Times, but Not Its Dividend",
-      "catalyst_present": true,
-      "delivery_status": "delivered",
-      "entry_z": -2.6208566435229437,
-      "half_life_days": 0.8776693306015444,
-      "historical_sharpe": 1.7168164646806225,
-      "market_timestamp": "2026-11-18T15:30:00-05:00",
-      "p_value": 0.011172433585873283,
-      "price_a": 285.29998779296875,
-      "price_b": 81.3499984741211,
-      "signal_id": "20261118T220137Z-CI-CVS-LONG",
-      "workflow_run_time": "2026-11-18T21:58:01.554815+00:00"
-    },
-    {
-      "Stock A": "CI",
-      "Stock B": "LH",
-      "action": "LONG SPREAD",
-      "beta": -0.09027046114220974,
-      "catalyst_context": "CI: \u26a0\ufe0f Guidance 11.6h ago: Zacks Industry Outlook Highlights UnitedHealth, The Cigna, Humana, Centene and Molina\nLH: No detected catalyst",
-      "catalyst_present": true,
-      "delivery_status": "delivered",
-      "entry_z": -2.559102339343894,
-      "half_life_days": 0.8266049732321216,
-      "historical_sharpe": 1.4589719125319758,
-      "market_timestamp": "2026-11-18T15:30:00-05:00",
-      "p_value": 0.014049410421913978,
-      "price_a": 285.29998779296875,
-      "price_b": 370.8399963378906,
-      "signal_id": "20261118T220138Z-CI-LH-LONG",
-      "workflow_run_time": "2026-11-18T21:58:01.554815+00:00"
+      "workflow_run_time": "2026-11-19T03:29:44.497522+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-18T21:58:01.554815+00:00"
+  "workflow_run_time": "2026-11-19T03:29:44.497522+00:00"
 }
