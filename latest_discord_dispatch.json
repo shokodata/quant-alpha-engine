@@ -1,59 +1,23 @@
 {
   "alerts": [
     {
-      "Stock A": "CI",
-      "Stock B": "CVS",
+      "Stock A": "GD",
+      "Stock B": "GE",
       "action": "LONG SPREAD",
-      "beta": 0.6453224247845242,
-      "catalyst_context": "CI: No detected catalyst\nCVS: \u26a0\ufe0f Guidance 44.7h ago: CVS Health Raised Its 2026 Outlook 3 Times, but Not Its Dividend",
+      "beta": -0.06864237140452484,
+      "catalyst_context": "GD: No detected catalyst\nGE: \u26a0\ufe0f Guidance 5.3h ago: Does Raised 2026 Guidance Change The Bull Case For GE Stock?; \u26a0\ufe0f Major News 11.5h ago: Boeing Is 36% Below Its High. A Director Who Was CFO of United Technologies Just Bought $500,000 of Stock; \u26a0\ufe0f Earnings 28.9h ago: Why Is GE (GE) Up 10.9% Since Last Earnings Report?",
       "catalyst_present": true,
       "delivery_status": "delivered",
-      "entry_z": -2.698008791315705,
-      "half_life_days": 2.6205144167889785,
-      "historical_sharpe": 1.716730385693912,
-      "market_timestamp": "2026-11-19T15:30:00-05:00",
-      "p_value": 0.011290308429053047,
-      "price_a": 273.0299987792969,
-      "price_b": 80.05000305175781,
-      "signal_id": "20261118T220137Z-CI-CVS-LONG",
-      "workflow_run_time": "2026-11-20T11:54:17.017155+00:00"
-    },
-    {
-      "Stock A": "CI",
-      "Stock B": "LH",
-      "action": "LONG SPREAD",
-      "beta": -0.14044374919545724,
-      "catalyst_context": "CI: No detected catalyst\nLH: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": -3.1475892748949175,
-      "half_life_days": 3.3425857965171724,
-      "historical_sharpe": 1.5789398046646994,
-      "market_timestamp": "2026-11-19T15:30:00-05:00",
-      "p_value": 0.012508743423478472,
-      "price_a": 273.0299987792969,
-      "price_b": 368.9700012207031,
-      "signal_id": "20261118T220138Z-CI-LH-LONG",
-      "workflow_run_time": "2026-11-20T11:54:17.017155+00:00"
-    },
-    {
-      "Stock A": "CI",
-      "Stock B": "DGX",
-      "action": "LONG SPREAD",
-      "beta": -0.321703569847966,
-      "catalyst_context": "CI: No detected catalyst\nDGX: No detected catalyst",
-      "catalyst_present": false,
-      "delivery_status": "delivered",
-      "entry_z": -3.0743496026440322,
-      "half_life_days": 2.771057084985841,
-      "historical_sharpe": 1.538894658672273,
-      "market_timestamp": "2026-11-19T15:30:00-05:00",
-      "p_value": 0.012765479718703206,
-      "price_a": 273.0299987792969,
-      "price_b": 259.1000061035156,
-      "signal_id": "20261028T160848Z-CI-DGX-LONG",
-      "workflow_run_time": "2026-11-20T11:54:17.017155+00:00"
+      "entry_z": -2.3280903775083073,
+      "half_life_days": 4.4604075021309395,
+      "historical_sharpe": 2.8203656678327254,
+      "market_timestamp": "2026-11-20T14:30:00-05:00",
+      "p_value": 0.000541763973309522,
+      "price_a": 343.65509033203125,
+      "price_b": 311.2749938964844,
+      "signal_id": "20261120T202550Z-GD-GE-LONG",
+      "workflow_run_time": "2026-11-20T20:22:58.045118+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-20T11:54:17.017155+00:00"
+  "workflow_run_time": "2026-11-20T20:22:58.045118+00:00"
 }

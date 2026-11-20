@@ -17379,13 +17379,13 @@
       "entry_z_reported": 2.400475537092403,
       "half_life_days": 0.8994895958716524,
       "historical_sharpe": 1.955584852554733,
-      "last_observed_market_timestamp": "2026-11-19T15:30:00-05:00",
-      "latest_pair_return": -0.0849325010798071,
-      "latest_z": 0.6689454711716273,
+      "last_observed_market_timestamp": "2026-11-20T14:30:00-05:00",
+      "latest_pair_return": -0.07881182779298714,
+      "latest_z": 0.425515116686863,
       "market_timestamp": "2026-10-27T12:30:00-04:00",
       "max_adverse_return": -0.11336697631204656,
       "max_favorable_return": 0.0,
-      "observation_count": 33,
+      "observation_count": 34,
       "observations": [
         {
           "market_timestamp": "2026-10-27T15:30:00-04:00",
@@ -17650,13 +17650,21 @@
           "price_b": 313.2099914550781,
           "spread": 58.33702377563185,
           "z": 0.6689454711716273
+        },
+        {
+          "market_timestamp": "2026-11-20T14:30:00-05:00",
+          "pair_return_net_est": -0.07881182779298714,
+          "price_a": 102.80999755859375,
+          "price_b": 311.5050048828125,
+          "spread": 57.514941325975755,
+          "z": 0.425515116686863
         }
       ],
       "pair_key": "EW|SYK",
-      "resolution_reason": null,
-      "resolved_at_utc": null,
+      "resolution_reason": "abs(z) <= 0.5",
+      "resolved_at_utc": "2026-11-20T20:22:58.542765+00:00",
       "signal_id": "20261027T164340Z-EW-SYK-SHORT",
-      "status": "OPEN",
+      "status": "CONVERGED",
       "stock_a": "EW",
       "stock_b": "SYK",
       "sub_industry": "Health Care Equipment"
@@ -17833,13 +17841,13 @@
       "entry_z_reported": -2.6190168396063616,
       "half_life_days": 1.6426569777856042,
       "historical_sharpe": 1.2869663908696642,
-      "last_observed_market_timestamp": "2026-11-19T15:30:00-05:00",
-      "latest_pair_return": -0.06392680698058409,
-      "latest_z": -2.346250792469099,
+      "last_observed_market_timestamp": "2026-11-20T14:30:00-05:00",
+      "latest_pair_return": -0.06634447520525538,
+      "latest_z": -2.22738485865369,
       "market_timestamp": "2026-10-28T11:30:00-04:00",
-      "max_adverse_return": -0.06392680698058409,
+      "max_adverse_return": -0.06634447520525538,
       "max_favorable_return": 0.0,
-      "observation_count": 30,
+      "observation_count": 31,
       "observations": [
         {
           "market_timestamp": "2026-10-28T15:30:00-04:00",
@@ -18080,6 +18088,14 @@
           "price_b": 259.1000061035156,
           "spread": -255.74267367077698,
           "z": -2.346250792469099
+        },
+        {
+          "market_timestamp": "2026-11-20T14:30:00-05:00",
+          "pair_return_net_est": -0.06634447520525538,
+          "price_a": 274.1549987792969,
+          "price_b": 260.6000061035156,
+          "spread": -257.67888165993554,
+          "z": -2.22738485865369
         }
       ],
       "pair_key": "CI|DGX",
@@ -20213,13 +20229,13 @@
       "entry_z_reported": -2.363514801815196,
       "half_life_days": 1.492654183734416,
       "historical_sharpe": 1.2073397927455225,
-      "last_observed_market_timestamp": "2026-11-19T15:30:00-05:00",
-      "latest_pair_return": -0.03963104085371942,
-      "latest_z": -1.160414483930594,
+      "last_observed_market_timestamp": "2026-11-20T14:30:00-05:00",
+      "latest_pair_return": -0.04187451797711043,
+      "latest_z": -1.2207688373976044,
       "market_timestamp": "2026-11-02T10:30:00-05:00",
-      "max_adverse_return": -0.04176286533679529,
+      "max_adverse_return": -0.04187451797711043,
       "max_favorable_return": 0.0,
-      "observation_count": 23,
+      "observation_count": 24,
       "observations": [
         {
           "market_timestamp": "2026-11-02T15:30:00-05:00",
@@ -20404,6 +20420,14 @@
           "price_b": 45.470001220703125,
           "spread": -60.25640774667693,
           "z": -1.160414483930594
+        },
+        {
+          "market_timestamp": "2026-11-20T14:30:00-05:00",
+          "pair_return_net_est": -0.04187451797711043,
+          "price_a": 276.364990234375,
+          "price_b": 41.275001525878906,
+          "spread": -62.18298402137759,
+          "z": -1.2207688373976044
         }
       ],
       "pair_key": "DELL|HPE",
@@ -21541,13 +21565,13 @@
       "entry_z_reported": -2.3409428463624207,
       "half_life_days": 0.5073033968083883,
       "historical_sharpe": 1.0368506337557033,
-      "last_observed_market_timestamp": "2026-11-19T15:30:00-05:00",
-      "latest_pair_return": -0.009199083946039362,
-      "latest_z": -2.190693461579295,
+      "last_observed_market_timestamp": "2026-11-20T14:30:00-05:00",
+      "latest_pair_return": -0.0018211566792492556,
+      "latest_z": -1.4747760536492485,
       "market_timestamp": "2026-11-17T15:30:00-05:00",
       "max_adverse_return": -0.009199083946039362,
       "max_favorable_return": 0.002794244845481064,
-      "observation_count": 2,
+      "observation_count": 3,
       "observations": [
         {
           "market_timestamp": "2026-11-18T15:30:00-05:00",
@@ -21564,6 +21588,14 @@
           "price_b": 106.18000030517578,
           "spread": 129.25956571067135,
           "z": -2.190693461579295
+        },
+        {
+          "market_timestamp": "2026-11-20T14:30:00-05:00",
+          "pair_return_net_est": -0.0018211566792492556,
+          "price_a": 126.02999877929688,
+          "price_b": 104.70999908447266,
+          "spread": 130.22072958274575,
+          "z": -1.4747760536492485
         }
       ],
       "pair_key": "AEP|ETR",
@@ -21591,13 +21623,13 @@
       "entry_z_reported": -2.9031240426689786,
       "half_life_days": 3.322032830301903,
       "historical_sharpe": 1.2070721721960367,
-      "last_observed_market_timestamp": "2026-11-19T15:30:00-05:00",
-      "latest_pair_return": 0.006596274876217398,
-      "latest_z": -1.3841923854550902,
+      "last_observed_market_timestamp": "2026-11-20T14:30:00-05:00",
+      "latest_pair_return": 0.005521570719241775,
+      "latest_z": -1.4930419133442534,
       "market_timestamp": "2026-11-18T15:30:00-05:00",
       "max_adverse_return": 0.0,
       "max_favorable_return": 0.006596274876217398,
-      "observation_count": 1,
+      "observation_count": 2,
       "observations": [
         {
           "market_timestamp": "2026-11-19T15:30:00-05:00",
@@ -21606,6 +21638,14 @@
           "price_b": 193.4199981689453,
           "spread": 14.44703275321433,
           "z": -1.3841923854550902
+        },
+        {
+          "market_timestamp": "2026-11-20T14:30:00-05:00",
+          "pair_return_net_est": 0.005521570719241775,
+          "price_a": 344.239990234375,
+          "price_b": 192.02000427246094,
+          "spread": 13.706883982535317,
+          "z": -1.4930419133442534
         }
       ],
       "pair_key": "GD|RTX",
@@ -21633,13 +21673,13 @@
       "entry_z_reported": -2.6208566435229437,
       "half_life_days": 0.8776693306015444,
       "historical_sharpe": 1.7168164646806225,
-      "last_observed_market_timestamp": "2026-11-19T15:30:00-05:00",
-      "latest_pair_return": -0.04403185001320715,
-      "latest_z": -3.1767166619361378,
+      "last_observed_market_timestamp": "2026-11-20T14:30:00-05:00",
+      "latest_pair_return": -0.04022484099151521,
+      "latest_z": -2.4971131185964666,
       "market_timestamp": "2026-11-18T15:30:00-05:00",
       "max_adverse_return": -0.04403185001320715,
       "max_favorable_return": 0.0,
-      "observation_count": 1,
+      "observation_count": 2,
       "observations": [
         {
           "market_timestamp": "2026-11-19T15:30:00-05:00",
@@ -21648,6 +21688,14 @@
           "price_b": 80.05000305175781,
           "spread": 271.2315505416543,
           "z": -3.1767166619361378
+        },
+        {
+          "market_timestamp": "2026-11-20T14:30:00-05:00",
+          "pair_return_net_est": -0.04022484099151521,
+          "price_a": 274.1549987792969,
+          "price_b": 81.47000122070312,
+          "spread": 272.3246480668631,
+          "z": -2.4971131185964666
         }
       ],
       "pair_key": "CI|CVS",
@@ -21675,13 +21723,13 @@
       "entry_z_reported": -2.559102339343894,
       "half_life_days": 0.8266049732321216,
       "historical_sharpe": 1.4589719125319758,
-      "last_observed_market_timestamp": "2026-11-19T15:30:00-05:00",
-      "latest_pair_return": -0.040420499698734215,
-      "latest_z": -3.1679945736483432,
+      "last_observed_market_timestamp": "2026-11-20T14:30:00-05:00",
+      "latest_pair_return": -0.03683473538288534,
+      "latest_z": -2.484345202788963,
       "market_timestamp": "2026-11-18T15:30:00-05:00",
       "max_adverse_return": -0.040420499698734215,
       "max_favorable_return": 0.0,
-      "observation_count": 1,
+      "observation_count": 2,
       "observations": [
         {
           "market_timestamp": "2026-11-19T15:30:00-05:00",
@@ -21690,6 +21738,14 @@
           "price_b": 368.9700012207031,
           "spread": 306.33709093713145,
           "z": -3.1679945736483432
+        },
+        {
+          "market_timestamp": "2026-11-20T14:30:00-05:00",
+          "pair_return_net_est": -0.03683473538288534,
+          "price_a": 274.1549987792969,
+          "price_b": 369.1700134277344,
+          "spread": 307.4801461312942,
+          "z": -2.484345202788963
         }
       ],
       "pair_key": "CI|LH",
@@ -21700,6 +21756,39 @@
       "stock_a": "CI",
       "stock_b": "LH",
       "sub_industry": "Health Care Services"
+    },
+    {
+      "action": "LONG SPREAD",
+      "beta": -0.06864237140452484,
+      "catalyst_context": "GD: No detected catalyst\nGE: \u26a0\ufe0f Guidance 5.3h ago: Does Raised 2026 Guidance Change The Bull Case For GE Stock?; \u26a0\ufe0f Major News 11.5h ago: Boeing Is 36% Below Its High. A Director Who Was CFO of United Technologies Just Bought $500,000 of Stock; \u26a0\ufe0f Earnings 28.9h ago: Why Is GE (GE) Up 10.9% Since Last Earnings Report?",
+      "catalyst_present": true,
+      "cointegration_p_value": 0.000541763973309522,
+      "created_at_utc": "2026-11-20T20:25:50.016519+00:00",
+      "entry_price_a": 343.65509033203125,
+      "entry_price_b": 311.2749938964844,
+      "entry_spread": 365.1318125213836,
+      "entry_spread_mean": 384.3820756990259,
+      "entry_spread_std": 8.315970811980163,
+      "entry_z_recomputed": -2.31485458678017,
+      "entry_z_reported": -2.3280903775083073,
+      "half_life_days": 4.4604075021309395,
+      "historical_sharpe": 2.8203656678327254,
+      "last_observed_market_timestamp": "2026-11-20T14:30:00-05:00",
+      "latest_pair_return": 0.0,
+      "latest_z": -2.31485458678017,
+      "market_timestamp": "2026-11-20T14:30:00-05:00",
+      "max_adverse_return": 0.0,
+      "max_favorable_return": 0.0,
+      "observation_count": 0,
+      "observations": [],
+      "pair_key": "GD|GE",
+      "resolution_reason": null,
+      "resolved_at_utc": null,
+      "signal_id": "20261120T202550Z-GD-GE-LONG",
+      "status": "OPEN",
+      "stock_a": "GD",
+      "stock_b": "GE",
+      "sub_industry": "Aerospace & Defense"
     }
   ]
 }
