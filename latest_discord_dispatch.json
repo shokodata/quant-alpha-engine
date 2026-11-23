@@ -10,13 +10,13 @@
       "delivery_status": "delivered",
       "entry_z": -2.4964768236961703,
       "half_life_days": 5.87866634248594,
-      "historical_sharpe": 2.3984963983670595,
+      "historical_sharpe": 2.3984966863942128,
       "market_timestamp": "2026-11-20T15:30:00-05:00",
-      "p_value": 0.0005793479553976694,
+      "p_value": 0.000579352099752873,
       "price_a": 341.7749938964844,
       "price_b": 309.7200012207031,
       "signal_id": "20261120T202550Z-GD-GE-LONG",
-      "workflow_run_time": "2026-11-22T21:46:42.469042+00:00"
+      "workflow_run_time": "2026-11-23T02:46:14.464971+00:00"
     },
     {
       "Stock A": "CI",
@@ -28,13 +28,13 @@
       "delivery_status": "delivered",
       "entry_z": -2.3540181392377644,
       "half_life_days": 2.8127869406469093,
-      "historical_sharpe": 1.7379258024320465,
+      "historical_sharpe": 1.7379262276945833,
       "market_timestamp": "2026-11-20T15:30:00-05:00",
-      "p_value": 0.009440067344959427,
+      "p_value": 0.009440085605147766,
       "price_a": 271.1300048828125,
       "price_b": 80.8499984741211,
       "signal_id": "20261118T220137Z-CI-CVS-LONG",
-      "workflow_run_time": "2026-11-22T21:46:42.469042+00:00"
+      "workflow_run_time": "2026-11-23T02:46:14.464971+00:00"
     },
     {
       "Stock A": "CI",
@@ -46,13 +46,13 @@
       "delivery_status": "delivered",
       "entry_z": -2.768180310841917,
       "half_life_days": 4.723508324197195,
-      "historical_sharpe": 1.5789301841823213,
+      "historical_sharpe": 1.578930848906363,
       "market_timestamp": "2026-11-20T15:30:00-05:00",
-      "p_value": 0.010006152974684804,
+      "p_value": 0.010006176777744864,
       "price_a": 271.1300048828125,
       "price_b": 367.5849914550781,
       "signal_id": "20261118T220138Z-CI-LH-LONG",
-      "workflow_run_time": "2026-11-22T21:46:42.469042+00:00"
+      "workflow_run_time": "2026-11-23T02:46:14.464971+00:00"
     },
     {
       "Stock A": "CI",
@@ -64,14 +64,14 @@
       "delivery_status": "delivered",
       "entry_z": -2.7212476820699054,
       "half_life_days": 2.6513505518322007,
-      "historical_sharpe": 1.5389679514632097,
+      "historical_sharpe": 1.538968547153013,
       "market_timestamp": "2026-11-20T15:30:00-05:00",
-      "p_value": 0.010272506319869612,
+      "p_value": 0.010272525271747024,
       "price_a": 271.1300048828125,
       "price_b": 258.4700012207031,
       "signal_id": "20261028T160848Z-CI-DGX-LONG",
-      "workflow_run_time": "2026-11-22T21:46:42.469042+00:00"
+      "workflow_run_time": "2026-11-23T02:46:14.464971+00:00"
     }
   ],
-  "workflow_run_time": "2026-11-22T21:46:42.469042+00:00"
+  "workflow_run_time": "2026-11-23T02:46:14.464971+00:00"
 }
