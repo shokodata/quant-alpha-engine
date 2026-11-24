@@ -17841,13 +17841,13 @@
       "entry_z_reported": -2.6190168396063616,
       "half_life_days": 1.6426569777856042,
       "historical_sharpe": 1.2869663908696642,
-      "last_observed_market_timestamp": "2026-11-20T15:30:00-05:00",
-      "latest_pair_return": -0.06469383044483844,
-      "latest_z": -2.07755722679689,
+      "last_observed_market_timestamp": "2026-11-23T15:30:00-05:00",
+      "latest_pair_return": -0.07782663315529117,
+      "latest_z": -2.2855124557882074,
       "market_timestamp": "2026-10-28T11:30:00-04:00",
-      "max_adverse_return": -0.06634447520525538,
+      "max_adverse_return": -0.07782663315529117,
       "max_favorable_return": 0.0,
-      "observation_count": 32,
+      "observation_count": 33,
       "observations": [
         {
           "market_timestamp": "2026-10-28T15:30:00-04:00",
@@ -18104,6 +18104,14 @@
           "price_b": 258.4700012207031,
           "spread": -256.35695024694496,
           "z": -2.07755722679689
+        },
+        {
+          "market_timestamp": "2026-11-23T15:30:00-05:00",
+          "pair_return_net_est": -0.07782663315529117,
+          "price_a": 270.489990234375,
+          "price_b": 263.30999755859375,
+          "spread": -266.8744552000818,
+          "z": -2.2855124557882074
         }
       ],
       "pair_key": "CI|DGX",
@@ -20237,13 +20245,13 @@
       "entry_z_reported": -2.363514801815196,
       "half_life_days": 1.492654183734416,
       "historical_sharpe": 1.2073397927455225,
-      "last_observed_market_timestamp": "2026-11-20T15:30:00-05:00",
-      "latest_pair_return": -0.03595082224183739,
-      "latest_z": -0.8914864109115045,
+      "last_observed_market_timestamp": "2026-11-23T15:30:00-05:00",
+      "latest_pair_return": -0.04040788724895504,
+      "latest_z": -1.1854832753399052,
       "market_timestamp": "2026-11-02T10:30:00-05:00",
       "max_adverse_return": -0.04187451797711043,
       "max_favorable_return": 0.0,
-      "observation_count": 25,
+      "observation_count": 26,
       "observations": [
         {
           "market_timestamp": "2026-11-02T15:30:00-05:00",
@@ -20444,6 +20452,14 @@
           "price_b": 40.869998931884766,
           "spread": -57.096035933905,
           "z": -0.8914864109115045
+        },
+        {
+          "market_timestamp": "2026-11-23T15:30:00-05:00",
+          "pair_return_net_est": -0.04040788724895504,
+          "price_a": 335.36090087890625,
+          "price_b": 48.3140983581543,
+          "spread": -60.92352122804175,
+          "z": -1.1854832753399052
         }
       ],
       "pair_key": "DELL|HPE",
@@ -21581,13 +21597,13 @@
       "entry_z_reported": -2.3409428463624207,
       "half_life_days": 0.5073033968083883,
       "historical_sharpe": 1.0368506337557033,
-      "last_observed_market_timestamp": "2026-11-20T15:30:00-05:00",
-      "latest_pair_return": -0.008523931842797285,
-      "latest_z": -1.9576519904728629,
+      "last_observed_market_timestamp": "2026-11-23T15:30:00-05:00",
+      "latest_pair_return": 0.007881823123143923,
+      "latest_z": -0.6130064053457704,
       "market_timestamp": "2026-11-17T15:30:00-05:00",
       "max_adverse_return": -0.009199083946039362,
-      "max_favorable_return": 0.002794244845481064,
-      "observation_count": 4,
+      "max_favorable_return": 0.007881823123143923,
+      "observation_count": 5,
       "observations": [
         {
           "market_timestamp": "2026-11-18T15:30:00-05:00",
@@ -21620,6 +21636,14 @@
           "price_b": 104.37999725341797,
           "spread": 129.34752155332546,
           "z": -1.9576519904728629
+        },
+        {
+          "market_timestamp": "2026-11-23T15:30:00-05:00",
+          "pair_return_net_est": 0.007881823123143923,
+          "price_a": 127.19000244140625,
+          "price_b": 107.30999755859375,
+          "spread": 131.48479105967402,
+          "z": -0.6130064053457704
         }
       ],
       "pair_key": "AEP|ETR",
@@ -21647,13 +21671,13 @@
       "entry_z_reported": -2.9031240426689786,
       "half_life_days": 3.322032830301903,
       "historical_sharpe": 1.2070721721960367,
-      "last_observed_market_timestamp": "2026-11-20T15:30:00-05:00",
-      "latest_pair_return": 0.006141406191283825,
-      "latest_z": -1.4112288897619965,
+      "last_observed_market_timestamp": "2026-11-23T15:30:00-05:00",
+      "latest_pair_return": 0.0038642382741298767,
+      "latest_z": -1.5284444394806769,
       "market_timestamp": "2026-11-18T15:30:00-05:00",
       "max_adverse_return": 0.0,
       "max_favorable_return": 0.006596274876217398,
-      "observation_count": 3,
+      "observation_count": 4,
       "observations": [
         {
           "market_timestamp": "2026-11-19T15:30:00-05:00",
@@ -21678,6 +21702,14 @@
           "price_b": 190.33999633789062,
           "spread": 14.133764682379478,
           "z": -1.4112288897619965
+        },
+        {
+          "market_timestamp": "2026-11-23T15:30:00-05:00",
+          "pair_return_net_est": 0.0038642382741298767,
+          "price_a": 347.9700012207031,
+          "price_b": 194.85000610351562,
+          "spread": 12.565479100183268,
+          "z": -1.5284444394806769
         }
       ],
       "pair_key": "GD|RTX",
@@ -21705,13 +21737,13 @@
       "entry_z_reported": -2.6208566435229437,
       "half_life_days": 0.8776693306015444,
       "historical_sharpe": 1.7168164646806225,
-      "last_observed_market_timestamp": "2026-11-20T15:30:00-05:00",
-      "latest_pair_return": -0.0507116911655343,
-      "latest_z": -2.7692426856671526,
+      "last_observed_market_timestamp": "2026-11-23T15:30:00-05:00",
+      "latest_pair_return": -0.052851515732436447,
+      "latest_z": -2.2337664018168155,
       "market_timestamp": "2026-11-18T15:30:00-05:00",
-      "max_adverse_return": -0.0507116911655343,
+      "max_adverse_return": -0.052851515732436447,
       "max_favorable_return": 0.0,
-      "observation_count": 3,
+      "observation_count": 4,
       "observations": [
         {
           "market_timestamp": "2026-11-19T15:30:00-05:00",
@@ -21736,6 +21768,14 @@
           "price_b": 80.8499984741211,
           "spread": 269.31358349960317,
           "z": -2.7692426856671526
+        },
+        {
+          "market_timestamp": "2026-11-23T15:30:00-05:00",
+          "pair_return_net_est": -0.052851515732436447,
+          "price_a": 270.489990234375,
+          "price_b": 79.70999908447266,
+          "spread": 268.6991807164382,
+          "z": -2.2337664018168155
         }
       ],
       "pair_key": "CI|CVS",
@@ -21763,13 +21803,13 @@
       "entry_z_reported": -2.559102339343894,
       "half_life_days": 0.8266049732321216,
       "historical_sharpe": 1.4589719125319758,
-      "last_observed_market_timestamp": "2026-11-20T15:30:00-05:00",
-      "latest_pair_return": -0.04677298575640326,
-      "latest_z": -2.77689907214991,
+      "last_observed_market_timestamp": "2026-11-23T15:30:00-05:00",
+      "latest_pair_return": -0.047332248155610136,
+      "latest_z": -2.209974683348077,
       "market_timestamp": "2026-11-18T15:30:00-05:00",
-      "max_adverse_return": -0.04677298575640326,
+      "max_adverse_return": -0.047332248155610136,
       "max_favorable_return": 0.0,
-      "observation_count": 3,
+      "observation_count": 4,
       "observations": [
         {
           "market_timestamp": "2026-11-19T15:30:00-05:00",
@@ -21794,6 +21834,14 @@
           "price_b": 367.5849914550781,
           "spread": 304.31207157041763,
           "z": -2.77689907214991
+        },
+        {
+          "market_timestamp": "2026-11-23T15:30:00-05:00",
+          "pair_return_net_est": -0.047332248155610136,
+          "price_a": 270.489990234375,
+          "price_b": 372.70001220703125,
+          "spread": 304.1337922040109,
+          "z": -2.209974683348077
         }
       ],
       "pair_key": "CI|LH",
@@ -21821,13 +21869,13 @@
       "entry_z_reported": -2.3280903775083073,
       "half_life_days": 4.4604075021309395,
       "historical_sharpe": 2.8203656678327254,
-      "last_observed_market_timestamp": "2026-11-20T15:30:00-05:00",
-      "latest_pair_return": -0.006842117642483243,
-      "latest_z": -2.5129173378733896,
+      "last_observed_market_timestamp": "2026-11-23T15:30:00-05:00",
+      "latest_pair_return": 0.01233061788205159,
+      "latest_z": -1.4533049197588161,
       "market_timestamp": "2026-11-20T14:30:00-05:00",
       "max_adverse_return": -0.006842117642483243,
-      "max_favorable_return": 0.0,
-      "observation_count": 1,
+      "max_favorable_return": 0.01233061788205159,
+      "observation_count": 2,
       "observations": [
         {
           "market_timestamp": "2026-11-20T15:30:00-05:00",
@@ -21836,6 +21884,14 @@
           "price_b": 309.7250061035156,
           "spread": 363.03525279871064,
           "z": -2.5129173378733896
+        },
+        {
+          "market_timestamp": "2026-11-23T15:30:00-05:00",
+          "pair_return_net_est": 0.01233061788205159,
+          "price_a": 347.9700012207031,
+          "price_b": 321.42999267578125,
+          "spread": 370.0337181585078,
+          "z": -1.4533049197588161
         }
       ],
       "pair_key": "GD|GE",
