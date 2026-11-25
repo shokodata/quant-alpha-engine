@@ -17841,13 +17841,13 @@
       "entry_z_reported": -2.6190168396063616,
       "half_life_days": 1.6426569777856042,
       "historical_sharpe": 1.2869663908696642,
-      "last_observed_market_timestamp": "2026-11-24T15:30:00-05:00",
-      "latest_pair_return": -0.078449610064271,
-      "latest_z": -1.9091382461910922,
+      "last_observed_market_timestamp": "2026-11-25T15:30:00-05:00",
+      "latest_pair_return": -0.08271830505381832,
+      "latest_z": -1.7946614617099828,
       "market_timestamp": "2026-10-28T11:30:00-04:00",
-      "max_adverse_return": -0.078449610064271,
+      "max_adverse_return": -0.08271830505381832,
       "max_favorable_return": 0.0,
-      "observation_count": 34,
+      "observation_count": 35,
       "observations": [
         {
           "market_timestamp": "2026-10-28T15:30:00-04:00",
@@ -18120,13 +18120,21 @@
           "price_b": 265.7349853515625,
           "spread": -267.3733709966824,
           "z": -1.9091382461910922
+        },
+        {
+          "market_timestamp": "2026-11-25T15:30:00-05:00",
+          "pair_return_net_est": -0.08271830505381832,
+          "price_a": 271.45001220703125,
+          "price_b": 265.70001220703125,
+          "spread": -270.7919878514274,
+          "z": -1.7946614617099828
         }
       ],
       "pair_key": "CI|DGX",
-      "resolution_reason": null,
-      "resolved_at_utc": null,
+      "resolution_reason": "no convergence in 35 hourly observations",
+      "resolved_at_utc": "2026-11-25T23:38:01.387807+00:00",
       "signal_id": "20261028T160848Z-CI-DGX-LONG",
-      "status": "OPEN",
+      "status": "TIMEOUT",
       "stock_a": "CI",
       "stock_b": "DGX",
       "sub_industry": "Health Care Services"
@@ -20253,13 +20261,13 @@
       "entry_z_reported": -2.363514801815196,
       "half_life_days": 1.492654183734416,
       "historical_sharpe": 1.2073397927455225,
-      "last_observed_market_timestamp": "2026-11-24T15:30:00-05:00",
-      "latest_pair_return": -0.009803450061438967,
-      "latest_z": 1.0599368104974494,
+      "last_observed_market_timestamp": "2026-11-25T15:30:00-05:00",
+      "latest_pair_return": -0.013543750157069148,
+      "latest_z": 0.8973671811803513,
       "market_timestamp": "2026-11-02T10:30:00-05:00",
       "max_adverse_return": -0.04187451797711043,
       "max_favorable_return": 0.0,
-      "observation_count": 27,
+      "observation_count": 28,
       "observations": [
         {
           "market_timestamp": "2026-11-02T15:30:00-05:00",
@@ -20476,6 +20484,14 @@
           "price_b": 40.220001220703125,
           "spread": -34.64209318436565,
           "z": 1.0599368104974494
+        },
+        {
+          "market_timestamp": "2026-11-25T15:30:00-05:00",
+          "pair_return_net_est": -0.013543750157069148,
+          "price_a": 297.0439147949219,
+          "price_b": 40.83000183105469,
+          "spread": -37.85405971140102,
+          "z": 0.8973671811803513
         }
       ],
       "pair_key": "DELL|HPE",
@@ -21695,13 +21711,13 @@
       "entry_z_reported": -2.9031240426689786,
       "half_life_days": 3.322032830301903,
       "historical_sharpe": 1.2070721721960367,
-      "last_observed_market_timestamp": "2026-11-24T15:30:00-05:00",
-      "latest_pair_return": 0.007825713158176421,
-      "latest_z": -0.8944406200735916,
+      "last_observed_market_timestamp": "2026-11-25T15:30:00-05:00",
+      "latest_pair_return": 0.018322769037639346,
+      "latest_z": 0.44894896545266294,
       "market_timestamp": "2026-11-18T15:30:00-05:00",
       "max_adverse_return": 0.0,
-      "max_favorable_return": 0.007825713158176421,
-      "observation_count": 5,
+      "max_favorable_return": 0.018322769037639346,
+      "observation_count": 6,
       "observations": [
         {
           "market_timestamp": "2026-11-19T15:30:00-05:00",
@@ -21742,13 +21758,21 @@
           "price_b": 195.39999389648438,
           "spread": 15.293746918327884,
           "z": -0.8944406200735916
+        },
+        {
+          "market_timestamp": "2026-11-25T15:30:00-05:00",
+          "pair_return_net_est": 0.018322769037639346,
+          "price_a": 360.260009765625,
+          "price_b": 196.2050018310547,
+          "spread": 22.52306947607957,
+          "z": 0.44894896545266294
         }
       ],
       "pair_key": "GD|RTX",
-      "resolution_reason": null,
-      "resolved_at_utc": null,
+      "resolution_reason": "abs(z) <= 0.5",
+      "resolved_at_utc": "2026-11-25T23:38:02.174957+00:00",
       "signal_id": "20261118T220125Z-GD-RTX-LONG",
-      "status": "OPEN",
+      "status": "CONVERGED",
       "stock_a": "GD",
       "stock_b": "RTX",
       "sub_industry": "Aerospace & Defense"
@@ -21769,13 +21793,13 @@
       "entry_z_reported": -2.6208566435229437,
       "half_life_days": 0.8776693306015444,
       "historical_sharpe": 1.7168164646806225,
-      "last_observed_market_timestamp": "2026-11-24T15:30:00-05:00",
-      "latest_pair_return": -0.0374298208220224,
-      "latest_z": -1.5351155665423257,
+      "last_observed_market_timestamp": "2026-11-25T15:30:00-05:00",
+      "latest_pair_return": -0.04961321929609768,
+      "latest_z": -1.6158703502646223,
       "market_timestamp": "2026-11-18T15:30:00-05:00",
       "max_adverse_return": -0.052851515732436447,
       "max_favorable_return": 0.0,
-      "observation_count": 5,
+      "observation_count": 6,
       "observations": [
         {
           "market_timestamp": "2026-11-19T15:30:00-05:00",
@@ -21816,6 +21840,14 @@
           "price_b": 80.69000244140625,
           "spread": 273.1271756187478,
           "z": -1.5351155665423257
+        },
+        {
+          "market_timestamp": "2026-11-25T15:30:00-05:00",
+          "pair_return_net_est": -0.04961321929609768,
+          "price_a": 271.45001220703125,
+          "price_b": 81.05500030517578,
+          "spread": 269.62898513777924,
+          "z": -1.6158703502646223
         }
       ],
       "pair_key": "CI|CVS",
@@ -21843,13 +21875,13 @@
       "entry_z_reported": -2.559102339343894,
       "half_life_days": 0.8266049732321216,
       "historical_sharpe": 1.4589719125319758,
-      "last_observed_market_timestamp": "2026-11-24T15:30:00-05:00",
-      "latest_pair_return": -0.032392764175633866,
-      "latest_z": -1.489590958809095,
+      "last_observed_market_timestamp": "2026-11-25T15:30:00-05:00",
+      "latest_pair_return": -0.04541373239457589,
+      "latest_z": -1.6355003784776279,
       "market_timestamp": "2026-11-18T15:30:00-05:00",
       "max_adverse_return": -0.047332248155610136,
       "max_favorable_return": 0.0,
-      "observation_count": 5,
+      "observation_count": 6,
       "observations": [
         {
           "market_timestamp": "2026-11-19T15:30:00-05:00",
@@ -21890,6 +21922,14 @@
           "price_b": 376.1600036621094,
           "spread": 308.8961394352402,
           "z": -1.489590958809095
+        },
+        {
+          "market_timestamp": "2026-11-25T15:30:00-05:00",
+          "pair_return_net_est": -0.04541373239457589,
+          "price_a": 271.45001220703125,
+          "price_b": 368.8399963378906,
+          "spread": 304.74536876414356,
+          "z": -1.6355003784776279
         }
       ],
       "pair_key": "CI|LH",
@@ -21917,13 +21957,13 @@
       "entry_z_reported": -2.3280903775083073,
       "half_life_days": 4.4604075021309395,
       "historical_sharpe": 2.8203656678327254,
-      "last_observed_market_timestamp": "2026-11-24T15:30:00-05:00",
-      "latest_pair_return": 0.02176099100120399,
-      "latest_z": -0.9481890548495797,
+      "last_observed_market_timestamp": "2026-11-25T15:30:00-05:00",
+      "latest_pair_return": 0.045187490636833014,
+      "latest_z": 0.11860331824304852,
       "market_timestamp": "2026-11-20T14:30:00-05:00",
       "max_adverse_return": -0.006842117642483243,
-      "max_favorable_return": 0.02176099100120399,
-      "observation_count": 3,
+      "max_favorable_return": 0.045187490636833014,
+      "observation_count": 4,
       "observations": [
         {
           "market_timestamp": "2026-11-20T15:30:00-05:00",
@@ -21948,16 +21988,57 @@
           "price_b": 318.0400085449219,
           "spread": 373.47600940171066,
           "z": -0.9481890548495797
+        },
+        {
+          "market_timestamp": "2026-11-25T15:30:00-05:00",
+          "pair_return_net_est": 0.045187490636833014,
+          "price_a": 360.260009765625,
+          "price_b": 317.1099853515625,
+          "spread": 382.0271911562104,
+          "z": 0.11860331824304852
         }
       ],
       "pair_key": "GD|GE",
-      "resolution_reason": null,
-      "resolved_at_utc": null,
+      "resolution_reason": "abs(z) <= 0.5",
+      "resolved_at_utc": "2026-11-25T23:38:03.009767+00:00",
       "signal_id": "20261120T202550Z-GD-GE-LONG",
-      "status": "OPEN",
+      "status": "CONVERGED",
       "stock_a": "GD",
       "stock_b": "GE",
       "sub_industry": "Aerospace & Defense"
+    },
+    {
+      "action": "SHORT SPREAD",
+      "beta": 0.5774325041792251,
+      "catalyst_context": "KLAC: \u26a0\ufe0f Earnings 45.4h ago: KLA Stock Jumps On Earnings Beat And Singapore Expansion\nLRCX: No detected catalyst",
+      "catalyst_present": true,
+      "cointegration_p_value": 0.014938708747224671,
+      "created_at_utc": "2026-11-25T23:40:48.531851+00:00",
+      "entry_price_a": 134.0800018310547,
+      "entry_price_b": 184.92999267578125,
+      "entry_spread": 27.29541306243256,
+      "entry_spread_mean": 22.841871415606363,
+      "entry_spread_std": 1.432700562350929,
+      "entry_z_recomputed": 3.108494380373765,
+      "entry_z_reported": 3.108494380373765,
+      "half_life_days": 0.5177963366159232,
+      "historical_sharpe": 0.8653613561672332,
+      "last_observed_market_timestamp": "2026-11-25T15:30:00-05:00",
+      "latest_pair_return": 0.0,
+      "latest_z": 3.108494380373765,
+      "market_timestamp": "2026-11-25T15:30:00-05:00",
+      "max_adverse_return": 0.0,
+      "max_favorable_return": 0.0,
+      "observation_count": 0,
+      "observations": [],
+      "pair_key": "KLAC|LRCX",
+      "resolution_reason": null,
+      "resolved_at_utc": null,
+      "signal_id": "20261125T234048Z-KLAC-LRCX-SHORT",
+      "status": "OPEN",
+      "stock_a": "KLAC",
+      "stock_b": "LRCX",
+      "sub_industry": "Semiconductor Materials & Equipment"
     }
   ]
 }

@@ -1,4 +1,23 @@
 {
-  "alerts": [],
-  "workflow_run_time": "2026-11-25T14:24:52.794559+00:00"
+  "alerts": [
+    {
+      "Stock A": "KLAC",
+      "Stock B": "LRCX",
+      "action": "SHORT SPREAD",
+      "beta": 0.5774325041792251,
+      "catalyst_context": "KLAC: \u26a0\ufe0f Earnings 45.4h ago: KLA Stock Jumps On Earnings Beat And Singapore Expansion\nLRCX: No detected catalyst",
+      "catalyst_present": true,
+      "delivery_status": "delivered",
+      "entry_z": 3.108494380373765,
+      "half_life_days": 0.5177963366159232,
+      "historical_sharpe": 0.8653613561672332,
+      "market_timestamp": "2026-11-25T15:30:00-05:00",
+      "p_value": 0.014938708747224671,
+      "price_a": 134.0800018310547,
+      "price_b": 184.92999267578125,
+      "signal_id": "20261125T234048Z-KLAC-LRCX-SHORT",
+      "workflow_run_time": "2026-11-25T23:38:00.718727+00:00"
+    }
+  ],
+  "workflow_run_time": "2026-11-25T23:38:00.718727+00:00"
 }
