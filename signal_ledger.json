@@ -20261,13 +20261,13 @@
       "entry_z_reported": -2.363514801815196,
       "half_life_days": 1.492654183734416,
       "historical_sharpe": 1.2073397927455225,
-      "last_observed_market_timestamp": "2026-11-27T12:30:00-05:00",
-      "latest_pair_return": -0.009448512255519171,
-      "latest_z": 1.2509119217735942,
+      "last_observed_market_timestamp": "2026-11-27T11:30:00-05:00",
+      "latest_pair_return": -0.008242658007812542,
+      "latest_z": 1.3547786195768505,
       "market_timestamp": "2026-11-02T10:30:00-05:00",
       "max_adverse_return": -0.04187451797711043,
       "max_favorable_return": 0.0,
-      "observation_count": 29,
+      "observation_count": 30,
       "observations": [
         {
           "market_timestamp": "2026-11-02T15:30:00-05:00",
@@ -20500,6 +20500,14 @@
           "price_b": 42.310001373291016,
           "spread": -34.33729187895011,
           "z": 1.2509119217735942
+        },
+        {
+          "market_timestamp": "2026-11-27T11:30:00-05:00",
+          "pair_return_net_est": -0.008242658007812542,
+          "price_a": 315.5400085449219,
+          "price_b": 42.529998779296875,
+          "spread": -33.30176976011205,
+          "z": 1.3547786195768505
         }
       ],
       "pair_key": "DELL|HPE",
@@ -21801,13 +21809,13 @@
       "entry_z_reported": -2.6208566435229437,
       "half_life_days": 0.8776693306015444,
       "historical_sharpe": 1.7168164646806225,
-      "last_observed_market_timestamp": "2026-11-27T12:30:00-05:00",
-      "latest_pair_return": -0.04230646337721467,
-      "latest_z": -1.3300097180473023,
+      "last_observed_market_timestamp": "2026-11-27T11:30:00-05:00",
+      "latest_pair_return": -0.041094904917457854,
+      "latest_z": -1.3243823861327173,
       "market_timestamp": "2026-11-18T15:30:00-05:00",
       "max_adverse_return": -0.052851515732436447,
       "max_favorable_return": 0.0,
-      "observation_count": 7,
+      "observation_count": 8,
       "observations": [
         {
           "market_timestamp": "2026-11-19T15:30:00-05:00",
@@ -21864,6 +21872,14 @@
           "price_b": 82.92500305175781,
           "spread": 271.7269567387727,
           "z": -1.3300097180473023
+        },
+        {
+          "market_timestamp": "2026-11-27T11:30:00-05:00",
+          "pair_return_net_est": -0.041094904917457854,
+          "price_a": 273.94000244140625,
+          "price_b": 83.0199966430664,
+          "spread": 272.0748286630208,
+          "z": -1.3243823861327173
         }
       ],
       "pair_key": "CI|CVS",
@@ -21891,13 +21907,13 @@
       "entry_z_reported": -2.559102339343894,
       "half_life_days": 0.8266049732321216,
       "historical_sharpe": 1.4589719125319758,
-      "last_observed_market_timestamp": "2026-11-27T12:30:00-05:00",
-      "latest_pair_return": -0.03819371000896951,
-      "latest_z": -1.3304846037914853,
+      "last_observed_market_timestamp": "2026-11-27T11:30:00-05:00",
+      "latest_pair_return": -0.037105653092433945,
+      "latest_z": -1.3244779413117431,
       "market_timestamp": "2026-11-18T15:30:00-05:00",
       "max_adverse_return": -0.047332248155610136,
       "max_favorable_return": 0.0,
-      "observation_count": 7,
+      "observation_count": 8,
       "observations": [
         {
           "market_timestamp": "2026-11-19T15:30:00-05:00",
@@ -21954,6 +21970,14 @@
           "price_b": 370.6300048828125,
           "spread": 307.04693779180155,
           "z": -1.3304846037914853
+        },
+        {
+          "market_timestamp": "2026-11-27T11:30:00-05:00",
+          "pair_return_net_est": -0.037105653092433945,
+          "price_a": 273.94000244140625,
+          "price_b": 370.5950012207031,
+          "spread": 307.3937840985969,
+          "z": -1.3244779413117431
         }
       ],
       "pair_key": "CI|LH",
@@ -22047,13 +22071,13 @@
       "entry_z_reported": 3.108494380373765,
       "half_life_days": 0.5177963366159232,
       "historical_sharpe": 0.8653613561672332,
-      "last_observed_market_timestamp": "2026-11-27T12:30:00-05:00",
-      "latest_pair_return": -0.011093810308072273,
-      "latest_z": 3.9723098809129653,
+      "last_observed_market_timestamp": "2026-11-27T11:30:00-05:00",
+      "latest_pair_return": -0.00467808085343688,
+      "latest_z": 3.197372961876468,
       "market_timestamp": "2026-11-25T15:30:00-05:00",
       "max_adverse_return": -0.011093810308072273,
       "max_favorable_return": 0.0,
-      "observation_count": 1,
+      "observation_count": 2,
       "observations": [
         {
           "market_timestamp": "2026-11-27T12:30:00-05:00",
@@ -22062,6 +22086,14 @@
           "price_b": 192.67999267578125,
           "spread": 29.63030871363732,
           "z": 3.9723098809129653
+        },
+        {
+          "market_timestamp": "2026-11-27T11:30:00-05:00",
+          "pair_return_net_est": -0.00467808085343688,
+          "price_a": 137.31500244140625,
+          "price_b": 189.1649932861328,
+          "spread": 28.08498666514828,
+          "z": 3.197372961876468
         }
       ],
       "pair_key": "KLAC|LRCX",
@@ -22089,14 +22121,23 @@
       "entry_z_reported": -2.8318594306228193,
       "half_life_days": 1.1387420093489657,
       "historical_sharpe": 1.4082245655577568,
-      "last_observed_market_timestamp": "2026-11-27T12:30:00-05:00",
-      "latest_pair_return": 0.0,
-      "latest_z": -2.8318594306228193,
+      "last_observed_market_timestamp": "2026-11-27T11:30:00-05:00",
+      "latest_pair_return": 0.006235125944814416,
+      "latest_z": -2.1671542027769264,
       "market_timestamp": "2026-11-27T12:30:00-05:00",
       "max_adverse_return": 0.0,
-      "max_favorable_return": 0.0,
-      "observation_count": 0,
-      "observations": [],
+      "max_favorable_return": 0.006235125944814416,
+      "observation_count": 1,
+      "observations": [
+        {
+          "market_timestamp": "2026-11-27T11:30:00-05:00",
+          "pair_return_net_est": 0.006235125944814416,
+          "price_a": 42.529998779296875,
+          "price_b": 171.35000610351562,
+          "spread": -22.967734411168763,
+          "z": -2.1671542027769264
+        }
+      ],
       "pair_key": "HPE|NTAP",
       "resolution_reason": null,
       "resolved_at_utc": null,
